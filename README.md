@@ -39,9 +39,10 @@ Conteúdo preservado, design moderno, deploy em GitHub Pages.
 - [x] Branch padrão de trabalho: `homologacao`
 - [x] Deploy em `main` executado para avaliação
 - [x] Caminhos de assets ajustados para subpath do Pages
+- [x] Design moderno aplicado
+- [x] Layout alinhado ao Wix
 - [ ] Revisão final de conteúdo
-- [ ] Ajustes visuais finais
-- [ ] Deploy definitivo
+- [ ] Ajustes finais de telefone/contato
 
 ## Links
 
@@ -55,12 +56,15 @@ Conteúdo preservado, design moderno, deploy em GitHub Pages.
 - Deploy só em `main` quando solicitado explicitamente
 - Caminhos relativos para funcionar no subpath do Pages
 - `.nojekyll` mantido para evitar processamento do Jekyll
+- Design moderno com princípios UI/UX minimalistas
+- Layout responsivo e acessível
 
 ## Problemas encontrados e resolvidos
 
 - Pages serviu `README.md` renderizado antes de usar `index.html` → resolvido com `.nojekyll` + `index.html` na raiz
 - Caminhos absolutos quebrados no Pages → resolvidos com caminhos relativos
-- Ajustes locais não refletiam no Pages em alguns momentos → identificada divergência entre branch e configuração do Pages
+- Layout não moderno suficiente → redesign com princípios UI/UX minimalistas
+- Cache do Pages atrasando atualizações → cache-bust aplicado
 
 ## Problemas pendentes
 
