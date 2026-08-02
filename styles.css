@@ -90,7 +90,7 @@ body {
 }
 
 .hero {
-  padding: clamp(48px, 7vw, 100px) 0;
+  padding: clamp(44px, 7vw, 96px) 0;
   background:
     radial-gradient(1200px 600px at -10% -20%, rgba(14, 165, 233, 0.12), transparent 60%),
     radial-gradient(1000px 500px at 120% 10%, rgba(11, 138, 111, 0.10), transparent 60%),
@@ -100,7 +100,7 @@ body {
 
 .hero h1 {
   font-size: clamp(30px, 4.2vw, 50px);
-  line-height: 1.08;
+  line-height: 1.1;
   margin: 0 0 16px;
   letter-spacing: -0.5px;
   font-weight: 800;
@@ -136,7 +136,7 @@ body {
 }
 
 .btn-secondary {
-  background: rgba(15, 23, 42, 0.05);
+  background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
 }
@@ -144,7 +144,7 @@ body {
 .btn:hover { transform: translateY(-1px); }
 .btn:active { transform: translateY(0); }
 
-.section { padding: 52px 0; border-top: 1px solid var(--border); }
+.section { padding: clamp(36px, 5vw, 52px) 0; border-top: 1px solid var(--border); }
 
 .section-alt {
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.025), rgba(15, 23, 42, 0.00));
