@@ -1,20 +1,19 @@
 :root {
-  --amber: #f59e0b;
-  --amber-soft: #fcd34d;
-  --terracotta: #c2410c;
-  --rose: #b3456b;
-  --gold: #d4a017;
-  --navy: #0e2236;
-  --navy-soft: #16324e;
-  --cream: #faf6ef;
+  --pedra: #f7f6f2;
   --surface: #ffffff;
-  --ink: #22303f;
-  --muted: #5c6b7a;
-  --border: #eadfce;
-  --shadow: rgba(14, 34, 54, 0.10);
+  --ink: #1d262e;
+  --muted: #5d6a75;
+  --border: #e5e1d7;
+  --navy: #0f1f2c;
+  --navy-soft: #16324e;
 
-  --grad-vitral: linear-gradient(120deg, #f59e0b 0%, #e1624a 45%, #b3456b 100%);
-  --grad-navy: linear-gradient(160deg, #0e2236 0%, #16324e 100%);
+  --safira: #2f5f92;
+  --esmeralda: #3f6f5a;
+  --ambar: #d99b2b;
+  --rubi: #b3493a;
+
+  --grad-vitral: linear-gradient(120deg, #d99b2b 0%, #b3493a 100%);
+  --grad-navy: linear-gradient(160deg, #0f1f2c 0%, #16324e 100%);
 
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -26,11 +25,11 @@
   --small: 0.875rem;
   --label: 0.72rem;
 
-  --radius: 18px;
+  --radius: 8px;
   --radius-pill: 999px;
   --space: clamp(1.1rem, 3vw, 2.2rem);
   --section: clamp(3rem, 7vw, 6rem);
 
-  --maxw: 1100px;
+  --maxw: 1120px;
   --bp-mobile: 760px;
 }
