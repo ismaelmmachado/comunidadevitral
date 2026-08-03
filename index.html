@@ -3,153 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Comunidade Vitral — Igreja em Pessoas</title>
-  <meta name="description" content="Comunidade Vitral: uma igreja simples, missional e acolhedora. Encontros, voluntariado, contribuição e contato em São José do Rio Preto.">
+  <title>Comunidade Vitral | Igreja em Pessoas — São José do Rio Preto</title>
+  <meta name="description" content="Comunidade Vitral: uma igreja simples, missional e acolhedora em São José do Rio Preto. Venha como você está. Encontros, mensagens, voluntariado e muito mais.">
+  <link rel="canonical" href="https://ismaelmmachado.github.io/comunidadevitral/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Comunidade Vitral | Igreja em Pessoas">
+  <meta property="og:description" content="Uma igreja simples, missional e acolhedora. Venha como você está — aqui é proibida a entrada de pessoas perfeitas.">
+  <meta property="og:url" content="https://ismaelmmachado.github.io/comunidadevitral/">
+  <meta property="og:image" content="https://ismaelmmachado.github.io/comunidadevitral/assets/og-image.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260802-04">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "name": "Comunidade Vitral",
+    "alternateName": "Igreja Presbiteriana Independente Vitral",
+    "slogan": "Igreja em Pessoas",
+    "telephone": "+5517996195302",
+    "email": "contato@comunidadevitral.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Sebastião Tavares da Silva, 1191 - Jardim Vista Alegre",
+      "addressLocality": "São José do Rio Preto",
+      "addressRegion": "SP",
+      "postalCode": "15061660",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "10:00",
+      "closes": "11:30"
+    },
+    "sameAs": [
+      "https://www.instagram.com/comunidadevitral/",
+      "https://www.youtube.com/c/ComunidadeVitral",
+      "https://www.facebook.com/comunidadevitral",
+      "https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Comunidade Vitral — página inicial">Comunidade Vitral</a>
+      <a class="brand" href="index.html">
+        <img src="assets/logos/logo-vitral-header.png" alt="Logotipo Comunidade Vitral">
+        <span>Comunidade Vitral</span>
+      </a>
       <nav class="nav" aria-label="Menu principal">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">Menu</button>
-        <ul id="nav-menu" class="nav-menu" hidden>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#encontros">Encontros</a></li>
-          <li><a href="#mensagens">Mensagens</a></li>
-          <li><a href="#voluntariado">Voluntariado</a></li>
-          <li><a href="#contribuir">Contribuir</a></li>
-          <li><a href="#contato">Visite-nos</a></li>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="mensagens.html">Mensagens</a></li>
+          <li><a href="encontros.html">Encontros</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="como-contribuir.html">Como contribuir</a></li>
+          <li><a href="visite-nos.html">Visite-nos</a></li>
+          <li class="nav-dropdown">
+            <span class="dd-label" aria-haspopup="true">Mais</span>
+            <ul class="dd-menu">
+              <li><a href="templo.html">Templo</a></li>
+              <li><a href="grande-banquete.html">Grande Banquete</a></li>
+              <li><a href="link-bio.html">Link-bio</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
+      <img class="hero-photo" src="assets/img/home-hero-bg.jpg" alt="Reunião da Comunidade Vitral" loading="lazy">
       <div class="container">
-        <h1>Uma comunidade simples, missional e acolhedora</h1>
-        <p>Venha como você está. Aqui é proibida a entrada de pessoas perfeitas.</p>
-        <p class="hero-cta">
-          <a class="btn btn-primary" href="#contato">Visite-nos</a>
-          <a class="btn btn-secondary" href="#encontros">Encontros</a>
-        </p>
-      </div>
-    </section>
-
-    <section id="sobre" class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label">Sobre</div>
-          <h2>Uma igreja para a cidade</h2>
-          <p>Somos como pedaços de vidro, de diferentes tamanhos e cores, que são trabalhados por Deus para formar uma estrutura maior. Nosso compromisso é sermos translúcidos: permitir a passagem da luz do amor através de quem somos e do jeito que vivemos.</p>
-          <p>A Vitral é uma igreja em pessoas: investimos em relacionamentos, dialogamos com a cidade e acolhemos quem pensa diferente.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon">✦</div>
-            <h3>Simples</h3>
-            <p>Comunidade organizada para o básico, com agenda leve e dinâmica.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">◉</div>
-            <h3>Missional</h3>
-            <p>Unir pessoas umas às outras e a Deus.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">❋</div>
-            <h3>Acolhedor</h3>
-            <p>Aberta a todas as pessoas, sem barreiras.</p>
-          </article>
+        <span class="hero-eyebrow">Bem-vindo!</span>
+        <h1>venha como você está</h1>
+        <p class="hero-sub">Porque aqui é proibida a entrada de pessoas perfeitas.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mensagens.html">Ouça as mensagens</a>
+          <a class="btn btn-outline" href="visite-nos.html">Visite-nos</a>
         </div>
       </div>
     </section>
 
-    <section id="encontros" class="section section-alt">
+    <section class="section">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label">Encontros</div>
-          <h2>O que fazemos quando estamos juntos</h2>
-          <p>Nosso culto semanal é chamado de encontro: leve, dinâmico e sem constrangimento. Dura cerca de 1h30. As crianças são cuidadas em linguagem própria. No início e no final, bate-papo com café.</p>
+        <div class="section-head">
+          <div>
+            <div class="section-label">Nossa essência</div>
+            <h2>menos programas. mais relacionamentos.</h2>
+          </div>
+          <p class="section-lead">A Vitral tem como "sobrenome" o termo "igreja em pessoas". Isso significa valorizar relacionamentos em tudo o que fazemos. Por isso, a comunidade não é baseada em programas, ou seja, encontros, atividades, cursos, etc. Mas isso não quer dizer que os programas não são importantes. Através deles todos podem se aproximar, mas ninguém depende de um programa para desenvolver relacionamentos com os outros e com Deus.</p>
         </div>
-        <ul class="list list-grid">
-          <li><strong>Quando:</strong> domingos, às 10h</li>
-          <li><strong>Formato:</strong> café, música, informalidade</li>
-          <li><strong>Infantil:</strong> sim, com linguagem própria</li>
-          <li><strong>Grupos pequenos:</strong> sim, nas casas</li>
-        </ul>
+        <a class="btn btn-primary" href="mensagens.html">Ouça as mensagens</a>
       </div>
     </section>
 
-    <section id="mensagens" class="section">
+    <section class="section section-alt">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label">Mensagens</div>
-          <h2>Reflexão para o dia a dia</h2>
-          <p>Temos um tempo de reflexão baseado na Bíblia, em linguagem contemporânea (versão A Mensagem). Você pode ouvir pelo site, pelo SoundCloud ou assinar o podcast.</p>
+        <div class="section-head">
+          <div>
+            <div class="section-label">Sobre</div>
+            <h2>Uma igreja para a cidade</h2>
+          </div>
+          <p class="section-lead"><strong>reflexão. transformação.</strong></p>
+        </div>
+        <div class="grid grid-2">
+          <div>
+            <img src="assets/img/capa-home-2.jpg" alt="Culto da Comunidade Vitral" loading="lazy">
+          </div>
+          <div>
+            <p>A Vitral se preocupa em compreender os valores e o estilo de vida das pessoas no contexto urbano para traduzir os ensinos de Jesus e aplicá-los ao nosso dia a dia sempre dialogando, acolhendo e respeitando quem pensa diferente. Fazemos isso para reconstruir as pontes entre a igreja e a sociedade que foram destruídas ao longo dos anos.</p>
+            <h3>Nossa história</h3>
+            <p>A Vitral nasceu em 2014, através de uma parceria entre igrejas e fundações para a plantação de uma nova igreja na região leste de São José do Rio Preto.</p>
+            <p>Mas por que uma nova igreja em uma cidade cheia de igrejas? Para dialogar com a sociedade sobre temas que nunca estariam em um templo religioso, para apresentar um evangelho que não pede ofertas ou promete "bênçãos" a quem é "fiel" e que seja relevante para os dias de hoje.</p>
+            <a class="btn btn-navy" href="sobre.html">Sobre a Vitral</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="voluntariado" class="section section-alt">
+    <section class="section section-dark">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label">Voluntariado</div>
-          <h2>Sirva a Deus servindo aos outros</h2>
-          <p>Você pode servir na comunidade, a partir da comunidade ou além da comunidade. Temos grupos de trabalho que surgem conforme a necessidade.</p>
+        <div class="section-head">
+          <div>
+            <div class="section-label">Crianças</div>
+            <h2>Uma comunidade que ama as crianças</h2>
+          </div>
+          <p class="section-lead">A Vitral apresenta as histórias da Bíblia e os conceitos do Reino de Deus para as crianças na linguagem que elas entendem, apoiados por um material pedagógico desenvolvido a partir de propostas contemporâneas de ensino-aprendizagem e uma equipe de facilitadores em constante treinamento.</p>
+        </div>
+        <div class="grid grid-2">
+          <div>
+            <img src="assets/img/capa-home-3.jpg" alt="Crianças na Comunidade Vitral" loading="lazy">
+          </div>
+          <div>
+            <p>Desde o nosso início decidimos ser uma comunidade inclusiva para as crianças. Por isso em todas as nossas atividades buscamos integrá-las com as demais gerações e ser sensíveis às necessidades delas e dos pais.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contribuir" class="section">
+    <section class="section">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label">Como Contribuir</div>
-          <h2>Contribua com alegria e gratidão</h2>
-          <p>Contribua de acordo com sua condição financeira, com regularidade e por compromisso com a comunidade.</p>
-        </div>
-        <ul class="list list-grid">
-          <li><strong>PIX:</strong> financeiro@comunidadevitral.com.br</li>
-          <li><strong>Banco:</strong> Itaú — Agência 8299 / C/C 24420-5</li>
-          <li><strong>URNA:</strong> durante os encontros</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contato" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label">Visite-nos</div>
-          <h2>Endereço e contato</h2>
-        </div>
-        <ul class="list list-grid">
-          <li><strong>Endereço:</strong> Avenida Sebastião Tavares da Silva, 1191 - Jardim Vista Alegre, São José do Rio Preto - SP - CEP 15061660</li>
-          <li><strong>Telefone:</strong> <a href="tel:+5517996195302">17 99619-5302</a></li>
-          <li><strong>E-mail:</strong> <a href="mailto:contato@comunidadevitral.com.br">contato@comunidadevitral.com.br</a></li>
-        </ul>
+        <div class="section-label">Contribuição financeira</div>
+        <h2>Não temos problema em falar sobre isso.</h2>
+        <p class="section-lead">Clique e conheça a nossa visão sobre esse tema tão delicado nos dias de hoje.</p>
+        <p><a class="btn btn-primary" href="como-contribuir.html">Como contribuir</a></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Comunidade Vitral — Igreja Presbiteriana Independente Vitral.</p>
-      <p>&copy; <span id="year"></span></p>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Comunidade Vitral</h3>
+          <p>Uma igreja simples, missional e acolhedora. Igreja em pessoas — venha como você está.</p>
+          <div class="social-row">
+            <a href="https://www.instagram.com/comunidadevitral/" target="_blank" rel="noopener"><img src="assets/logos/icone-instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/c/ComunidadeVitral" target="_blank" rel="noopener"><img src="assets/logos/icone-youtube.png" alt="YouTube"></a>
+            <a href="https://www.facebook.com/comunidadevitral" target="_blank" rel="noopener"><img src="assets/logos/icone-facebook-branco.png" alt="Facebook"></a>
+            <a href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank" rel="noopener"><img src="assets/logos/icone-spotify.png" alt="Spotify"></a>
+          </div>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="tel:+5517996195302">17 99619-5302</a></li>
+            <li><a href="mailto:contato@comunidadevitral.com.br">contato@comunidadevitral.com.br</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Onde estamos</h3>
+          <p>Avenida Sebastião Tavares da Silva, 1191<br>Jardim Vista Alegre, São José do Rio Preto - SP<br>CEP 15061660</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Comunidade Vitral · Igreja Presbiteriana Independente Vitral</span>
+        <div class="footer-logos">
+          <img src="assets/logos/logo-ipi-comunidade-vitral.png" alt="IPI Comunidade Vitral">
+        </div>
+      </div>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('nav-menu');
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      menu.hidden = open;
-    });
-  </script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
