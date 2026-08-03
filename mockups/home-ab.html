@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOME — A/B · Comunidade Vitral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: #efece4; color: #1d262e; }
+  .topbar { padding: 18px 24px; background: #0f1f2c; color: #fff; }
+  .topbar h1 { margin: 0 0 4px; font-family: 'Playfair Display', serif; font-size: 22px; }
+  .topbar p { margin: 0; color: rgba(255,255,255,.75); font-size: 13px; }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px; }
+  @media (max-width: 980px) { .stage { grid-template-columns: 1fr; } }
+  .panel { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(15,31,44,.12); }
+  .panel-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; font-weight: 700; font-size: 14px; border-bottom: 1px solid #eee; }
+  .panel-head .letter { background: #0f1f2c; color: #fff; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; margin-right: 8px; }
+  .badge { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+  .badge-yes { background: #3f6f5a; color: #fff; }
+  .badge-no { background: #e8e5dd; color: #5d6a75; }
+  .vote { padding: 16px; display: flex; gap: 10px; justify-content: center; }
+  .vote button { font: inherit; font-weight: 700; padding: 12px 22px; border-radius: 8px; border: none; cursor: pointer; }
+  .vote .pickA { background: linear-gradient(120deg, #d99b2b, #b3493a); color: #fff; }
+  .vote .pickB { background: #16181c; color: #fff; }
+  .vote .active { outline: 3px solid #2f5f92; outline-offset: 2px; }
+  .result { text-align: center; padding: 8px 16px 16px; font-weight: 700; min-height: 22px; }
+
+  /* ---- mock A ---- */
+  .mkA { font-family:'Inter',sans-serif; background:#f7f6f2; color:#1d262e; line-height:1.55; }
+  .mkA-hdr { display:flex; justify-content:space-between; align-items:center; padding:14px 20px; background:rgba(255,255,255,.9); border-bottom:1px solid #e5e1d7; font-weight:600; font-size:12px; }
+  .mkA-logo { display:flex; align-items:center; gap:8px; font-weight:700; }
+  .mkA-logo i { width:24px;height:24px;border-radius:6px; display:inline-block; background:linear-gradient(120deg,#2f5f92,#d99b2b 55%,#b3493a); }
+  .mkA-nav { display:flex; gap:12px; color:#5d6a75; }
+  .mkA-nav b { color:#1d262e; }
+  .mkA-hero { display:grid; grid-template-columns:1.3fr .9fr; gap:20px; padding:44px 24px 34px; align-items:center; }
+  .mkA-eyebrow { font-size:10px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:#2f5f92; margin-bottom:8px; }
+  .mkA-h1 { font-family:'Playfair Display',serif; font-size:38px; line-height:1.08; margin:0 0 10px; }
+  .mkA-sub { color:#5d6a75; font-size:14px; margin:0 0 18px; max-width:32ch; }
+  .mkA-btn { display:inline-block; padding:11px 20px; border-radius:8px; font-weight:700; font-size:12px; color:#fff; background:linear-gradient(120deg,#d99b2b,#b3493a); box-shadow:0 8px 16px rgba(179,73,58,.25); }
+  .mkA-btn-o { display:inline-block; padding:11px 20px; border-radius:8px; font-weight:700; font-size:12px; color:#1d262e; border:1px solid #1d262e; margin-left:8px; }
+  .mkA-sec { padding:28px 24px 30px; border-top:1px solid #e5e1d7; background:#fff; }
+  .mkA-label { font-size:10px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:#b3493a; margin-bottom:6px; }
+  .mkA-row { display:grid; grid-template-columns:1.3fr 1fr; gap:18px; align-items:center; }
+  .mkA-h2 { font-family:'Playfair Display',serif; font-size:22px; margin:0; }
+  .mkA-copy { color:#5d6a75; font-size:12.5px; margin:0; }
+  .mkA-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px; }
+  .mkA-card { background:#f7f6f2; border:1px solid #e5e1d7; border-radius:8px; padding:13px; }
+  .mkA-card h4 { margin:0 0 4px; font-family:'Playfair Display',serif; font-size:14px; }
+  .mkA-card p { margin:0; color:#5d6a75; font-size:11px; }
+  .mkA-ftr { background:#0f1f2c; color:rgba(255,255,255,.8); padding:22px 24px; font-size:11px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; }
+
+  /* ---- mock B ---- */
+  .mkB { font-family:'Inter',sans-serif; background:#fbfaf7; color:#16181c; line-height:1.6; }
+  .mkB-hdr { display:flex; justify-content:space-between; align-items:center; padding:14px 26px; background:#fff; border-bottom:1px solid #e6e3dc; font-weight:600; font-size:11px; letter-spacing:.05em; text-transform:uppercase; }
+  .mkB-logo { display:flex; align-items:center; gap:8px; text-transform:none; }
+  .mkB-logo i { width:18px;height:18px;border:1px solid #16181c;border-radius:4px; display:inline-block; background:linear-gradient(135deg,#2f5f92 0 40%,#d99b2b 40% 70%,#b3493a 70%); }
+  .mkB-nav { display:flex; gap:16px; color:#5c6268; }
+  .mkB-nav b { color:#16181c; }
+  .mkB-hero { padding:64px 24px 50px; text-align:center; }
+  .mkB-eyebrow { font-size:10px; letter-spacing:.24em; text-transform:uppercase; font-weight:700; color:#2f5f92; margin-bottom:12px; }
+  .mkB-h1 { font-family:'Fraunces',serif; font-size:40px; font-weight:600; line-height:1.12; margin:0 auto 12px; max-width:16ch; }
+  .mkB-sub { color:#5c6268; font-size:14px; margin:0 auto 24px; max-width:38ch; }
+  .mkB-btn { display:inline-block; padding:12px 24px; border-radius:6px; font-weight:600; font-size:12px; color:#fff; background:#16181c; }
+  .mkB-btn-o { display:inline-block; padding:12px 24px; border-radius:6px; font-weight:600; font-size:12px; color:#16181c; border:1px solid #16181c; margin-left:10px; }
+  .mkB-strip { display:flex; width:260px; margin:30px auto 0; }
+  .mkB-strip span { flex:1; height:5px; }
+  .mkB-sec { padding:40px 24px; border-top:1px solid #e6e3dc; background:#fff; }
+  .mkB-grid { max-width:720px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:26px; align-items:start; }
+  .mkB-label { font-size:10px; letter-spacing:.24em; text-transform:uppercase; font-weight:700; color:#b3493a; margin-bottom:8px; }
+  .mkB-h2 { font-family:'Fraunces',serif; font-size:20px; font-weight:600; margin:0 0 10px; }
+  .mkB-copy { color:#5c6268; font-size:12.5px; margin:0 0 16px; }
+  .mkB-cards { display:grid; gap:1px; background:#e6e3dc; border:1px solid #e6e3dc; }
+  .mkB-card { background:#fff; padding:14px 16px; }
+  .mkB-card h4 { margin:0 0 4px; font-family:'Fraunces',serif; font-size:14px; font-weight:600; }
+  .mkB-card p { margin:0; color:#5c6268; font-size:11px; }
+  .mkB-ftr { background:#0f1f2c; color:rgba(255,255,255,.8); padding:24px 26px; font-size:11px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>HOME — Direção de design (A/B)</h1>
+    <p>Proposta "Vitral Arquitetônico". Compare e clique em um dos botões abaixo de cada mockup para registrar sua escolha. Conteúdo real do site.</p>
+  </div>
+
+  <div class="stage">
+
+    <!-- ============ A ============ -->
+    <div class="panel">
+      <div class="panel-head"><span><span class="letter">A</span> Vitral Luminoso</span><span class="badge badge-no">Cálido · presente</span></div>
+      <div class="mkA">
+        <div class="mkA-hdr"><div class="mkA-logo"><i></i> Comunidade Vitral</div><div class="mkA-nav"><b>Home</b> Sobre Mensagens Encontros <b>Mais ▾</b></div></div>
+        <div class="mkA-hero">
+          <div>
+            <div class="mkA-eyebrow">Bem-vindo!</div>
+            <div class="mkA-h1">venha como<br>você está</div>
+            <p class="mkA-sub">Porque aqui é proibida a entrada de pessoas perfeitas.</p>
+            <span class="mkA-btn">Ouça as mensagens</span><span class="mkA-btn-o">Visite-nos</span>
+          </div>
+          <svg viewBox="0 0 180 210" style="width:100%;max-width:170px;margin-left:auto">
+            <defs>
+              <linearGradient id="ga" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2f5f92"/><stop offset=".55" stop-color="#d99b2b"/><stop offset="1" stop-color="#b3493a"/>
+              </linearGradient>
+            </defs>
+            <path d="M0 0 h60 l15 70 h45 l15 70 h45 v70 h-180 Z" fill="url(#ga)" opacity=".92"/>
+            <path d="M60 0 l15 70 -30 70 h-45 Z" fill="#3f6f5a"/>
+            <path d="M120 0 l15 70 -15 70 h-30 l15 -70 Z" fill="#d99b2b"/>
+            <path d="M135 140 h45 v70 h-45 Z" fill="#b3493a"/>
+          </svg>
+        </div>
+        <div class="mkA-sec">
+          <div class="mkA-label">Nossa essência</div>
+          <div class="mkA-row">
+            <div class="mkA-h2">menos programas.<br>mais relacionamentos.</div>
+            <p class="mkA-copy">A Vitral tem como "sobrenome" o termo "igreja em pessoas". A comunidade não é baseada em programas: ninguém depende deles para desenvolver relacionamentos com os outros e com Deus.</p>
+          </div>
+          <div class="mkA-cards">
+            <div class="mkA-card"><h4>Simples</h4><p>Comunidade organizada para o básico.</p></div>
+            <div class="mkA-card"><h4>Missional</h4><p>Unir pessoas umas às outras e a Deus.</p></div>
+            <div class="mkA-card"><h4>Acolhedor</h4><p>Aberta a todas as pessoas.</p></div>
+          </div>
+        </div>
+        <div class="mkA-ftr"><span>© 2026 Comunidade Vitral</span><span>17 99619-5302 · contato@comunidadevitral.com.br</span></div>
+      </div>
+      <div class="vote"><button class="pickA" data-choice="a" onclick="vote(this)">Escolher A</button></div>
+      <div class="result" id="resA"></div>
+    </div>
+
+    <!-- ============ B ============ -->
+    <div class="panel">
+      <div class="panel-head"><span><span class="letter">B</span> Vitral Estrutural</span><span class="badge badge-no">Sóbrio · premium</span></div>
+      <div class="mkB">
+        <div class="mkB-hdr"><div class="mkB-logo"><i></i> Comunidade Vitral</div><div class="mkB-nav"><b>Home</b> Sobre Mensagens Encontros <b>Mais ▾</b></div></div>
+        <div class="mkB-hero">
+          <div class="mkB-eyebrow">Bem-vindo!</div>
+          <div class="mkB-h1">venha como você está</div>
+          <p class="mkB-sub">Porque aqui é proibida a entrada de pessoas perfeitas.</p>
+          <span class="mkB-btn">Ouça as mensagens</span><span class="mkB-btn-o">Visite-nos</span>
+          <div class="mkB-strip"><span style="background:#2f5f92"></span><span style="background:#3f6f5a"></span><span style="background:#d99b2b"></span><span style="background:#b3493a"></span></div>
+        </div>
+        <div class="mkB-sec">
+          <div class="mkB-grid">
+            <div>
+              <div class="mkB-label">Nossa essência</div>
+              <div class="mkB-h2">menos programas. mais relacionamentos.</div>
+            </div>
+            <p class="mkB-copy">A Vitral tem como "sobrenome" o termo "igreja em pessoas". A comunidade não é baseada em programas: ninguém depende deles para desenvolver relacionamentos com os outros e com Deus.</p>
+          </div>
+          <div class="mkB-grid" style="margin-top:24px">
+            <div class="mkB-cards">
+              <div class="mkB-card"><h4>Simples</h4><p>Comunidade organizada para o básico.</p></div>
+              <div class="mkB-card"><h4>Missional</h4><p>Unir pessoas umas às outras e a Deus.</p></div>
+              <div class="mkB-card"><h4>Acolhedor</h4><p>Aberta a todas as pessoas.</p></div>
+            </div>
+            <p class="mkB-copy" style="font-size:11.5px">"Somos como pedaços de vidros, de diferentes tamanhos e cores, que são trabalhados por Deus para formar uma estrutura maior."</p>
+          </div>
+        </div>
+        <div class="mkB-ftr"><span>© 2026 Comunidade Vitral</span><span>17 99619-5302 · contato@comunidadevitral.com.br</span></div>
+      </div>
+      <div class="vote"><button class="pickB" data-choice="b" onclick="vote(this)">Escolher B</button></div>
+      <div class="result" id="resB"></div>
+    </div>
+
+  </div>
+
+<script>
+  function vote(btn) {
+    var choice = btn.getAttribute('data-choice');
+    var all = document.querySelectorAll('.vote button');
+    all.forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var label = choice === 'a' ? 'A · Vitral Luminoso' : 'B · Vitral Estrutural';
+    var other = choice === 'a' ? 'B' : 'A';
+    document.getElementById('resA').textContent = '';
+    document.getElementById('resB').textContent = '';
+    document.getElementById(choice === 'a' ? 'resA' : 'resB').textContent = '✓ Sua escolha: ' + label;
+    localStorage.setItem('vitral-home', choice);
+  }
+  var saved = localStorage.getItem('vitral-home');
+  if (saved) {
+    var b = document.querySelector('.vote button[data-choice="' + saved + '"]');
+    if (b) vote(b);
+  }
+</script>
+</body>
+</html>

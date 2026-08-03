@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipografia — Playfair vs Fraunces · Comunidade Vitral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: #efece4; color: #1d262e; }
+  .topbar { padding: 18px 24px; background: #0f1f2c; color: #fff; }
+  .topbar h1 { margin: 0 0 4px; font-family: 'Playfair Display', serif; font-size: 22px; }
+  .topbar p { margin: 0; color: rgba(255,255,255,.75); font-size: 13px; }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+  @media (max-width: 900px) { .stage { grid-template-columns: 1fr; } }
+  .panel { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(15,31,44,.12); }
+  .panel-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; font-weight: 700; font-size: 14px; border-bottom: 1px solid #eee; }
+  .panel-head .letter { background: #0f1f2c; color: #fff; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; margin-right: 8px; }
+  .vote { padding: 16px; display: flex; gap: 10px; justify-content: center; }
+  .vote button { font: inherit; font-weight: 700; padding: 12px 22px; border-radius: 8px; border: none; cursor: pointer; }
+  .vote .pick { background: #0f1f2c; color: #fff; }
+  .vote .active { outline: 3px solid #2f5f92; outline-offset: 2px; }
+  .result { text-align: center; padding: 0 16px 16px; font-weight: 700; min-height: 22px; }
+  .body { padding: 26px 28px; background: #f7f6f2; }
+  .col { margin-bottom: 22px; }
+  .col:last-child { margin-bottom: 0; }
+  .lbl { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; color: #b3493a; margin-bottom: 6px; }
+  .sample { border-top: 1px solid #e5e1d7; padding-top: 10px; }
+  .playfair { font-family: 'Playfair Display', Georgia, serif; color: #1d262e; }
+  .fraunces { font-family: 'Fraunces', Georgia, serif; color: #1d262e; }
+  .body-text { font-family: 'Inter', sans-serif; color: #5d6a75; font-size: 13.5px; line-height: 1.6; }
+  .note { padding: 12px 20px; font-size: 12px; color: #5d6a75; border-top: 1px solid #eee; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Tipografia dos títulos</h1>
+    <p>Playfair Display (serif clássica) vs Fraunces (serif moderna). O corpo permanece em Inter nas duas. Clique para registrar sua preferência.</p>
+  </div>
+
+  <div class="stage">
+
+    <div class="panel">
+      <div class="panel-head"><span><span class="letter">1</span> Playfair Display</span><span style="font-size:11px;color:#5d6a75">atual no site</span></div>
+      <div class="body">
+        <div class="col">
+          <div class="lbl">H1 · Título principal</div>
+          <div class="sample playfair" style="font-size:40px;font-weight:700;line-height:1.1">venha como você está</div>
+        </div>
+        <div class="col">
+          <div class="lbl">H2 · Seção</div>
+          <div class="sample playfair" style="font-size:24px;font-weight:700">menos programas. mais relacionamentos.</div>
+        </div>
+        <div class="col">
+          <div class="lbl">H3 · Card</div>
+          <div class="sample playfair" style="font-size:17px;font-weight:600">Uma comunidade que ama as crianças</div>
+        </div>
+        <div class="col">
+          <div class="lbl">Corpo (Inter)</div>
+          <div class="sample body-text">A Vitral tem como "sobrenome" o termo "igreja em pessoas". Isso significa valorizar relacionamentos em tudo o que fazemos. Somos como pedaços de vidros que são trabalhados por Deus para formar uma estrutura maior.</div>
+        </div>
+      </div>
+      <div class="vote"><button class="pick" data-choice="playfair" onclick="vote(this)">Escolher Playfair</button></div>
+      <div class="result" id="res-playfair"></div>
+      <div class="note">Clássica, elegante e confiável. Transmite tradição e seriedade — alinha com a herança reformada.</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><span><span class="letter">2</span> Fraunces</span><span style="font-size:11px;color:#5d6a75">proposta moderna</span></div>
+      <div class="body">
+        <div class="col">
+          <div class="lbl">H1 · Título principal</div>
+          <div class="sample fraunces" style="font-size:40px;font-weight:600;line-height:1.12">venha como você está</div>
+        </div>
+        <div class="col">
+          <div class="lbl">H2 · Seção</div>
+          <div class="sample fraunces" style="font-size:24px;font-weight:600">menos programas. mais relacionamentos.</div>
+        </div>
+        <div class="col">
+          <div class="lbl">H3 · Card</div>
+          <div class="sample fraunces" style="font-size:17px;font-weight:600">Uma comunidade que ama as crianças</div>
+        </div>
+        <div class="col">
+          <div class="lbl">Corpo (Inter)</div>
+          <div class="sample body-text">A Vitral tem como "sobrenome" o termo "igreja em pessoas". Isso significa valorizar relacionamentos em tudo o que fazemos. Somos como pedaços de vidros que são trabalhados por Deus para formar uma estrutura maior.</div>
+        </div>
+      </div>
+      <div class="vote"><button class="pick" data-choice="fraunces" onclick="vote(this)">Escolher Fraunces</button></div>
+      <div class="result" id="res-fraunces"></div>
+      <div class="note">Serif contemporânea com personalidade própria — visual mais premium e distinto, sem perder o caráter editorial.</div>
+    </div>
+
+  </div>
+
+<script>
+  function vote(btn) {
+    var choice = btn.getAttribute('data-choice');
+    var all = document.querySelectorAll('.vote button');
+    all.forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var label = choice === 'playfair' ? 'Playfair Display' : 'Fraunces';
+    document.getElementById('res-playfair').textContent = '';
+    document.getElementById('res-fraunces').textContent = '';
+    document.getElementById(choice === 'playfair' ? 'res-playfair' : 'res-fraunces').textContent = '✓ Sua escolha: ' + label;
+    localStorage.setItem('vitral-tipo', choice);
+  }
+  var saved = localStorage.getItem('vitral-tipo');
+  if (saved) {
+    var b = document.querySelector('.vote button[data-choice="' + saved + '"]');
+    if (b) vote(b);
+  }
+</script>
+</body>
+</html>

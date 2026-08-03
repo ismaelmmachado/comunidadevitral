@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paleta — Vitral sobre Pedra · Comunidade Vitral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: #efece4; color: #1d262e; }
+  .topbar { padding: 18px 24px; background: #0f1f2c; color: #fff; }
+  .topbar h1 { margin: 0 0 4px; font-family: 'Playfair Display', serif; font-size: 22px; }
+  .topbar p { margin: 0; color: rgba(255,255,255,.75); font-size: 13px; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 20px; }
+  .panel { background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(15,31,44,.12); overflow: hidden; margin-bottom: 18px; }
+  .panel-head { padding: 12px 16px; font-weight: 700; font-size: 14px; border-bottom: 1px solid #eee; }
+  .panel-body { padding: 22px; }
+
+  h3.sec { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #5d6a75; margin: 0 0 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .sw { border-radius: 10px; overflow: hidden; border: 1px solid #e5e1d7; }
+  .sw .chip { height: 74px; }
+  .sw .meta { padding: 8px 10px; font-size: 11px; }
+  .sw .name { font-weight: 700; color: #1d262e; }
+  .sw .hex { color: #5d6a75; }
+
+  .row { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; margin-top: 8px; }
+  .glass { width: 170px; }
+  .glass polygon { stroke: #f7f6f2; stroke-width: 3; }
+  .btn { display: inline-block; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 13px; text-decoration: none; color: #fff; }
+  .btn-pri { background: linear-gradient(120deg, #d99b2b, #b3493a); box-shadow: 0 8px 18px rgba(179,73,58,.28); }
+  .btn-navy { background: #0f1f2c; }
+  .btn-out { background: transparent; border: 1px solid #1d262e; color: #1d262e; }
+  .label-cap { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; color: #b3493a; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Paleta — "Vidro sobre Pedra"</h1>
+    <p>O degradê deixa de dominar os fundos e vira faceta. As cores do vidro pontuam; os neutros acolhem.</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="panel">
+      <div class="panel-head">Cores do vidro (acentos)</div>
+      <div class="panel-body">
+        <div class="grid">
+          <div class="sw"><div class="chip" style="background:#2f5f92"></div><div class="meta"><div class="name">Safira</div><div class="hex">#2f5f92</div></div></div>
+          <div class="sw"><div class="chip" style="background:#3f6f5a"></div><div class="meta"><div class="name">Esmeralda</div><div class="hex">#3f6f5a</div></div></div>
+          <div class="sw"><div class="chip" style="background:#d99b2b"></div><div class="meta"><div class="name">Âmbar</div><div class="hex">#d99b2b</div></div></div>
+          <div class="sw"><div class="chip" style="background:#b3493a"></div><div class="meta"><div class="name">Rubi</div><div class="hex">#b3493a</div></div></div>
+        </div>
+        <p style="font-size:12.5px;color:#5d6a75;margin:14px 0 0">Cores pontuais — usadas em painéis de vitral, destaques e 1–2 elementos por página.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">Neutros (estrutura)</div>
+      <div class="panel-body">
+        <div class="grid">
+          <div class="sw"><div class="chip" style="background:#f7f6f2"></div><div class="meta"><div class="name">Pedra (fundo)</div><div class="hex">#f7f6f2</div></div></div>
+          <div class="sw"><div class="chip" style="background:#ffffff"></div><div class="meta"><div class="name">Superfície</div><div class="hex">#ffffff</div></div></div>
+          <div class="sw"><div class="chip" style="background:#1d262e"></div><div class="meta"><div class="name">Grafite (texto)</div><div class="hex">#1d262e</div></div></div>
+          <div class="sw"><div class="chip" style="background:#5d6a75"></div><div class="meta"><div class="name">Cinza-pedra</div><div class="hex">#5d6a75</div></div></div>
+          <div class="sw"><div class="chip" style="background:#e5e1d7"></div><div class="meta"><div class="name">Linha (borda)</div><div class="hex">#e5e1d7</div></div></div>
+          <div class="sw"><div class="chip" style="background:#0f1f2c"></div><div class="meta"><div class="name">Marinho (footer)</div><div class="hex">#0f1f2c</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">Janela de vitral + componentes</div>
+      <div class="panel-body">
+        <div class="row">
+          <svg class="glass" viewBox="0 0 180 210">
+            <defs>
+              <linearGradient id="gv" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2f5f92"/><stop offset=".55" stop-color="#d99b2b"/><stop offset="1" stop-color="#b3493a"/>
+              </linearGradient>
+            </defs>
+            <path d="M0 0 h60 l15 70 h45 l15 70 h45 v70 h-180 Z" fill="url(#gv)" opacity=".92"/>
+            <path d="M60 0 l15 70 -30 70 h-45 Z" fill="#3f6f5a"/>
+            <path d="M120 0 l15 70 -15 70 h-30 l15 -70 Z" fill="#d99b2b"/>
+            <path d="M135 140 h45 v70 h-45 Z" fill="#b3493a"/>
+          </svg>
+          <div>
+            <div class="label-cap">Botões</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px">
+              <span class="btn btn-pri">Primário (faceta)</span>
+              <span class="btn btn-navy">Marinho</span>
+              <span class="btn btn-out">Outline</span>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:12.5px;color:#5d6a75;margin:16px 0 0">O painel de vitral (facetas) é o elemento assinatura: hero, divisores de seção, footer e favicon/og-image.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
