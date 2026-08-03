@@ -1,79 +1,46 @@
-# Comunidade Vitral — Documentação do Projeto
+# Comunidade Vitral — Site
 
-Novo site estático para substituir o site atual em Wix.
-Conteúdo preservado, design moderno, deploy em GitHub Pages.
+Novo site estático da **Comunidade Vitral** (Igreja Presbiteriana Independente Vitral),
+em substituição ao site em Wix. Conteúdo preservado, novo design "Vitral contemporâneo",
+publicado em GitHub Pages.
 
-## Estrutura
+Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 
-```
-/opt/data/projetos/comunidadevitral/
-├── README.md
-├── AGENTS.md
-├── openspec/
-│   ├── 001-scope.md
-│   ├── 002-content-map.md
-│   ├── 003-design-system.md
-│   └── 004-deploy.md
-├── content/
-│   ├── sobre.md
-│   ├── mensagens.md
-│   ├── encontros.md
-│   ├── voluntariado.md
-│   ├── como-contribuir.md
-│   └── visite-nos.md
-├── raw/                         # HTML bruto extraído do Wix
-├── src/                         # scaffold inicial
-├── index.html                   # site publicado na raiz
-├── styles.css                   # estilo publicado na raiz
-├── .nojekyll                    # desativa Jekyll no Pages
-└── scripts/
-```
+## Páginas
 
-## Status
+| Página | Arquivo |
+|---|---|
+| HOME | `index.html` |
+| Sobre | `sobre.html` |
+| Mensagens | `mensagens.html` |
+| Encontros | `encontros.html` |
+| Voluntariado | `voluntariado.html` |
+| Como contribuir | `como-contribuir.html` |
+| Visite-nos | `visite-nos.html` |
+| Templo | `templo.html` |
+| Grande Banquete | `grande-banquete.html` |
+| Link-bio | `link-bio.html` |
+| 404 | `404.html` |
 
-- [x] Estrutura de pastas criada
-- [x] Conteúdo extraído do Wix
-- [x] Protótipo estático publicado
-- [x] GitHub Pages ativo
-- [x] Repo: `ismaelmmachado/comunidadevitral`
-- [x] Branch padrão de trabalho: `homologacao`
-- [x] Deploy em `main` executado para avaliação
-- [x] Caminhos de assets ajustados para subpath do Pages
-- [x] Design moderno aplicado
-- [x] Layout alinhado ao Wix
-- [ ] Revisão final de conteúdo
-- [ ] Ajustes finais de telefone/contato
+## Stack
 
-## Links
+- **HTML5 + CSS puro** — sem build step, zero dependências.
+- Fontes: Playfair Display (títulos) e Inter (corpo), via Google Fonts.
+- Design tokens: `css/tokens.css` (paleta vitral contemporâneo).
+- JS mínimo: `js/menu.js`.
 
-- Repo: https://github.com/ismaelmmachado/comunidadevitral
-- Site: https://ismaelmmachado.github.io/comunidadevitral/
+## Conteúdo
 
-## Decisões tomadas
+- Extraído do site Wix original em 2026-08-03.
+- Fonte da verdade: `docs/conteudo/` (markdown por página) e `docs/inventario.md`.
+- HTML bruto baixado: `docs/raw/`.
+- Imagens: `assets/img/` (fotos) e `assets/logos/`.
 
-- Site 100% estático; sem backend/CMS por enquanto
-- Toda alteração entra em `homologacao`
-- Deploy só em `main` quando solicitado explicitamente
-- Caminhos relativos para funcionar no subpath do Pages
-- `.nojekyll` mantido para evitar processamento do Jekyll
-- Design moderno com princípios UI/UX minimalistas
-- Layout responsivo e acessível
+## Rodar localmente
 
-## Problemas encontrados e resolvidos
+Abra `index.html` diretamente no navegador (site estático, sem servidor).
 
-- Pages serviu `README.md` renderizado antes de usar `index.html` → resolvido com `.nojekyll` + `index.html` na raiz
-- Caminhos absolutos quebrados no Pages → resolvidos com caminhos relativos
-- Layout não moderno suficiente → redesign com princípios UI/UX minimalistas
-- Cache do Pages atrasando atualizações → cache-bust aplicado
+## Publicar
 
-## Problemas pendentes
-
-- Telefone: link `tel:` continua mascarado no arquivo publicado; suspeita de sobrescrita externa/cache; precisa verificação manual no repositório/navegador
-- Revisão de conteúdo em `content/` ainda não finalizada
-
-## Próximos passos recomendados
-
-1. Validar manualmente o site publicado e ajustar telefone se necessário
-2. Revisar conteúdo em `content/`
-3. Ajustar textos e layout conforme feedback
-4. Aplicar deploy final em `main` quando aprovado
+O GitHub Pages serve a raiz da branch `homologacao`. Basta fazer push nessa branch.
+`main` só é usada em deploys explícitos.
