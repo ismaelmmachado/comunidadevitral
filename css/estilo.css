@@ -381,6 +381,17 @@
   color: #fff;
 }
 
+.btn-outline-dark {
+  background: transparent;
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.btn-outline-dark:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
 /* Lists + FAQ */
 .feature-list {
   list-style: none;
