@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venha como você está — Comunidade Vitral</title>
+  <meta name="description" content="Você não precisa ser perfeito para ser amado. Dúvidas são bem-vindas.">
+  <link rel="stylesheet" href="styles.css?v=20260803-01">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Comunidade Vitral — página inicial">Comunidade Vitral</a>
+      <nav class="nav" aria-label="Menu principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">Menu</button>
+        <ul id="nav-menu" class="nav-menu" hidden>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="venha-como-voce-esta.html">Venha Como Você Está</a></li>
+          <li><a href="encontros.html">Encontros</a></li>
+          <li><a href="pequenos-grupos.html">Pequenos Grupos</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="participe.html">Participe</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Você pode chegar como está.</h1>
+        <p class="hero-sub">Com suas dúvidas, suas marcas e sua história.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Perguntas comuns</div>
+          <h2>Talvez você tenha dúvidas — tudo bem</h2>
+          <p>Se você está com dúvidas, você está no lugar certo. A fé não é sobre não ter perguntas. É sobre dar um passo de cada vez.</p>
+        </div>
+        <ul class="list">
+          <li><strong>“E se eu não acreditar em tudo?”</strong> Tudo bem. A fé é uma jornada. Você não precisa ter todas as respostas para começar.</li>
+          <li><strong>“E se eu tiver dúvidas sobre Deus?”</strong> Dúvidas são bem-vindas. A Bíblia está cheia de pessoas que duvidaram — e Deus não as rejeitou.</li>
+          <li><strong>“E se eu não souber orar?”</strong> Não tem problema. A oração não é sobre palavras bonitas. É sobre conversar com Deus do jeito que você sabe.</li>
+          <li><strong>“E se eu tiver um passado que me envergonha?”</strong> Seu passado não te desqualifica. A gente acredita que o Restaurador trabalha com cacos.</li>
+          <li><strong>“E se eu não me sentir bem-vindo?”</strong> A gente vai te esperar. A mesa tem espaço para você. Sempre.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">O que esperar</div>
+          <h2>Como é um encontro</h2>
+          <p>Aqui está o que acontece quando você vem:</p>
+        </div>
+        <ul class="list">
+          <li><strong>Chegada:</strong> você é recebido com um sorriso. Pode sentar onde quiser.</li>
+          <li><strong>Louvor:</strong> músicas que falam sobre Deus e a vida. Você pode cantar ou só ouvir.</li>
+          <li><strong>Mensagem:</strong> uma reflexão simples sobre a fé e o dia a dia.</li>
+          <li><strong>Oração:</strong> você pode participar do jeito que se sentir confortável.</li>
+          <li><strong>Café:</strong> depois do encontro, servimos café. Tempo para conversar e conhecer pessoas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="section-label">Convite</div>
+          <h2>Dê o primeiro passo</h2>
+          <p class="hero-cta">
+            <a class="btn btn-primary" href="encontros.html">Ver encontros</a>
+            <a class="btn btn-secondary" href="contato.html">Falar com a gente</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Comunidade Vitral</span>
+      <span>Uma igreja para a cidade</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const hidden = menu.getAttribute('hidden') === 'hidden';
+        menu.setAttribute('hidden', hidden ? null : 'hidden');
+        toggle.setAttribute('aria-expanded', hidden ? 'true' : 'false');
+      });
+    }
+  </script>
+</body>
+</html>
