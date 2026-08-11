@@ -26,12 +26,12 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 - **HTML5 + CSS puro** — sem build step, zero dependências.
 - Fontes: Playfair Display (títulos) e Inter (corpo), via Google Fonts.
 - Design tokens: `css/tokens.css` — paleta "vidro sobre pedra" (pedra `#f7f6f2`, grafite `#1d262e`, marinho `#0f1f2c`, vidro safira `#2f5f92` / esmeralda `#3f6f5a` / âmbar `#d99b2b` / rubi `#b3493a`).
-- Janela de vitral (assinatura): `assets/vitral.svg` (hero da HOME e tira no footer).
+- Emblema oficial da marca no hero (`assets/logos/logo-ipi-comunidade-vitral.png`) e tira de 4 cores no footer.
 - JS mínimo: `js/menu.js`.
 
 ## Design — "Vitral Arquitetônico" (v1.1)
 
-- Hero da HOME editorial e claro, com a janela de vitral ao lado do título.
+- Hero da HOME editorial e claro, com o emblema da marca ao lado do título.
 - Subpáginas com banner marinho + foto.
 - Cards e botões retangulares (raio 8px); degradê âmbar→rubi apenas em facetas (botão primário, card de destaque).
 - Spec: `docs/superpowers/specs/2026-08-03-design-vitral-arquitetonico.md`

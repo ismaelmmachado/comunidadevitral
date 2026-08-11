@@ -28,11 +28,11 @@ O 1º viewport da HOME DEVE (MUST) apresentar a fachada do café: um letreiro pi
 
 ### Requirement: Marca do vitral preservada
 
-A janela de vitral (`assets/vitral.svg`) e a tira de 4 cores DEVEM (MUST) permanecer como identidade: a janela no hero como o vidro pintado da vitrine e a tira como divisor/porta.
+O emblema oficial da marca (`assets/logos/logo-ipi-comunidade-vitral.png`) e a tira de 4 cores DEVEM (MUST) permanecer como identidade: o emblema no hero num quadro pintado e a tira como divisor/porta.
 
-#### Scenario: Conferir a janela de vitral
+#### Scenario: Conferir o emblema da marca
 - **WHEN** o usuário vê o hero da HOME
-- **THEN** a janela de vitral é exibida na moldura da vitrine
+- **THEN** o emblema da marca é exibido na moldura pintada
 
 ### Requirement: Conteúdo verbatim inalterado
 

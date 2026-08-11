@@ -795,6 +795,12 @@ body.home .hero-glass::before {
 }
 
 body.home .hero-glass img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 16px;
+  background: var(--creme);
   filter: none;
 }
 

@@ -79,19 +79,19 @@ components:
 
 **Creative North Star: "O Café da Rua"**
 
-A HOME se apresenta como a fachada de um café do interior paulista: um convite pintado à mão, uma lousa de giz com a informação prática e a janela de vitral acesa na vitrine. O sistema traduz a promessa "puxe uma cadeira e respire fundo" em hospitalidade material — pedra lavada e creme como o chão da rua, marrom-café nos painéis e no rodapé, e o letreiro pintado (Bree Serif) como a voz do convite. A lousa (Kalam) cuida do cotidiano — horários, café, passos; o corpo (Archivo) fica quieto e legível.
+A HOME se apresenta como a fachada de um café do interior paulista: um convite pintado à mão, uma lousa de giz com a informação prática e o emblema oficial da marca emoldurado como quadro pintado. O sistema traduz a promessa "puxe uma cadeira e respire fundo" em hospitalidade material — pedra lavada e creme como o chão da rua, marrom-café nos painéis e no rodapé, e o letreiro pintado (Bree Serif) como a voz do convite. A lousa (Kalam) cuida do cotidiano — horários, café, passos; o corpo (Archivo) fica quieto e legível.
 
-As quatro gemas do vitral (safira, esmeralda, âmbar, rubi) — marca inegociável — aparecem como tintas pintadas em doses precisas, e a janela de vitral entra no hero como o vidro pintado da vitrine, numa moldura de madeira. O sistema é deliberadamente anti-"religioso genérico": sem cruz decorativa, sem dourado, sem dourado de megachurch.
+As quatro gemas do vitral (safira, esmeralda, âmbar, rubi) — marca inegociável — aparecem como tintas pintadas em doses precisas, e o emblema oficial da marca (logo IPI Comunidade Vitral) entra no hero num quadro pintado, emoldurado. O sistema é deliberadamente anti-"religioso genérico": sem cruz decorativa, sem dourado, sem dourado de megachurch.
 
 **Estado de migração:** esta versão documenta o mundo aplicado à **HOME**. As subpáginas e a 404 ainda usam o mundo anterior ("Vitral Arquitetônico", paleta vidro sobre pedra) até a rodada de extensão. O padrão de componentes aqui vale para a Home.
 
 **Key Characteristics:**
-- Fachada pintada: letreiro (Bree Serif) + lousa de giz (Kalam) + janela de vitral em moldura.
+- Fachada pintada: letreiro (Bree Serif) + lousa de giz (Kalam) + emblema oficial em moldura.
 - Tom de cor Committed quente: chão claro (pedra lavada/creme) e marrom-café em painéis (Café, Café do Entardecer).
 - Sem eyebrow/kicker acima de heading; o heading carrega o peso.
 - Componentes planos e quentes (raio 6px), com filete pintado (2px âmbar) sob títulos.
 - Citação em painel de lousa (giz sobre café), sem borda colorida lateral.
-- Marca preservada: janela de vitral (`assets/vitral.svg`) e tira de 4 cores.
+- Marca preservada: emblema oficial no hero (`assets/logos/logo-ipi-comunidade-vitral.png`) e tira de 4 cores.
 
 ## Colors
 
@@ -143,7 +143,7 @@ A paleta é "café e gemas": neutros quentes de café sobre uma rua clara, com a
 
 ## Layout
 
-Container único de 1120px, padding lateral em `--space`; seções com `--section` de respiro. A Home alterna chão de pedra lavada e faixas creme (`section-alt`) separadas por fio de café-com-leite; a seção institucional é o "interior ao entardecer" (café do entardecer). Héros e grids herdados (hero-inner 1.25fr/0.75fr; grades de 3 colunas colapsando a 1 na quebra de 760px). A janela de vitral fica na coluna direita do hero com moldura pintada.
+Container único de 1120px, padding lateral em `--space`; seções com `--section` de respiro. A Home alterna chão de pedra lavada e faixas creme (`section-alt`) separadas por fio de café-com-leite; a seção institucional é o "interior ao entardecer" (café do entardecer). Héros e grids herdados (hero-inner 1.25fr/0.75fr; grades de 3 colunas colapsando a 1 na quebra de 760px). O emblema oficial fica na coluna direita do hero, emoldurado numa base creme.
 
 ### Named Rules
 **The One-At-a-Time Rule.** Um H2 por seção; um convite por viewport; o letreiro nunca compete com outro display.
@@ -193,11 +193,11 @@ Forma reta e curta: raio de 6px em componentes do café (botões, cards, painéi
 ## Do's and Don'ts
 
 ### Do:
-- **Do** fazer do 1º viewport uma fachada: letreiro com o convite, linha de lousa com horário/café, CTA e a janela de vitral na moldura.
+- **Do** fazer do 1º viewport uma fachada: letreiro com o convite, linha de lousa com horário/café, CTA e o emblema oficial na moldura.
 - **Do** usar café/tinta para as ações primárias (texto creme, AA) e âmbar profundo para o segundo quente.
 - **Do** deixar o heading carregar o peso — sem eyebrow/kicker acima dele.
 - **Do** usar filete pintado (2px) e moldura para profundidade, não sombras em cards.
-- **Do** manter a janela de vitral (`assets/vitral.svg`) e a tira de 4 cores como marca nas páginas.
+- **Do** manter o emblema oficial no hero e a tira de 4 cores como marca nas páginas.
 - **Do** usar Kalam apenas para o que "está na lousa" e Bree para letreiros/títulos.
 
 ### Don't:
