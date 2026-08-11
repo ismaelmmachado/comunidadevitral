@@ -16,17 +16,20 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 
 ### Stack
 - **HTML5 + CSS puro** — sem build step, zero dependências de runtime.
-- Fontes: Playfair Display (títulos) e Inter (corpo), via Google Fonts.
-- Design tokens: `css/tokens.css` (paleta "Vitral contemporâneo").
-- JS mínimo: `js/menu.js` (menu mobile/dropdown).
+- HOME (mundo "O Café da Rua"): Bree Serif (letreiro), Kalam (lousa) e Archivo (corpo), via Google Fonts.
+- Subpáginas (ainda no "Vitral Arquitetônico"): Playfair Display (títulos) e Inter (corpo), via Google Fonts.
+- Design tokens: `css/tokens.css` — paleta "vidro sobre pedra" (subpáginas) + tokens café (Home). Fonte do sistema visual: `DESIGN.md`.
+- JS mínimo: `js/menu.js` (menu mobile).
+- O hero da HOME usa o emblema oficial da marca (`assets/logos/logo-ipi-comunidade-vitral.png`); a tira de 4 cores é marca.
 
 ### Estrutura
 - 7 páginas estáticas na raiz: `index`, `quem-somos`, `jornada`, `encontros-e-pgs`,
   `criancas-e-familia`, `causas-e-cidade`, `contato` + `404.html`.
 - `css/` (tokens, base, estilo), `js/`, `assets/` (img, logos, favicon, og-image).
-- `docs/` — conteúdo extraído (`conteudo/`, `conteudo/novo/`, `raw/`, `inventario.md`).
-- `openspec/` — documentação spec-driven (change `redesign-site-vitral`).
+- `docs/` — conteúdo extraído (`conteudo/`, `conteudo/novo/`, `raw/`, `inventario.md`), legado (`openspec-legado/`) e propostas (`propostas/`).
+- `openspec/` — documentação spec-driven (specs: `site-estatico-vitral`, `design-vitral-arquitetonico`, `design-cafe-da-rua`; `config.yaml`); changes concluídos em `changes/archive/`.
 - `AGENTS.md`, `README.md` — documentação do projeto.
+- `PRODUCT.md`, `DESIGN.md`, `.impeccable/` — sistema documentado via skill **impeccable** (ver abaixo).
 
 ### Conteúdo
 - Conteúdo das 7 páginas em `docs/conteudo/novo/*.md` (fonte da verdade); a Home está
@@ -47,3 +50,14 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - Idioma: português (pt-BR).
 - Sem emojis em código/comentários; sem comentários no código salvo se solicitado.
 - Mobile-first; acessibilidade AA; caminhos relativos (subpath do Pages).
+
+## Design (impeccable)
+
+O sistema visual é documentado pela skill impeccable:
+- `PRODUCT.md` — verdade de produto; `DESIGN.md` + `.impeccable/design.json` — sistema visual
+  (North Star atual: "O Café da Rua"; hero da HOME usa o emblema oficial da marca).
+- `.impeccable/surfaces/` — briefs por superfície; `.impeccable/critique/` — snapshots de crítica.
+- Comandos: critique, audit, polish, typeset etc. (skill impeccable). Detector mecânico:
+  `node /root/.opencode/skills/impeccable/scripts/detect.mjs --json <target>`.
+- Estado: a HOME está no mundo "O Café da Rua"; **as subpáginas ainda usam o "Vitral Arquitetônico"
+  (migração pendente)** — ao alterar estilos compartilhados, preservar os dois mundos.

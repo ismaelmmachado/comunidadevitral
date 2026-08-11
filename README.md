@@ -1,10 +1,11 @@
 # Comunidade Vitral — Site
 
 Novo site estático da **Comunidade Vitral** (Igreja Presbiteriana Independente Vitral),
-em substituição ao site em Wix. Design **"Vitral Arquitetônico" (v1.1)**
-— Direção A, Playfair Display, paleta "vidro sobre pedra" —, publicado em GitHub Pages.
+em substituição ao site em Wix. A HOME adota o mundo visual **"O Café da Rua"** (letreiro
+pintado, lousa de giz e o emblema oficial da marca); as subpáginas ainda usam o
+"Vitral Arquitetônico" (migração pendente). Sistema visual documentado em `DESIGN.md`.
 
-Versão atual: **v2.0.0** · Branch de trabalho: `homologacao`
+Versão atual: **v2.1.0** · Branch de trabalho: `homologacao`
 
 Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 
@@ -24,18 +25,19 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 ## Stack
 
 - **HTML5 + CSS puro** — sem build step, zero dependências.
-- Fontes: Playfair Display (títulos) e Inter (corpo), via Google Fonts.
-- Design tokens: `css/tokens.css` — paleta "vidro sobre pedra" (pedra `#f7f6f2`, grafite `#1d262e`, marinho `#0f1f2c`, vidro safira `#2f5f92` / esmeralda `#3f6f5a` / âmbar `#d99b2b` / rubi `#b3493a`).
+- Fontes: Bree Serif + Kalam + Archivo na HOME; Playfair Display + Inter nas subpáginas (via Google Fonts).
+- Design tokens: `css/tokens.css` — paleta "vidro sobre pedra" (subpáginas) + tokens café do mundo "O Café da Rua" (Home).
 - Emblema oficial da marca no hero (`assets/logos/logo-ipi-comunidade-vitral.png`) e tira de 4 cores no footer.
 - JS mínimo: `js/menu.js`.
 
-## Design — "Vitral Arquitetônico" (v1.1)
+## Design
 
-- Hero da HOME editorial e claro, com o emblema da marca ao lado do título.
-- Subpáginas com banner marinho + foto.
-- Cards e botões retangulares (raio 8px); degradê âmbar→rubi apenas em facetas (botão primário, card de destaque).
-- Spec: `docs/superpowers/specs/2026-08-03-design-vitral-arquitetonico.md`
-- OpenSpec change: `openspec/changes/design-vitral-arquitetonico/`
+- **HOME — "O Café da Rua"** (v2.1): fachada de café com letreiro pintado (Bree Serif) + lousa de giz (Kalam)
+  e o emblema oficial da marca em quadro pintado; corpo Archivo. North Star: "O Café da Rua".
+- **Subpáginas — "Vitral Arquitetônico"** (v1.1): banner marinho + foto; Playfair Display + Inter; migração pendente.
+- Fonte do sistema visual: `DESIGN.md` (+ `.impeccable/design.json`).
+- Specs OpenSpec: `openspec/specs/site-estatico-vitral/`, `openspec/specs/design-vitral-arquitetonico/`,
+  `openspec/specs/design-cafe-da-rua/` (changes concluídos em `openspec/changes/archive/`).
 
 ## Conteúdo
 

@@ -51,8 +51,9 @@ Acolhe quem tem dúvidas, marcas e histórias difíceis, sem cobrar nada.
 - Nome: Comunidade Vitral — Igreja Presbiteriana Independente Vitral (IPI Vitral); raiz IPIB.
 - Marca: "Igreja em Pessoas"; valores Simples, Missional, Acolhedor.
 - Tom: coloquial, "você"/"a gente", sem jargão teológico; sempre convida, nunca exige.
-- Design "Vitral Arquitetônico": Playfair Display (títulos) + Inter (corpo); paleta
-  "vidro sobre pedra" (css/tokens.css); janela de vitral (assets/vitral.svg).
+- Mundo visual atual: "O Café da Rua" na HOME (letreiro pintado, lousa, emblema oficial da
+  marca); subpáginas seguem no "Vitral Arquitetônico" (migração pendente). Sistema visual
+  documentado em DESIGN.md — a série do vitral (emblema/tira de 4 cores/conceito) é marca.
 - Citações bíblicas sempre na Nova Versão Transformadora (NVT).
 
 ## Evidence on Hand
