@@ -573,6 +573,15 @@
   margin: 0 0 1.2rem;
 }
 
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+}
+
+.table-wrap .table-bank {
+  min-width: 560px;
+}
+
 .table-bank {
   width: 100%;
   border-collapse: collapse;

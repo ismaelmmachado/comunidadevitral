@@ -21,18 +21,19 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - JS mínimo: `js/menu.js` (menu mobile/dropdown).
 
 ### Estrutura
-- 10 páginas estáticas na raiz: `index`, `sobre`, `mensagens`, `encontros`,
-  `voluntariado`, `como-contribuir`, `visite-nos`, `templo`, `grande-banquete`,
-  `link-bio` + `404.html`.
+- 7 páginas estáticas na raiz: `index`, `quem-somos`, `jornada`, `encontros-e-pgs`,
+  `criancas-e-familia`, `causas-e-cidade`, `contato` + `404.html`.
 - `css/` (tokens, base, estilo), `js/`, `assets/` (img, logos, favicon, og-image).
-- `docs/` — conteúdo extraído (`conteudo/`, `raw/`, `inventario.md`) e specs/plans.
+- `docs/` — conteúdo extraído (`conteudo/`, `conteudo/novo/`, `raw/`, `inventario.md`).
 - `openspec/` — documentação spec-driven (change `redesign-site-vitral`).
 - `AGENTS.md`, `README.md` — documentação do projeto.
 
 ### Conteúdo
-- Todo o conteúdo vem de `docs/conteudo/*.md` (fonte da verdade, extraída do Wix).
+- Conteúdo das 7 páginas em `docs/conteudo/novo/*.md` (fonte da verdade); a Home está
+  em `docs/conteudo/homepage.md`.
 - Preservar verbatim: textos, telefone 17 99619-5302, e-mail contato@comunidadevitral.com.br,
   endereço, CNPJ 49.075.286/0001-63, PIX financeiro@comunidadevitral.com.br, banco Itaú Ag 8299.
+- Botões de WhatsApp usam o número institucional `https://wa.me/5517996195302`.
 - Header e footer são repetidos em cada página HTML — ao alterar, atualizar **todas** as páginas.
 
 ## Deploy (GitHub Pages)

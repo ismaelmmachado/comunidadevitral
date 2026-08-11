@@ -1,10 +1,10 @@
 # Comunidade Vitral — Site
 
 Novo site estático da **Comunidade Vitral** (Igreja Presbiteriana Independente Vitral),
-em substituição ao site em Wix. Conteúdo preservado, design **"Vitral Arquitetônico" (v1.1)**
+em substituição ao site em Wix. Design **"Vitral Arquitetônico" (v1.1)**
 — Direção A, Playfair Display, paleta "vidro sobre pedra" —, publicado em GitHub Pages.
 
-Versão atual: **v1.1.0** · Branch de trabalho: `homologacao`
+Versão atual: **v2.0.0** · Branch de trabalho: `homologacao`
 
 Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 
@@ -13,15 +13,12 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 | Página | Arquivo |
 |---|---|
 | HOME | `index.html` |
-| Sobre | `sobre.html` |
-| Mensagens | `mensagens.html` |
-| Encontros | `encontros.html` |
-| Voluntariado | `voluntariado.html` |
-| Como contribuir | `como-contribuir.html` |
-| Visite-nos | `visite-nos.html` |
-| Templo | `templo.html` |
-| Grande Banquete | `grande-banquete.html` |
-| Link-bio | `link-bio.html` |
+| Quem Somos | `quem-somos.html` |
+| A Jornada & Trilha de Novos | `jornada.html` |
+| Encontros & PGs | `encontros-e-pgs.html` |
+| Crianças & Família | `criancas-e-familia.html` |
+| Causas & Cidade | `causas-e-cidade.html` |
+| Contato & Guia do Visitante | `contato.html` |
 | 404 | `404.html` |
 
 ## Stack
@@ -34,17 +31,16 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 
 ## Design — "Vitral Arquitetônico" (v1.1)
 
-- Hero da HOME editorial e claro, com a janela de vitral ao lado do título "venha como você está".
-- Subpáginas com banner marinho + foto; TEMPLO segue esse padrão.
+- Hero da HOME editorial e claro, com a janela de vitral ao lado do título.
+- Subpáginas com banner marinho + foto.
 - Cards e botões retangulares (raio 8px); degradê âmbar→rubi apenas em facetas (botão primário, card de destaque).
 - Spec: `docs/superpowers/specs/2026-08-03-design-vitral-arquitetonico.md`
 - OpenSpec change: `openspec/changes/design-vitral-arquitetonico/`
 
 ## Conteúdo
 
-- Extraído do site Wix original em 2026-08-03.
-- Fonte da verdade: `docs/conteudo/` (markdown por página) e `docs/inventario.md`.
-- HTML bruto baixado: `docs/raw/`.
+- Fonte da verdade das 7 páginas: `docs/conteudo/novo/` (a Home está em `docs/conteudo/homepage.md`).
+- Conteúdo antigo (10 páginas Wix) preservado em `docs/conteudo/` e `docs/raw/` para referência.
 - Imagens: `assets/img/` (fotos) e `assets/logos/`.
 
 ## Rodar localmente
