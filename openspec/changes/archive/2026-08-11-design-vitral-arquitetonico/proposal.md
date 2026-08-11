@@ -4,13 +4,13 @@ O site (v1.0.0) usa o design "Vitral contemporâneo" com degradê dominante e ca
 
 ## What Changes
 
-- Nova paleta "vidro sobre pedra": fundo pedra `#f7f6f2`, grafite `#1d262e`, marinho `#0f1f2c` e cores de vidro safira `#2f5f92`, esmeralda `#3f6f5a`, âmbar `#d99b2b`, rubi `#b3493a`.
-- Degradê deixa de dominar os fundos e vira **faceta** (botão primário, card destaque, painel de vitral).
+- Nova paleta "vidro sobre pedra": fundo pedra `#f7f6f2`, grafite `#1d262e`, marinho `#0f1f2c` e cores de vidro safira `#2f5f92`, esmeralda `#3f6f5a`, âmbar `#d99b2b`, âmbar profundo `#a06a18` (CTAs, AA) e rubi `#b3493a`.
+- Degradê deixa de dominar os fundos e vira **faceta** (botão primário, card destaque, cabeçalho de tabela) e é escurecido (âmbar profundo→rubi) para contraste AA com texto branco.
 - Hero da HOME editorial claro e assimétrico, com **janela de vitral (SVG de facetas)**.
 - Cards e botões passam de arredondados (raio 18px / pill) para **retangulares arquitetônicos** (raio 8px).
-- Novos assets: `assets/vitral.svg`, atualização de `favicon.svg` e `og-image.svg`.
+- Novos assets: `assets/vitral.svg`, atualização de `favicon.svg` e `og-image.png` (1200x630).
 - Tipografia dos títulos permanece **Playfair Display** (corpo Inter).
-- Hero do TEMPLO vira banner marinho (padrão das subpáginas).
+- Subpáginas com banner marinho (padrão das subpáginas).
 
 ## Capabilities
 
@@ -24,5 +24,5 @@ O site (v1.0.0) usa o design "Vitral contemporâneo" com degradê dominante e ca
 
 - `css/tokens.css`, `css/base.css`, `css/estilo.css` — nova paleta e componentes.
 - `assets/vitral.svg` (novo), `assets/favicon.svg`, `assets/og-image.svg`.
-- `index.html` (hero Direção A) e `templo.html` (banner marinho).
+- `index.html` (hero Direção A) e subpáginas (banner marinho).
 - Conteúdo, navegação e URLs permanecem iguais.

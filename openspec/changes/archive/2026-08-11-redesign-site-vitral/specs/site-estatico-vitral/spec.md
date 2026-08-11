@@ -4,31 +4,7 @@
 
 O site estático da Comunidade Vitral apresenta o conteúdo institucional da igreja em uma arquitetura de 7 páginas + 404, no design "Vitral Arquitetônico", preservando fielmente os textos e dados institucionais, e é publicado via GitHub Pages (subpath `/comunidadevitral/`, branch `homologacao`).
 
-## Requirements
-
-### Requirement: Estrutura de 7 páginas com conteúdo preservado
-
-O site DEVE (MUST) publicar 7 páginas + 404: HOME (`index.html`), Quem Somos (`quem-somos.html`), A Jornada & Trilha de Novos (`jornada.html`), Encontros & PGs (`encontros-e-pgs.html`), Crianças & Família (`criancas-e-familia.html`), Causas & Cidade (`causas-e-cidade.html`) e Contato (`contato.html`). O conteúdo de cada página DEVE (MUST) seguir a fonte da verdade em `docs/conteudo/novo/*.md` (a Home em `docs/conteudo/homepage.md`). Os dados institucionais DEVEM (MUST) estar corretos e visíveis no rodapé e na página de contato: telefone 17 99619-5302, e-mail contato@comunidadevitral.com.br, endereço "Avenida Sebastião Tavares da Silva, 1191 - Jardim Vista Alegre, São José do Rio Preto - SP - CEP 15061-660", CNPJ 49.075.286/0001-63, PIX financeiro@comunidadevitral.com.br e banco Itaú Ag 8299.
-
-#### Scenario: Visualizar dados de contato na HOME
-- **WHEN** o usuário acessa a página inicial
-- **THEN** o telefone, e-mail e endereço da igreja são exibidos no rodapé
-
-#### Scenario: Visualizar dados de contribuição na página de contato
-- **WHEN** o usuário acessa a página "Contato"
-- **THEN** os canais de contato, o endereço e os horários dos Encontros (domingos às 10h, café de acolhida 30 minutos antes) são exibidos
-
-### Requirement: Contato e canais institucionais
-
-O site DEVE (MUST) oferecer canais de contato direto: WhatsApp institucional (`https://wa.me/5517996195302`), e-mail `contato@comunidadevitral.com.br` e redes sociais (Instagram `@comunidadevitral`, YouTube, Facebook e Spotify). Links externos DEVEM (MUST) abrir em nova aba com `rel="noopener"`. O contato não usa formulário — apenas links diretos e mapa do Google com o endereço.
-
-#### Scenario: Falar pelo WhatsApp
-- **WHEN** o usuário clica em "Falar pelo WhatsApp"
-- **THEN** uma nova aba abre em `https://wa.me/5517996195302`
-
-#### Scenario: Abrir o mapa
-- **WHEN** o usuário clica em "Abrir no Google Maps" na página de contato
-- **THEN** uma nova aba abre o mapa do endereço da igreja
+## MODIFIED Requirements
 
 ### Requirement: Navegação entre as páginas
 
@@ -65,3 +41,37 @@ O site DEVE (MUST) ser mobile-first e acessível (WCAG 2.1 AA): navegação por 
 #### Scenario: Visualizar em telas pequenas
 - **WHEN** o site é aberto em uma tela de 320px de largura
 - **THEN** não há rolagem horizontal e o conteúdo permanece legível
+
+## ADDED Requirements
+
+### Requirement: Estrutura de 7 páginas com conteúdo preservado
+
+O site DEVE (MUST) publicar 7 páginas + 404: HOME (`index.html`), Quem Somos (`quem-somos.html`), A Jornada & Trilha de Novos (`jornada.html`), Encontros & PGs (`encontros-e-pgs.html`), Crianças & Família (`criancas-e-familia.html`), Causas & Cidade (`causas-e-cidade.html`) e Contato (`contato.html`). O conteúdo de cada página DEVE (MUST) seguir a fonte da verdade em `docs/conteudo/novo/*.md` (a Home em `docs/conteudo/homepage.md`). Os dados institucionais DEVEM (MUST) estar corretos e visíveis no rodapé e na página de contato: telefone 17 99619-5302, e-mail contato@comunidadevitral.com.br, endereço "Avenida Sebastião Tavares da Silva, 1191 - Jardim Vista Alegre, São José do Rio Preto - SP - CEP 15061-660", CNPJ 49.075.286/0001-63, PIX financeiro@comunidadevitral.com.br e banco Itaú Ag 8299.
+
+#### Scenario: Visualizar dados de contato na HOME
+- **WHEN** o usuário acessa a página inicial
+- **THEN** o telefone, e-mail e endereço da igreja são exibidos no rodapé
+
+#### Scenario: Visualizar dados de contribuição na página de contato
+- **WHEN** o usuário acessa a página "Contato"
+- **THEN** os canais de contato, o endereço e os horários dos Encontros (domingos às 10h, café de acolhida 30 minutos antes) são exibidos
+
+### Requirement: Contato e canais institucionais
+
+O site DEVE (MUST) oferecer canais de contato direto: WhatsApp institucional (`https://wa.me/5517996195302`), e-mail `contato@comunidadevitral.com.br` e redes sociais (Instagram `@comunidadevitral`, YouTube, Facebook e Spotify). Links externos DEVEM (MUST) abrir em nova aba com `rel="noopener"`. O contato não usa formulário — apenas links diretos e mapa do Google com o endereço.
+
+#### Scenario: Falar pelo WhatsApp
+- **WHEN** o usuário clica em "Falar pelo WhatsApp"
+- **THEN** uma nova aba abre em `https://wa.me/5517996195302`
+
+#### Scenario: Abrir o mapa
+- **WHEN** o usuário clica em "Abrir no Google Maps" na página de contato
+- **THEN** uma nova aba abre o mapa do endereço da igreja
+
+## REMOVED Requirements
+
+### Requirement: Preservar o conteúdo institucional das 10 páginas
+
+### Requirement: Redirecionar para serviços externos
+
+### Requirement: Design Vitral contemporâneo
