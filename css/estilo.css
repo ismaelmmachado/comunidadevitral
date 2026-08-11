@@ -693,3 +693,305 @@
     align-items: center;
   }
 }
+
+/* O Cafe da Rua — mundo da HOME (scoped em body.home) */
+body.home {
+  background: var(--pedra-lavada);
+  color: var(--letreiro-ink);
+  font-family: var(--font-body);
+}
+
+body.home h1,
+body.home h2,
+body.home h3,
+body.home h4 {
+  font-family: var(--font-sign);
+  color: var(--letreiro-ink);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+body.home .site-header {
+  background: var(--pedra-lavada);
+  backdrop-filter: none;
+  border-bottom: 1px solid var(--cafe-leite);
+}
+
+body.home .brand {
+  color: var(--letreiro-ink);
+  font-family: var(--font-sign);
+  font-weight: 400;
+}
+
+body.home .nav-menu a,
+body.home .nav-dropdown > .dd-label {
+  color: var(--letreiro-ink);
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+body.home .nav-menu a:hover,
+body.home .nav-menu a[aria-current="page"],
+body.home .nav-dropdown.open > .dd-label {
+  background: rgba(217, 155, 43, 0.16);
+  color: var(--rubi);
+}
+
+body.home .nav-toggle {
+  border-color: var(--cafe-leite);
+  color: var(--letreiro-ink);
+}
+
+body.home .nav-menu {
+  background: var(--creme);
+  border-color: var(--cafe-leite);
+}
+
+/* Hero: fachada do cafe */
+body.home .hero {
+  background: var(--pedra-lavada);
+  border-bottom: none;
+}
+
+body.home .hero h1 {
+  color: var(--letreiro-ink);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.06;
+}
+
+body.home .hero-sub {
+  color: var(--cafe-leite);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  max-width: 42ch;
+}
+
+body.home .chalk-line {
+  display: inline-block;
+  font-family: var(--font-chalk);
+  font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  color: var(--giz-ink);
+  background: var(--cafe);
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  margin: 0 0 1.2rem;
+  font-weight: 700;
+}
+
+body.home .hero-glass {
+  position: relative;
+  isolation: isolate;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+body.home .hero-glass::before {
+  content: "";
+  position: absolute;
+  inset: -10px -10px -16px;
+  border: 6px solid var(--cafe);
+  border-radius: 8px 8px 0 0;
+  background: var(--creme);
+  z-index: -1;
+}
+
+body.home .hero-glass img {
+  filter: none;
+}
+
+body.home .hero-meta {
+  color: var(--cafe-leite);
+  font-size: var(--small);
+}
+
+body.home .hero-meta a {
+  color: var(--cafe-leite);
+}
+
+body.home .hero-meta a:hover {
+  color: var(--rubi);
+}
+
+/* Botoes do cafe */
+body.home .btn {
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+body.home .btn-primary {
+  background: var(--cafe);
+  color: var(--creme);
+  box-shadow: none;
+}
+
+body.home .btn-primary:hover {
+  background: var(--letreiro-ink);
+  box-shadow: none;
+}
+
+body.home .btn-outline-dark {
+  border-color: var(--cafe);
+  color: var(--cafe);
+  border-width: 2px;
+}
+
+body.home .btn-outline-dark:hover {
+  background: var(--cafe);
+  color: var(--creme);
+}
+
+body.home .btn-outline {
+  border-color: rgba(242, 234, 210, 0.7);
+  color: var(--giz-ink);
+}
+
+body.home .btn-outline:hover {
+  background: rgba(242, 234, 210, 0.12);
+}
+
+/* Seções */
+body.home .section-alt {
+  background: var(--creme);
+  border-top: 1px solid var(--cafe-leite);
+  border-bottom: 1px solid var(--cafe-leite);
+}
+
+body.home .section-dark {
+  background: var(--cafe-entardecer);
+  color: rgba(242, 234, 210, 0.9);
+}
+
+body.home .section-dark h2,
+body.home .section-dark h3 {
+  color: var(--giz-ink);
+}
+
+body.home .section-dark a:not(.btn) {
+  color: var(--ambar);
+}
+
+body.home .section-lead {
+  color: var(--cafe-leite);
+}
+
+body.home .section-dark .section-lead {
+  color: rgba(242, 234, 210, 0.85);
+}
+
+/* Mesas (cards do cafe) */
+body.home .card {
+  background: var(--creme);
+  border: 1px solid var(--cafe-leite);
+  border-radius: 6px;
+  box-shadow: none;
+  padding: 1.5rem;
+}
+
+body.home .card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+body.home .card h3 {
+  border-bottom: 2px solid var(--ambar);
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+body.home .card p {
+  color: var(--cafe-leite);
+}
+
+body.home .card-dark {
+  background: var(--cafe-entardecer);
+  border: 1px solid rgba(242, 234, 210, 0.25);
+  color: rgba(242, 234, 210, 0.9);
+}
+
+body.home .card-dark h3 {
+  color: var(--giz-ink);
+  border-bottom-color: var(--ambar);
+}
+
+body.home .card-dark p {
+  color: rgba(242, 234, 210, 0.9);
+}
+
+/* Passaporte (lista numerada com carimbo) */
+body.home .feature-list li {
+  background: var(--creme);
+  border: 1px solid var(--cafe-leite);
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+body.home .feature-list .num {
+  font-family: var(--font-sign);
+  color: var(--rubi);
+  border: 2px solid var(--rubi);
+  border-radius: 50%;
+  width: 2.1em;
+  height: 2.1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Citação em lousa */
+body.home .big-quote {
+  font-family: var(--font-chalk);
+  color: var(--giz-ink);
+  background: var(--cafe);
+  border: none;
+  border-left: none;
+  border-radius: 6px;
+  padding: 1.1rem 1.3rem;
+  margin: 1.2rem 0;
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  line-height: 1.4;
+}
+
+/* Tabela do cordão */
+body.home .table-bank {
+  background: var(--creme);
+  border: 1px solid var(--cafe-leite);
+  border-radius: 6px;
+}
+
+body.home .table-bank th {
+  background: var(--cafe);
+  color: var(--giz-ink);
+}
+
+body.home .table-bank th,
+body.home .table-bank td {
+  border-bottom: 1px solid var(--cafe-leite);
+}
+
+/* Footer do cafe */
+body.home .site-footer {
+  background: var(--cafe-entardecer);
+  color: rgba(242, 234, 210, 0.85);
+}
+
+body.home .site-footer h3 {
+  color: var(--giz-ink);
+}
+
+body.home .site-footer a {
+  color: var(--ambar);
+}
+
+body.home .footer-bottom {
+  border-top-color: rgba(242, 234, 210, 0.18);
+  color: rgba(242, 234, 210, 0.6);
+}
+
+@media (max-width: 760px) {
+  body.home .chalk-line {
+    display: block;
+  }
+}

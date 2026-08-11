@@ -1,222 +1,208 @@
 ---
-name: Comunidade Vitral — Vitral Arquitetônico
-description: Site institucional da Comunidade Vitral (IPI Vitral) — pedra clara, vidro translúcido e acentos de gema.
+name: Comunidade Vitral — O Café da Rua
+description: Mundo visual "O Café da Rua" (letreiro pintado e lousa de café do interior) aplicado à HOME; marca do vitral preservada.
 colors:
+  pedra-lavada: "#f7f3ea"
+  creme: "#f5efe2"
+  cafe: "#4a3528"
+  cafe-entardecer: "#3a2b1f"
+  cafe-leite: "#7a5f48"
+  giz-ink: "#f2ead2"
+  letreiro-ink: "#3a2416"
   ambar: "#d99b2b"
   ambar-deep: "#a06a18"
   rubi: "#b3493a"
   safira: "#2f5f92"
   esmeralda: "#3f6f5a"
-  navy: "#0f1f2c"
-  navy-soft: "#16324e"
-  pedra: "#f7f6f2"
   surface: "#ffffff"
   ink: "#1d262e"
-  muted: "#5d6a75"
   border: "#e5e1d7"
+  navy: "#0f1f2c"
 typography:
   display:
-    fontFamily: "\"Playfair Display\", Georgia, serif"
-    fontSize: "clamp(2rem, 4.6vw, 3.4rem)"
+    fontFamily: "\"Bree Serif\", Georgia, serif"
+    fontSize: "clamp(2.2rem, 6vw, 4rem)"
+    fontWeight: 400
+    lineHeight: 1.06
+  chalk:
+    fontFamily: "\"Kalam\", cursive"
+    fontSize: "clamp(1.1rem, 2.2vw, 1.3rem)"
     fontWeight: 700
-    lineHeight: 1.2
-  headline:
-    fontFamily: "\"Playfair Display\", Georgia, serif"
-    fontSize: "clamp(1.5rem, 3vw, 2.2rem)"
-    fontWeight: 700
-    lineHeight: 1.2
-  title:
-    fontFamily: "\"Playfair Display\", Georgia, serif"
-    fontSize: "clamp(1.15rem, 2vw, 1.4rem)"
-    fontWeight: 700
-    lineHeight: 1.2
+    lineHeight: 1.4
   body:
-    fontFamily: "\"Inter\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    fontFamily: "\"Archivo\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
     fontSize: "clamp(1rem, 1.4vw, 1.125rem)"
     fontWeight: 400
     lineHeight: 1.65
   label:
-    fontFamily: "\"Inter\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    fontFamily: "\"Archivo\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
     fontSize: "0.72rem"
     fontWeight: 700
     letterSpacing: "0.16em"
 rounded:
+  sm: "6px"
   md: "8px"
-  pill: "999px"
 spacing:
   space: "clamp(1.1rem, 3vw, 2.2rem)"
   section: "clamp(3rem, 7vw, 6rem)"
-  card: "1.6rem"
+  card: "1.5rem"
 components:
   button-primary:
-    backgroundColor: "{colors.ambar-deep}"
-    textColor: "#ffffff"
-    rounded: "{rounded.md}"
+    backgroundColor: "{colors.cafe}"
+    textColor: "{colors.creme}"
+    rounded: "{rounded.sm}"
     padding: "13px 26px"
   button-gold:
     backgroundColor: "{colors.ambar-deep}"
     textColor: "#ffffff"
-    rounded: "{rounded.md}"
+    rounded: "{rounded.sm}"
     padding: "13px 26px"
   button-outline-dark:
-    textColor: "{colors.ink}"
-    rounded: "{rounded.md}"
+    textColor: "{colors.cafe}"
+    rounded: "{rounded.sm}"
     padding: "13px 26px"
   card:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.md}"
+    backgroundColor: "{colors.creme}"
+    textColor: "{colors.letreiro-ink}"
+    rounded: "{rounded.sm}"
     padding: "{spacing.card}"
   card-dark:
-    backgroundColor: "{colors.ambar-deep}"
-    textColor: "#ffffff"
-    rounded: "{rounded.md}"
+    backgroundColor: "{colors.cafe-entardecer}"
+    textColor: "{colors.giz-ink}"
+    rounded: "{rounded.sm}"
     padding: "{spacing.card}"
-  nav-link:
-    textColor: "{colors.ink}"
-    rounded: "{rounded.md}"
-    padding: "8px 12px"
 ---
 
-# Design System: Comunidade Vitral — Vitral Arquitetônico
+# Design System: Comunidade Vitral — O Café da Rua
 
 ## Overview
 
-**Creative North Star: "O Vitral Translúcido"**
+**Creative North Star: "O Café da Rua"**
 
-A Comunidade Vitral se apresenta como uma igreja em pessoas — não um prédio — e o sistema visual traduz isso como pedra clara sob a luz do dia, com a luz passando por facetas de vidro colorido. Cada superfície é luminosa e respirável: o fundo pedra (#f7f6f2) e o branco dos cards funcionam como a moldura de janela; as quatro gemas (safira, esmeralda, âmbar, rubi) aparecem em doses precisas, como os cacos do vitral, nunca como pintura inteira. A profundidade é tátil e suave: sombras ambientais discretas, elevação gentil no hover e o drop-shadow que faz a janela de vitral parecer vidro de verdade.
+A HOME se apresenta como a fachada de um café do interior paulista: um convite pintado à mão, uma lousa de giz com a informação prática e a janela de vitral acesa na vitrine. O sistema traduz a promessa "puxe uma cadeira e respire fundo" em hospitalidade material — pedra lavada e creme como o chão da rua, marrom-café nos painéis e no rodapé, e o letreiro pintado (Bree Serif) como a voz do convite. A lousa (Kalam) cuida do cotidiano — horários, café, passos; o corpo (Archivo) fica quieto e legível.
 
-A tipografia carrega a alma: Playfair Display pesada e editorial nos títulos, Inter calma e legível no corpo — o contraste entre a voz poética (serif) e a voz cotidiana (sans) ecoa o convite "venha como você está". O sistema é deliberadamente anti-"igreja corporativa": sem banco de imagens de sorrisos, sem acúmulo de dourado, sem telhados de megachurch. A assinatura é a janela de vitral em arco (assets/vitral.svg) e a tira de quatro cores que divide seções e coroa o rodapé.
+As quatro gemas do vitral (safira, esmeralda, âmbar, rubi) — marca inegociável — aparecem como tintas pintadas em doses precisas, e a janela de vitral entra no hero como o vidro pintado da vitrine, numa moldura de madeira. O sistema é deliberadamente anti-"religioso genérico": sem cruz decorativa, sem dourado, sem dourado de megachurch.
+
+**Estado de migração:** esta versão documenta o mundo aplicado à **HOME**. As subpáginas e a 404 ainda usam o mundo anterior ("Vitral Arquitetônico", paleta vidro sobre pedra) até a rodada de extensão. O padrão de componentes aqui vale para a Home.
 
 **Key Characteristics:**
-- Pedra clara e luminosa como fundo; marinho profundo para âncoras (banners, seções escuras, rodapé).
-- Acentos de gema em doses: gradiente âmbar profundo→rubi em CTAs e destaques; safira para estados de navegação e eyebrow; rubi para links e labels.
-- Radii retos e discretos (8px); pílulas apenas em eyebrows e selos.
-- Sombras suaves e camadas leves; elevação como resposta a hover/foco.
-- Playfair Display (700/800) para títulos; Inter (400–700) para corpo e labels em caixa alta espaçada.
+- Fachada pintada: letreiro (Bree Serif) + lousa de giz (Kalam) + janela de vitral em moldura.
+- Tom de cor Committed quente: chão claro (pedra lavada/creme) e marrom-café em painéis (Café, Café do Entardecer).
+- Sem eyebrow/kicker acima de heading; o heading carrega o peso.
+- Componentes planos e quentes (raio 6px), com filete pintado (2px âmbar) sob títulos.
+- Citação em painel de lousa (giz sobre café), sem borda colorida lateral.
+- Marca preservada: janela de vitral (`assets/vitral.svg`) e tira de 4 cores.
 
 ## Colors
 
-A paleta é "vidro sobre pedra": neutros de pedra e marinho sobre os quais as quatro gemas do vitral emitem cor, como luz através de cacos.
+A paleta é "café e gemas": neutros quentes de café sobre uma rua clara, com as quatro gemas do vitral como tintas pintadas.
 
 ### Primary
-- **Âmbar do Café** (#d99b2b): o calor do convite. Lidera o gradiente de CTA primário, preenche a faixa de foco (:focus-visible) e links sobre fundos escuros. É a cor "da mesa".
-- **Âmbar Profundo** (#a06a18): o mesmo âmbar, escurecido para AA — usado em toda superfície que carrega texto branco (botões primário e gold, cards escuros, cabeçalho de tabela).
+- **Letreiro Tinta** (#3a2416): o marrom quase-preto do letreiro pintado; texto de títulos e o botão primário.
+- **Café** (#4a3528): o marrom do painel de lousa e do CTA primário (texto creme, AA ~10:1).
+- **Café do Entardecer** (#3a2b1f): painéis escuros, rodapé e seção institucional.
+- **Âmbar Profundo** (#a06a18): o acento quente dos CTAs secundários/gold (texto branco, AA 4.6:1).
 
 ### Secondary
-- **Rubi Terracota** (#b3493a): a segunda faceta do gradiente, o acento de vínculo. Links, labels de seção, números da lista de passos e o destaque do card escuro. É a cor "do coração".
+- **Âmbar** (#d99b2b): filete pintado sob títulos, links em fundos escuros, faixa de foco.
 
 ### Tertiary
-- **Safira do Rio Preto** (#2f5f92): a faceta da confiança. Estados de navegação (hover/atual), eyebrow e a primeira cor da tira de vitral.
-- **Esmeralda da Esperança** (#3f6f5a): faceta rara, usada apenas na tira de vitral (footer e divisores) e no desenho da janela — não em superfícies de conteúdo.
+- **Rubi** (#b3493a): carimbo dos passos, estados ativos da navegação, tintas do vitral.
+- **Safira** (#2f5f92) e **Esmeralda** (#3f6f5a): tintas do vitral e da tira de 4 cores; superfícies de conteúdo não as usam.
 
 ### Neutral
-- **Pedra de Rio Preto** (#f7f6f2): o fundo claro do site inteiro — o "chão" de pedra da janela.
-- **Superfície** (#ffffff): cards, menus, seções alternadas.
-- **Tinta** (#1d262e): texto principal e elementos de alto contraste.
-- **Cinza Sussurrado** (#5d6a75): texto secundário, leads e metadados.
-- **Fio de Cal** (#e5e1d7): bordas e divisores.
-- **Marinho Profundo** (#0f1f2c) e **Marinho Suave** (#16324e): o azul da noite — banners de subpágina, seções escuras, rodapé e o gradiente de âncora.
+- **Pedra Lavada** (#f7f3ea): o chão claro da Home (background).
+- **Creme** (#f5efe2): cards (mesas), seções alternadas, menus mobile.
+- **Café com Leite** (#7a5f48): texto secundário e bordas — contraste AA (5.3:1 sobre pedra lavada).
+- **Giz** (#f2ead2): texto sobre painéis de café (contraste ~9.5:1).
 
 ### Named Rules
-**The Rarity of Glass Rule.** As quatro gemas aparecem em superfícies pequenas e precisas, nunca como fundo generalizado de páginas inteiras (exceto marinho, que é âncora estrutural). A raridade do acento é o que faz o vitral brilhar.
+**The Rarity of Paint Rule.** As quatro gemas aparecem em superfícies pequenas e precisas (tintas, filetes, carimbos, tira); o marrom-café é o único "cheio" além dos neutros. O acúmulo de gema mateia o vidro.
 
-**The Warm Action Rule.** Toda ação primária é quente (gradiente âmbar profundo→rubi ou âmbar profundo sólido) e mantém contraste AA com texto branco; o marinho reserva-se para âncoras e contextos escuros, nunca para o CTA de conversão. O âmbar claro é reservado para acentos e estados, onde não carrega texto sobre si.
+**The Café Ink Rule.** Toda ação primária é café/tinta-marrom com texto creme (AA); o âmbar profundo é o segundo quente. Nenhum CTA primário usa gradiente — o mundo é tinta chapada, não luz.
 
 ## Typography
 
-**Display Font:** Playfair Display 700/800 (fallback: Georgia, serif)
-**Body Font:** Inter 400/500/600/700 (fallback: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif)
+**Display Font (Letreiro):** Bree Serif 400 (fallback: Georgia, serif)
+**Chalk Font (Lousa):** Kalam 400/700 (fallback: cursive)
+**Body Font (Corpo):** Archivo 400/500/600/700 (fallback: system-ui; grotesca brasileira, Omnibus-Type)
 
-**Character:** Editorial e íntima ao mesmo tempo. A Playfair dá peso poético a frases longas de acolhimento; a Inter mantém tudo legível e calmo. O par fala a língua de quem chega cansado — sem jargão, com respiro.
+**Character:** a voz do convite é pintada à mão (Bree), generosa e quente; a voz do cotidiano é giz (Kalam); a voz do corpo é Archivo, grotesca limpa e brasileira. O contraste "pintado × quieto" ecoa o convite "venha como você está".
 
 ### Hierarchy
-- **Display** (700, clamp(2rem → 3.4rem), 1.2): H1 de hero e banners. Título de página é o único Display por viewport.
-- **Headline** (700, clamp(1.5rem → 2.2rem), 1.2): H2 de seção. Só um por seção.
-- **Title** (700, clamp(1.15rem → 1.4rem), 1.2): H3 de cards e grupos.
-- **Body** (400, clamp(1rem → 1.125rem), 1.65): texto corrente; leads e citações usam clamp próprio (1.1→1.35rem e 1.3→1.8rem).
-- **Label** (700, 0.72rem, letter-spacing 0.16em, uppercase): eyebrows, labels de seção e de contato. O único "texto de marca" em caixa alta.
+- **Display** (Bree 400, clamp(2.2rem → 4rem), 1.06): H1 do hero (o letreiro). Máximo 2-3 linhas.
+- **Headline** (Bree 400, clamp(1.5rem → 2.2rem), 1.15): H2 de seção; um por seção.
+- **Title** (Bree 400, clamp(1.15rem → 1.4rem), 1.15): H3 de cards, com filete pintado (2px âmbar) sob o título.
+- **Body** (Archivo 400, clamp(1rem → 1.125rem), 1.65): corpo; medidas 42–60ch (leads/hero).
+- **Chalk** (Kalam 700, clamp(1.1rem → 1.3rem), 1.4): linhas de lousa (informação prática) sobre painel café, ou citação em lousa.
 
 ### Named Rules
-**The One Serif Voice Rule.** Playfair é para títulos e números de destaque; corpo, botões e inputs são sempre Inter. Nunca usar a serif em parágrafos longos de conteúdo.
+**The Painted Voice Rule.** Bree é para títulos e números; Kalam para o que "está na lousa"; Archivo para corpo, botões e inputs. Nunca usar a serif pintada em parágrafos longos.
 
-**The Rested Hero Rule.** Títulos de hero respeitam máximos de largura (16ch no H1, 40ch no subtítulo) para frases de acolhimento não virarem paredes de texto.
+**The No-Kicker Rule.** Nenhuma eyebrow/kicker acima de heading na Home; o H1/H2 carrega o peso inteiro. (O mundo pintado não precisa de rótulo em caixa alta.)
 
 ## Layout
 
-Container único com max-width de 1120px, padding lateral em `--space` (clamp 1.1→2.2rem). Seções respiram com `--section` (clamp 3→6rem) de padding vertical; as seções alternadas (branco, `section-alt`) separam blocos com fio de cal no topo e na base.
-
-Grades utilitárias de 3 colunas (`grid`, gap 1.2rem) e 2 colunas (`grid-2`); `section-head` e `hero-inner` usam duas colunas assimétricas (1.2fr/1fr e 1.25fr/0.75fr) para pares título+lead ou texto+vitral. Na quebra de 760px (`--bp-mobile`), tudo vira uma coluna e o hero centraliza texto e vitral.
+Container único de 1120px, padding lateral em `--space`; seções com `--section` de respiro. A Home alterna chão de pedra lavada e faixas creme (`section-alt`) separadas por fio de café-com-leite; a seção institucional é o "interior ao entardecer" (café do entardecer). Héros e grids herdados (hero-inner 1.25fr/0.75fr; grades de 3 colunas colapsando a 1 na quebra de 760px). A janela de vitral fica na coluna direita do hero com moldura pintada.
 
 ### Named Rules
-**The One-Seat Rule.** Cada seção tem um único H2 e um foco claro; cards em grade contam uma história por coluna — sem sobreposição de mensagens na mesma linha.
+**The One-At-a-Time Rule.** Um H2 por seção; um convite por viewport; o letreiro nunca compete com outro display.
 
 ## Elevation & Depth
 
-Sistema em camadas suaves, "Layered com sombras ambientais": profundidade vem de sombras difusas e elevação em resposta a estados, não de camadas empilhadas. Fundos planos descansam à vista; o hover ergue o card, o foco acende o contorno.
-
-### Shadow Vocabulary
-- **Ambient (repouso)** (`0 4px 14px rgba(15,31,44,0.06)`): cards e itens de lista em repouso.
-- **Hover (erguido)** (`0 10px 24px rgba(15,31,44,0.10)`): card sob hover, com translateY(-3px).
-- **Menu/painel (suspenso)** (`0 12px 30px rgba(15,31,44,0.12)`): dropdowns e menu mobile.
-- **CTA (chama)** (`0 8px 20px rgba(179,73,58,0.30)` → `0 12px 26px rgba(179,73,58,0.40)` no hover): botão primário — a única sombra colorida do sistema.
-- **Vidro (translúcido)** (`drop-shadow(0 18px 34px rgba(15,31,44,0.18))`): a janela de vitral no hero.
+Sistema plano com profundidade de tinta, não de sombra: as coisas "se erguem" por filete pintado, moldura e tom, não por sombras empilhadas. O hover de botão escurece a tinta (`--letreiro-ink` sobre `--cafe`) a 1px; o foco usa a faixa âmbar do sistema. Não há sombras coloridas nem sombras duras na Home do café.
 
 ### Named Rules
-**The Flat-By-Default Rule.** Superfícies são planas em repouso; sombras aparecem como resposta a estado (hover, menu aberto, foco) ou como material (o vidro). Nenhuma sombra permanente sobre o corpo de texto.
+**The Ink Depth Rule.** Nenhuma sombra em card/marrom nesta Home; a profundidade vem de camadas de tinta (filete, moldura, painel), não de box-shadow.
 
 ## Shapes
 
-Forma reta e discreta: raio único de 8px (`--radius`) para quase tudo — botões, cards, menus, tabelas, listas. Pílulas (`--radius-pill`, 999px) são reservadas a eyebrows e selos. Bordas de 1px em `--border` (fio de cal) definem a maioria das superfícies; o marinho usa-se em blocos cheios, sem borda. A única geometria expressiva é o arco da janela de vitral e seus cacos.
-
-### Named Rules
-**The Straight Corner Rule.** Nenhum componente de conteúdo (card, botão, campo, menu) excede 8px de raio. O drama fica no vitral, não nos cantos.
+Forma reta e curta: raio de 6px em componentes do café (botões, cards, painéis de lousa, tabela); a moldura da vitrine tem raio de 8px no topo. Pílulas não aparecem na Home (sem eyebrows). Filetes de 2px — âmbar sob títulos, café-com-leite em divisores — são a gramática de linha.
 
 ## Components
 
 ### Buttons
-- **Shape:** retangular, raio 8px, padding 13px 26px, peso 700, com transição de transform/sombra (0.15s) e micro-elevação de 1px no hover. Alvos de toque ≥ 44px no mobile.
-- **Primary:** gradiente âmbar profundo→rubi com sombra colorida quente. É o CTA de conversão (visitar, falar no WhatsApp).
-- **Gold:** âmbar profundo sólido, para chamadas dentro de cards escuros e seções coloridas.
-- **Navy:** marinho sólido, para ações sólidas sem a "chama" do primário.
-- **Outline:** transparente com borda branca (60%), para CTAs sobre fundos escuros.
-- **Outline Dark:** transparente com borda de tinta; hover inverte para tinta com texto branco.
-- **Hover / Focus:** todos elevam 1px; foco usa o contorno de 3px âmbar do sistema.
+- **Shape:** retangular, raio 6px, padding 13px 26px, peso 700 (Archivo), micro-elevação de 1px no hover.
+- **Primary:** tinta marrom `--cafe` com texto creme (AA ~10:1). É o CTA de conversão (visitar, WhatsApp).
+- **Outline Dark:** borda 2px `--cafe` + texto café; hover inverte para tinta cheia com creme.
+- **Outline (sobre painel escuro):** borda giz translúcida + texto giz; usado na Trilha sobre o card do entardecer.
+- **Gold:** âmbar profundo com texto branco (AA).
+- **Hover/Focus:** hover escurece a tinta; foco usa a faixa âmbar do sistema.
 
-### Cards
-- **Corner Style:** raio 8px; **Border:** 1px fio de cal.
-- **Background:** superfície branca; **Shadow Strategy:** ambient em repouso, hover erguido (ver Elevation).
-- **Internal Padding:** `--space` (1.6rem), com imagem de topo sangrando o padding (margem negativa 1.6rem).
-- **Card Dark:** gradiente âmbar profundo→rubi, texto branco, sem borda — reservado a 1–3 destaque por página.
+### Cards ("Mesas")
+- **Corner:** raio 6px; **Border:** 1px café-com-leite.
+- **Background:** creme; **Filete:** 2px âmbar sob o H3 (inline-block).
+- **Internal Padding:** 1.5rem. Sem sombra; sem hover de elevação.
+- **Card Dark (entardecer):** fundo café do entardecer, texto giz, borda giz translúcida — 1–3 destaques.
 
-### Feature List (passos numerados)
-- **Style:** item como card compacto (superfície, borda 1px, raio 8px, padding 1rem 1.2rem).
-- **Number:** Playfair 1.4rem 700 em rubi — o toque editorial que liga a lista à serif dos títulos.
+### Feature List ("Passaporte")
+- **Item:** linha em creme com borda café-com-leite, raio 6px.
+- **Stamp (num):** círculo de 2px rubi com número em Bree — o carimbo do passo.
 
-### Tabela (info)
-- **Style:** superfície, borda 1px, raio 8px; células com padding 0.8rem 1.1rem e divisor de fio de cal.
-- **Header:** gradiente âmbar profundo→rubi com texto branco; rolagem horizontal dentro de `.table-wrap` no mobile.
+### Chalkboard Panel (citação)
+- **Style:** painel `--cafe` com texto giz em Kalam, raio 6px; sem borda lateral colorida.
+- **Uso:** citação da marca ("Existimos para que...") e linhas de lousa do hero.
+
+### Tabela (Cordão de Três Dobras)
+- **Style:** creme, borda café-com-leite, raio 6px; **Header:** café com texto giz; rolagem horizontal dentro de `.table-wrap` no mobile.
 
 ### Navigation
-- **Desktop:** links com padding 8px 12px, raio 8px, peso 600; hover/atual com fundo safira a 8% e texto safira. Dropdown suspenso (210px, borda, sombra de painel).
-- **Mobile (≤760px):** botão "Menu" (borda de fio de cal); painel suspenso à direita com pilha vertical, mesma linguagem de sombra e borda.
-
-### Eyebrow (selo de seção)
-- **Style:** pílula em caixa alta espaçada (0.16em), safira sobre fundo safira a 8% com borda safira a 25%; variante branca translúcida sobre marinho.
+- **Desktop:** links em letreiro-tinta (Archivo 600), raio 4px; hover/atual com tinta âmbar a 16% e texto rubi. Sem dropdown na Home.
+- **Mobile (≤760px):** botão "Menu" com borda café-com-leite (alvo ≥44px); painel creme suspenso à direita.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** usar pedra + branco como maioria da página; acentos de gema em superfícies pequenas e precisas.
-- **Do** fazer todo CTA primário quente (gradiente âmbar profundo→rubi ou âmbar profundo, sempre AA sobre texto branco) e reservar marinho para âncoras e contextos escuros.
-- **Do** manter um único H2 por seção e uma única mensagem por card.
-- **Do** respeitar raio de 8px em componentes e pílulas apenas em eyebrows/selos.
-- **Do** usar sombras apenas como resposta a estado (hover/foco/menu) ou como material (vidro).
-- **Do** preservar o contraste AA: tinta sobre pedra para corpo; branco sobre marinho/gradiente para texto em fundos escuros.
+- **Do** fazer do 1º viewport uma fachada: letreiro com o convite, linha de lousa com horário/café, CTA e a janela de vitral na moldura.
+- **Do** usar café/tinta para as ações primárias (texto creme, AA) e âmbar profundo para o segundo quente.
+- **Do** deixar o heading carregar o peso — sem eyebrow/kicker acima dele.
+- **Do** usar filete pintado (2px) e moldura para profundidade, não sombras em cards.
+- **Do** manter a janela de vitral (`assets/vitral.svg`) e a tira de 4 cores como marca nas páginas.
+- **Do** usar Kalam apenas para o que "está na lousa" e Bree para letreiros/títulos.
 
 ### Don't:
-- **Don't** pintar páginas inteiras de uma gema; o marinho é a única cor estrutural além dos neutros.
-- **Don't** usar Playfair em parágrafos de conteúdo nem Inter em títulos.
-- **Don't** usar sombras coloridas fora do CTA primário.
-- **Don't** exceder 8px de raio em componentes de conteúdo.
-- **Don't** adotar estética de "igreja corporativa" genérica (banco de imagens, acúmulo de dourado, telhados de megachurch) — o sistema é pedra e vidro, não publicidade.
+- **Don't** pintar páginas inteiras das gemas; o café e os neutros são o chão, as gemas são tintas em doses.
+- **Don't** usar gradiente de texto, glass/blur decorativo ou sombras duras na Home do café.
+- **Don't** colocar eyebrow/kicker/pílula acima de heading.
+- **Don't** usar borda lateral colorida (>1px) em quotes ou cards — a citação é painel de lousa.
+- **Don't** criar estética "religiosa genérica" (cruz decorativa, dourado de megachurch, banco de sorrisos).

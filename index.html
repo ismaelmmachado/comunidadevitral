@@ -15,7 +15,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kalam:wght@400;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/estilo.css">
@@ -38,7 +38,15 @@
   }
   </script>
 </head>
-<body>
+<body class="home">
+  <!--
+  THESIS: O Cafe da Rua — um convite pintado a mao a quem cansou de fingir; recusa a vitrine de "igreja corporativa" e o scaffold generico de landing.
+  OWN-WORLD: fachada de cafe do interior — letreiro pintado (Bree Serif), lousa de giz (Kalam), corpo quieto (Archivo); pedra lavada e creme com paineis marrom-cafe; as 4 gemas do vitral como tintas pintadas.
+  STORY: quem chega cansado le em segundos "puxe uma cadeira", ve o domingo as 10h na lousa, enxerga a vitral acesa na vitrine e entende que e bem-vindo como esta.
+  FIRST VIEWPORT: a fachada — letreiro com o convite (h1), linha de lousa com horario/cafe, CTA "Venha nos visitar", janela de vitral em moldura pintada a direita.
+  FORM: "O Cafe da Rua" (Letreiros de Cafe do Interior) — posicao 7 da lista de direcoes; seed key 62dde5c6 (mode persuade).
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -65,14 +73,14 @@
     <section class="hero">
       <div class="container hero-inner">
         <div>
-          <span class="hero-eyebrow">Comunidade Vitral</span>
           <h1>Cansado de fingir? Puxe uma cadeira e respire fundo.</h1>
+          <p class="chalk-line">Domingos às 10h · café quentinho te espera.</p>
           <p class="hero-sub">Em uma cidade que cobra performance o tempo todo e nos deixa profundamente sós, a Vitral é um lugar de alívio. Uma comunidade cristã simples, missional e acolhedora para você ser quem é, aprender no seu ritmo e encontrar um lugar à mesa.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="contato.html">Venha nos visitar este domingo</a>
             <a class="btn btn-outline-dark" href="quem-somos.html">Conheça o nosso jeito de viver</a>
           </div>
-          <p class="hero-meta"><a href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Sebasti%C3%A3o+Tavares+da+Silva+1191+S%C3%A3o+Jos%C3%A9+do+Rio+Preto" target="_blank" rel="noopener">Domingos às 10h · Av. Sebastião Tavares da Silva, 1191 — ver no mapa</a></p>
+          <p class="hero-meta"><a href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Sebasti%C3%A3o+Tavares+da+Silva+1191+S%C3%A3o+Jos%C3%A9+do+Rio+Preto" target="_blank" rel="noopener">Av. Sebastião Tavares da Silva, 1191 — ver no mapa</a></p>
         </div>
         <div class="hero-glass">
           <img src="assets/vitral.svg" alt="Janela de vitral com facetas coloridas">
@@ -82,9 +90,8 @@
 
     <section class="section section-alt">
       <div class="container">
-        <div class="section-label">A gente entende o peso que você carrega na cidade</div>
-        <h2>O calor de Rio Preto não é só no clima</h2>
-        <p class="section-lead">É a temperatura da pressa, da exigência de parecer bem o tempo todo, da rotina exaustiva. A gente trabalha muito, cuida da aparência, mas por dentro, muitas vezes, sente um vazio e uma solidão profunda.</p>
+        <h2>A gente entende o peso que você carrega na cidade</h2>
+        <p class="section-lead">O calor de Rio Preto não é só no clima. É a temperatura da pressa, da exigência de parecer bem o tempo todo, da rotina exaustiva. A gente trabalha muito, cuida da aparência, mas por dentro, muitas vezes, sente um vazio e uma solidão profunda.</p>
         <p>Você não precisa continuar fingindo que tem todas as respostas.</p>
         <blockquote class="big-quote">"Existimos para que pessoas cansadas de fingir encontrem um lugar à mesa."</blockquote>
         <p>Na Vitral, você não precisa se defender ou mascarar sua história. Suas marcas, suas dúvidas e suas dores são acolhidas com gentileza.</p>
@@ -93,7 +100,6 @@
 
     <section class="section">
       <div class="container">
-        <div class="section-label">Nosso jeito</div>
         <h2>Venha exatamente como você está</h2>
         <div class="grid">
           <article class="card">
@@ -117,7 +123,6 @@
 
     <section class="section section-alt">
       <div class="container">
-        <div class="section-label">O que esperar no domingo</div>
         <h2>Sua primeira visita sem frio na barriga</h2>
         <ul class="feature-list">
           <li>
@@ -150,12 +155,7 @@
 
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">A Jornada do Discípulo</div>
-            <h2>Um caminho para caminhar no seu ritmo</h2>
-          </div>
-        </div>
+        <h2>Um caminho para caminhar no seu ritmo</h2>
         <p class="section-lead">Seguir a Jesus é uma jornada bonita, simples e comunitária. Resumimos nosso caminho em três passos práticos: <strong>Esteja com Jesus, Torne-se como Ele e Faça como Ele fez.</strong></p>
         <ol class="feature-list">
           <li>
@@ -179,14 +179,9 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-alt">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Convite</div>
-            <h2>A mesa está posta. Há um lugar no vitral reservado para você.</h2>
-          </div>
-        </div>
+        <h2>A mesa está posta. Há um lugar no vitral reservado para você.</h2>
         <p class="section-lead">Venha tomar um café conosco neste domingo. Estamos na Região Leste de São José do Rio Preto, às 10h.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="contato.html">Quero visitar este domingo</a>
@@ -195,9 +190,8 @@
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section">
       <div class="container">
-        <div class="section-label">O Cordão de Três Dobras</div>
         <h2>Sua fé vivida no ritmo do dia a dia</h2>
         <p class="section-lead">Acreditamos que a fé se sustenta como um cordão de três dobras: firme, pé no chão e integrada à vida real.</p>
         <div class="table-wrap">
@@ -233,7 +227,6 @@
 
     <section class="section section-dark">
       <div class="container">
-        <div class="section-label">Nossa raiz institucional</div>
         <h2>Simples na forma, profundos nas raízes</h2>
         <p class="section-lead">A Vitral é uma comunidade vibrante e acolhedora, com um alicerce histórico e teológico muito sólido. Fazemos parte da <strong>Igreja Presbiteriana Independente do Brasil (IPIB)</strong>, a primeira denominação evangélica genuinamente brasileira, fundada em 1903.</p>
         <div class="grid">

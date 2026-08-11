@@ -19,6 +19,18 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
+  --pedra-lavada: #f7f3ea;
+  --creme: #f5efe2;
+  --cafe: #4a3528;
+  --cafe-entardecer: #3a2b1f;
+  --cafe-leite: #7a5f48;
+  --giz-ink: #f2ead2;
+  --letreiro-ink: #3a2416;
+
+  --font-sign: "Bree Serif", Georgia, serif;
+  --font-chalk: "Kalam", cursive;
+  --font-body: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
   --h1: clamp(2rem, 4.6vw, 3.4rem);
   --h2: clamp(1.5rem, 3vw, 2.2rem);
   --h3: clamp(1.15rem, 2vw, 1.4rem);
