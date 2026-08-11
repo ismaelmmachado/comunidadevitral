@@ -1,0 +1,296 @@
+/* Marca Nova — Verde Petróleo + Verde Acinzentado (teste em quem-somos.html) */
+
+body.marca-nova {
+  --petroleo: #005f6b;
+  --petroleo-deep: #00434d;
+  --sage: #94a69a;
+  --sage-lighter: #b5c6ba;
+  --sage-claro: #e9ede9;
+  --off-black: #1f2421;
+  --muted-nova: #5b6b63;
+  --border-nova: #d7ded9;
+
+  --grad-marca: linear-gradient(120deg, #005f6b 0%, #94a69a 100%);
+  --grad-banner: linear-gradient(160deg, #00434d 0%, #005f6b 100%);
+
+  --font-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body.marca-nova {
+  background: #ffffff;
+  color: var(--off-black);
+}
+
+body.marca-nova h1,
+body.marca-nova h2,
+body.marca-nova h3,
+body.marca-nova h4 {
+  font-family: var(--font-serif);
+  color: var(--off-black);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+body.marca-nova a {
+  color: var(--petroleo);
+}
+
+body.marca-nova a:hover {
+  color: var(--petroleo-deep);
+}
+
+body.marca-nova :focus-visible {
+  outline: 3px solid var(--petroleo);
+  outline-offset: 2px;
+}
+
+/* Header */
+body.marca-nova .site-header {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid var(--border-nova);
+}
+
+body.marca-nova .brand {
+  color: var(--off-black);
+  font-weight: 700;
+}
+
+body.marca-nova .nav-menu a,
+body.marca-nova .nav-dropdown > .dd-label {
+  color: var(--off-black);
+}
+
+body.marca-nova .nav-menu a:hover,
+body.marca-nova .nav-dropdown > .dd-label:hover,
+body.marca-nova .nav-menu a[aria-current="page"],
+body.marca-nova .nav-dropdown.open > .dd-label {
+  background: rgba(0, 95, 107, 0.08);
+  color: var(--petroleo);
+}
+
+body.marca-nova .nav-toggle {
+  border-color: var(--border-nova);
+  color: var(--off-black);
+}
+
+body.marca-nova .nav-dropdown .dd-menu {
+  background: #ffffff;
+  border-color: var(--border-nova);
+  box-shadow: 0 12px 30px rgba(0, 67, 77, 0.12);
+}
+
+/* Banner */
+body.marca-nova .page-banner {
+  background: var(--grad-banner);
+}
+
+body.marca-nova .page-banner .hero-eyebrow {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+body.marca-nova .page-banner h1 {
+  color: #ffffff;
+}
+
+body.marca-nova .page-banner .page-lead {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Sections */
+body.marca-nova .section-alt {
+  background: var(--sage-claro);
+  border-color: var(--border-nova);
+}
+
+body.marca-nova .section-dark {
+  background: var(--grad-banner);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+body.marca-nova .section-dark h2,
+body.marca-nova .section-dark h3 {
+  color: #ffffff;
+}
+
+body.marca-nova .section-dark a:not(.btn) {
+  color: var(--sage-lighter);
+}
+
+body.marca-nova .section-label {
+  color: var(--petroleo);
+}
+
+body.marca-nova .section-dark .section-label {
+  color: var(--sage);
+}
+
+body.marca-nova .section-lead {
+  color: var(--muted-nova);
+}
+
+body.marca-nova .section-dark .section-lead {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Cards */
+body.marca-nova .card {
+  background: #ffffff;
+  border: 1px solid var(--border-nova);
+  box-shadow: 0 4px 14px rgba(0, 67, 77, 0.06);
+}
+
+body.marca-nova .card:hover {
+  box-shadow: 0 10px 24px rgba(0, 67, 77, 0.10);
+}
+
+body.marca-nova .card h3 {
+  color: var(--off-black);
+  border-bottom: 2px solid var(--petroleo);
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+body.marca-nova .card p {
+  color: var(--muted-nova);
+}
+
+body.marca-nova .card-dark {
+  background: var(--grad-banner);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+body.marca-nova .card-dark h3 {
+  color: #ffffff;
+  border-bottom-color: var(--sage);
+}
+
+body.marca-nova .card-dark p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Feature list */
+body.marca-nova .feature-list li {
+  background: #ffffff;
+  border: 1px solid var(--border-nova);
+}
+
+body.marca-nova .feature-list .num {
+  font-family: var(--font-serif);
+  color: var(--petroleo);
+  font-weight: 700;
+}
+
+/* FAQ */
+body.marca-nova .faq details {
+  background: #ffffff;
+  border: 1px solid var(--border-nova);
+}
+
+body.marca-nova .faq summary {
+  color: var(--off-black);
+}
+
+body.marca-nova .faq details p {
+  color: var(--muted-nova);
+}
+
+/* Contact */
+body.marca-nova .contact-item {
+  background: #ffffff;
+  border: 1px solid var(--border-nova);
+}
+
+body.marca-nova .contact-item .label {
+  color: var(--petroleo);
+}
+
+/* Buttons */
+body.marca-nova .btn {
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+body.marca-nova .btn-primary {
+  background: var(--petroleo);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 95, 107, 0.22);
+}
+
+body.marca-nova .btn-primary:hover {
+  background: var(--petroleo-deep);
+  box-shadow: 0 12px 26px rgba(0, 95, 107, 0.30);
+}
+
+body.marca-nova .btn-gold {
+  background: var(--petroleo-deep);
+  color: #ffffff;
+}
+
+body.marca-nova .btn-outline-dark {
+  border-color: var(--off-black);
+  color: var(--off-black);
+}
+
+body.marca-nova .btn-outline-dark:hover {
+  background: var(--off-black);
+  color: #ffffff;
+}
+
+body.marca-nova .btn-navy {
+  background: var(--off-black);
+  color: #ffffff;
+}
+
+/* Big quote */
+body.marca-nova .big-quote {
+  font-family: var(--font-serif);
+  color: var(--off-black);
+  border-left: 4px solid var(--petroleo);
+}
+
+/* Table */
+body.marca-nova .table-bank {
+  background: #ffffff;
+  border: 1px solid var(--border-nova);
+}
+
+body.marca-nova .table-bank th {
+  background: var(--petroleo);
+  color: #ffffff;
+}
+
+body.marca-nova .table-bank th,
+body.marca-nova .table-bank td {
+  border-bottom: 1px solid var(--border-nova);
+}
+
+/* Footer */
+body.marca-nova .site-footer {
+  background: var(--grad-banner);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+body.marca-nova .site-footer::before {
+  background: var(--grad-marca);
+}
+
+body.marca-nova .site-footer h3 {
+  color: #ffffff;
+}
+
+body.marca-nova .site-footer a {
+  color: var(--sage-lighter);
+}
+
+body.marca-nova .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.marca-nova .meta-line {
+  color: var(--muted-nova);
+}
