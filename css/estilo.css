@@ -84,6 +84,8 @@
   font: inherit;
   font-weight: 600;
   padding: 8px 14px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: var(--radius);
   cursor: pointer;
 }
@@ -190,6 +192,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-meta {
+  margin: 1rem 0 0;
+  font-size: var(--small);
+  color: var(--muted);
+}
+
+.hero-meta a {
+  color: var(--muted);
+  text-underline-offset: 3px;
+}
+
+.hero-meta a:hover {
+  color: var(--rubi);
 }
 
 /* Page banner (subpáginas — marinho) */
@@ -370,7 +387,7 @@
 }
 
 .btn-gold {
-  background: var(--ambar);
+  background: var(--ambar-deep);
   color: #fff;
 }
 
@@ -628,6 +645,13 @@
 
   .nav-menu.open {
     display: flex;
+  }
+
+  .nav-menu a,
+  .nav-dropdown > .dd-label {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
   }
 
   .nav-dropdown .dd-menu {

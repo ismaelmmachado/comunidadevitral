@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-11T00:00:00.000Z",
+  "title": "Design System: Comunidade Vitral — Vitral Arquitetônico",
+  "extensions": {
+    "colorMeta": {
+      "ambar": { "role": "primary", "displayName": "Âmbar do Café", "canonical": "oklch(73% 0.140 77.0)", "tonalRamp": ["#270000", "#481000", "#693200", "#8c5300", "#b07500", "#d69826", "#fcbc54", "#ffe27b"] },
+      "ambar-deep": { "role": "primary", "displayName": "Âmbar Profundo", "canonical": "oklch(57% 0.114 71.4)", "tonalRamp": ["#240000", "#441400", "#663400", "#885400", "#ac7528", "#d1984f", "#f8bd73", "#ffe298"] },
+      "rubi": { "role": "secondary", "displayName": "Rubi Terracota", "canonical": "oklch(54% 0.141 30.4)", "tonalRamp": ["#320000", "#570000", "#7c1207", "#a2392c", "#c95d4c", "#f0806e", "#ffa491", "#ffcab5"] },
+      "safira": { "role": "tertiary", "displayName": "Safira do Rio Preto", "canonical": "oklch(48% 0.098 251.8)", "tonalRamp": ["#000532", "#002452", "#114374", "#346497", "#5586bb", "#77a9e1", "#9aceff", "#bef4ff"] },
+      "esmeralda": { "role": "tertiary", "displayName": "Esmeralda da Esperança", "canonical": "oklch(50% 0.063 164.3)", "tonalRamp": ["#001205", "#002e1d", "#1c4c39", "#3d6d58", "#5e8f78", "#80b29b", "#a4d7be", "#c8fde3"] },
+      "navy": { "role": "neutral", "displayName": "Marinho Profundo", "canonical": "oklch(23% 0.033 244.5)", "tonalRamp": ["#010c18", "#172734", "#334453", "#526473", "#728595", "#94a8b9", "#b8ccde", "#ddf2ff"] },
+      "navy-soft": { "role": "neutral", "displayName": "Marinho Suave", "canonical": "oklch(31% 0.061 250.4)", "tonalRamp": ["#000a23", "#0a2641", "#284461", "#466483", "#6785a6", "#89a8cb", "#accdf0", "#d1f2ff"] },
+      "pedra": { "role": "neutral", "displayName": "Pedra de Rio Preto", "canonical": "oklch(97% 0.005 95.1)", "tonalRamp": ["#0c0b09", "#262522", "#43423f", "#62615e", "#83827f", "#a6a5a1", "#cac9c5", "#efeeea"] },
+      "surface": { "role": "neutral", "displayName": "Superfície", "canonical": "oklch(100% 0.000 89.9)", "tonalRamp": ["#0b0b0b", "#252525", "#424242", "#616161", "#828282", "#a5a5a5", "#c9c9c9", "#eeeeee"] },
+      "ink": { "role": "neutral", "displayName": "Tinta", "canonical": "oklch(26% 0.020 245.5)", "tonalRamp": ["#050c13", "#1d262e", "#3a434c", "#58636c", "#79848e", "#9ba7b1", "#bfcbd5", "#e4f0fb"] },
+      "muted": { "role": "neutral", "displayName": "Cinza Sussurrado", "canonical": "oklch(52% 0.024 243.7)", "tonalRamp": ["#040c14", "#1b2630", "#38444e", "#56636e", "#778490", "#99a7b3", "#bdcbd8", "#e2f1fe"] },
+      "border": { "role": "neutral", "displayName": "Fio de Cal", "canonical": "oklch(91% 0.014 88.7)", "tonalRamp": ["#0e0b05", "#28251d", "#45423a", "#646158", "#868279", "#a9a59b", "#cdc9bf", "#f2eee4"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "H1 de hero e banners; único Display por viewport." },
+      "headline": { "displayName": "Headline", "purpose": "H2 de seção; um por seção." },
+      "title": { "displayName": "Title", "purpose": "H3 de cards e grupos." },
+      "body": { "displayName": "Body", "purpose": "Texto corrente, leads e citações." },
+      "label": { "displayName": "Label", "purpose": "Eyebrows e labels em caixa alta espaçada (0.16em)." }
+    },
+    "shadows": [
+      { "name": "ambient", "value": "0 4px 14px rgba(15,31,44,0.06)", "purpose": "Cards e itens de lista em repouso." },
+      { "name": "hover", "value": "0 10px 24px rgba(15,31,44,0.10)", "purpose": "Card sob hover, com translateY(-3px)." },
+      { "name": "menu", "value": "0 12px 30px rgba(15,31,44,0.12)", "purpose": "Dropdowns e menu mobile." },
+      { "name": "cta", "value": "0 8px 20px rgba(179,73,58,0.30)", "purpose": "CTA primário (gradiente âmbar profundo→rubi)." },
+      { "name": "cta-hover", "value": "0 12px 26px rgba(179,73,58,0.40)", "purpose": "CTA primário sob hover." },
+      { "name": "glass", "value": "drop-shadow(0 18px 34px rgba(15,31,44,0.18))", "purpose": "Janela de vitral no hero." }
+    ],
+    "motion": [
+      { "name": "ease-state", "value": "transform 0.2s ease, box-shadow 0.2s ease", "purpose": "Elevação de cards em estado." },
+      { "name": "ease-btn", "value": "transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease", "purpose": "Micro-interação de botões (1px de elevação)." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "760px", "purpose": "Quebra para coluna única, menu mobile e hero centralizado." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA de conversão: visitar, falar no WhatsApp. O único com sombra colorida. Gradiente escurecido para AA.",
+      "html": "<a class=\"ds-btn-primary\">Venha nos visitar este domingo</a>",
+      "css": ".ds-btn-primary { display:inline-block; padding:13px 26px; border-radius:8px; text-decoration:none; font-family:'Inter',system-ui,sans-serif; font-weight:700; font-size:0.98rem; border:1px solid transparent; color:#fff; background:linear-gradient(120deg,#a06a18 0%,#b3493a 100%); box-shadow:0 8px 20px rgba(179,73,58,0.30); transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; cursor:pointer; } .ds-btn-primary:hover { transform:translateY(-1px); box-shadow:0 12px 26px rgba(179,73,58,0.40); } .ds-btn-primary:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+    },
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Âmbar profundo sólido (AA); chamadas dentro de cards escuros e seções coloridas.",
+      "html": "<a class=\"ds-btn-gold\">Quero conhecer a Trilha de Novos</a>",
+      "css": ".ds-btn-gold { display:inline-block; padding:13px 26px; border-radius:8px; text-decoration:none; font-family:'Inter',system-ui,sans-serif; font-weight:700; font-size:0.98rem; border:1px solid transparent; color:#fff; background:#a06a18; transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; cursor:pointer; } .ds-btn-gold:hover { transform:translateY(-1px); } .ds-btn-gold:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+    },
+    {
+      "name": "Outline Dark Button",
+      "kind": "button",
+      "refersTo": "button-outline-dark",
+      "description": "Borda de tinta sobre fundo claro; hover inverte para tinta com texto branco.",
+      "html": "<a class=\"ds-btn-outline-dark\">Conheça o nosso jeito de viver</a>",
+      "css": ".ds-btn-outline-dark { display:inline-block; padding:13px 26px; border-radius:8px; text-decoration:none; font-family:'Inter',system-ui,sans-serif; font-weight:700; font-size:0.98rem; background:transparent; border:1px solid #1d262e; color:#1d262e; transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; cursor:pointer; } .ds-btn-outline-dark:hover { background:#1d262e; color:#fff; transform:translateY(-1px); } .ds-btn-outline-dark:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Superfície branca com fio de cal; eleva-se suavemente no hover.",
+      "html": "<article class=\"ds-card\"><h3>Nosso Jeito de Viver</h3><p>Pessoas reais, fé translúcida.</p></article>",
+      "css": ".ds-card { background:#fff; border:1px solid #e5e1d7; border-radius:8px; padding:1.6rem; box-shadow:0 4px 14px rgba(15,31,44,0.06); transition:transform 0.2s ease, box-shadow 0.2s ease; font-family:'Inter',system-ui,sans-serif; } .ds-card h3 { font-family:'Playfair Display',Georgia,serif; font-weight:700; font-size:1.15rem; color:#0f1f2c; line-height:1.2; margin:0 0 0.5rem; } .ds-card p { color:#5d6a75; margin:0; line-height:1.65; } .ds-card:hover { transform:translateY(-3px); box-shadow:0 10px 24px rgba(15,31,44,0.10); }"
+    },
+    {
+      "name": "Dark Card",
+      "kind": "card",
+      "refersTo": "card-dark",
+      "description": "Gradiente âmbar profundo→rubi com texto branco; reservado a 1–3 destaques por página.",
+      "html": "<article class=\"ds-card-dark\"><h3>Está chegando agora?</h3><p>A Trilha de Novos é um espaço acolhedor.</p></article>",
+      "css": ".ds-card-dark { background:linear-gradient(120deg,#a06a18 0%,#b3493a 100%); border:none; border-radius:8px; padding:1.6rem; color:#fff; font-family:'Inter',system-ui,sans-serif; } .ds-card-dark h3 { font-family:'Playfair Display',Georgia,serif; font-weight:700; font-size:1.15rem; color:#fff; line-height:1.2; margin:0 0 0.5rem; } .ds-card-dark p { color:rgba(255,255,255,0.92); margin:0; line-height:1.65; }"
+    },
+    {
+      "name": "Feature List Item",
+      "kind": "custom",
+      "refersTo": "feature-list",
+      "description": "Passo numerado em card compacto; número em Playfair rubi.",
+      "html": "<ol class=\"ds-feature-list\"><li><span class=\"ds-num\">1</span><span>Chegar — conheça o Encontro e tome um café.</span></li></ol>",
+      "css": ".ds-feature-list { list-style:none; padding:0; margin:0; display:grid; gap:1rem; font-family:'Inter',system-ui,sans-serif; } .ds-feature-list li { display:flex; gap:0.8rem; align-items:flex-start; background:#fff; border:1px solid #e5e1d7; border-radius:8px; padding:1rem 1.2rem; } .ds-num { font-family:'Playfair Display',Georgia,serif; font-size:1.4rem; font-weight:700; color:#b3493a; line-height:1.2; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Link de menu; hover/atual com fundo safira a 8% e texto safira.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"ds-nav-link\">Home</a><a href=\"#\" class=\"ds-nav-link ds-current\">Quem Somos</a></nav>",
+      "css": ".ds-nav { display:flex; gap:4px; font-family:'Inter',system-ui,sans-serif; } .ds-nav-link { display:inline-block; padding:8px 12px; color:#1d262e; text-decoration:none; font-weight:600; font-size:0.95rem; border-radius:8px; } .ds-nav-link:hover { background:rgba(47,95,146,0.08); color:#2f5f92; } .ds-current { background:rgba(47,95,146,0.08); color:#2f5f92; } .ds-nav-link:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+    },
+    {
+      "name": "Eyebrow",
+      "kind": "custom",
+      "refersTo": "hero-eyebrow",
+      "description": "Selo de seção em pílula: caixa alta espaçada, safira sobre safira a 8%.",
+      "html": "<span class=\"ds-eyebrow\">Comunidade Vitral</span>",
+      "css": ".ds-eyebrow { display:inline-block; text-transform:uppercase; letter-spacing:0.16em; font-size:0.72rem; font-weight:700; color:#2f5f92; background:rgba(47,95,146,0.08); border:1px solid rgba(47,95,146,0.25); padding:6px 14px; border-radius:999px; font-family:'Inter',system-ui,sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Vitral Translúcido",
+    "overview": "A Comunidade Vitral se apresenta como uma igreja em pessoas — não um prédio — e o sistema visual traduz isso como pedra clara sob a luz do dia, com a luz passando por facetas de vidro colorido. Cada superfície é luminosa e respirável: o fundo pedra e o branco dos cards funcionam como a moldura de janela; as quatro gemas (safira, esmeralda, âmbar, rubi) aparecem em doses precisas, como os cacos do vitral, nunca como pintura inteira. A profundidade é tátil e suave: sombras ambientais discretas, elevação gentil no hover e o drop-shadow que faz a janela de vitral parecer vidro de verdade. A tipografia carrega a alma: Playfair Display pesada e editorial nos títulos, Inter calma e legível no corpo — o contraste entre a voz poética e a voz cotidiana ecoa o convite 'venha como você está'. O sistema é deliberadamente anti-'igreja corporativa': sem banco de imagens de sorrisos, sem acúmulo de dourado, sem telhados de megachurch. A assinatura é a janela de vitral em arco (assets/vitral.svg) e a tira de quatro cores que divide seções e coroa o rodapé.",
+    "keyCharacteristics": [
+      "Pedra clara e luminosa como fundo; marinho profundo para âncoras (banners, seções escuras, rodapé).",
+      "Acentos de gema em doses: gradiente âmbar profundo→rubi em CTAs e destaques; safira para estados de navegação e eyebrow; rubi para links e labels.",
+      "Radii retos e discretos (8px); pílulas apenas em eyebrows e selos.",
+      "Sombras suaves e camadas leves; elevação como resposta a hover/foco.",
+      "Playfair Display (700/800) para títulos; Inter (400–700) para corpo e labels em caixa alta espaçada."
+    ],
+    "rules": [
+      { "name": "The Rarity of Glass Rule", "body": "As quatro gemas aparecem em superfícies pequenas e precisas, nunca como fundo generalizado de páginas inteiras (exceto marinho, que é âncora estrutural). A raridade do acento é o que faz o vitral brilhar.", "section": "colors" },
+      { "name": "The Warm Action Rule", "body": "Toda ação primária é quente (gradiente âmbar profundo→rubi ou âmbar profundo sólido) e mantém contraste AA com texto branco; o marinho reserva-se para âncoras e contextos escuros, nunca para o CTA de conversão. O âmbar claro é reservado para acentos e estados, onde não carrega texto sobre si.", "section": "colors" },
+      { "name": "The One Serif Voice Rule", "body": "Playfair é para títulos e números de destaque; corpo, botões e inputs são sempre Inter. Nunca usar a serif em parágrafos longos de conteúdo.", "section": "typography" },
+      { "name": "The Rested Hero Rule", "body": "Títulos de hero respeitam máximos de largura (16ch no H1, 40ch no subtítulo) para frases de acolhimento não virarem paredes de texto.", "section": "typography" },
+      { "name": "The One-Seat Rule", "body": "Cada seção tem um único H2 e um foco claro; cards em grade contam uma história por coluna — sem sobreposição de mensagens na mesma linha.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Superfícies são planas em repouso; sombras aparecem como resposta a estado (hover, menu aberto, foco) ou como material (o vidro). Nenhuma sombra permanente sobre o corpo de texto.", "section": "elevation" },
+      { "name": "The Straight Corner Rule", "body": "Nenhum componente de conteúdo (card, botão, campo, menu) excede 8px de raio. O drama fica no vitral, não nos cantos.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar pedra + branco como maioria da página; acentos de gema em superfícies pequenas e precisas.",
+      "Do fazer todo CTA primário quente (gradiente âmbar profundo→rubi ou âmbar profundo, sempre AA sobre texto branco) e reservar marinho para âncoras e contextos escuros.",
+      "Do manter um único H2 por seção e uma única mensagem por card.",
+      "Do respeitar raio de 8px em componentes e pílulas apenas em eyebrows/selos.",
+      "Do usar sombras apenas como resposta a estado (hover/foco/menu) ou como material (vidro).",
+      "Do preservar o contraste AA: tinta sobre pedra para corpo; branco sobre marinho/gradiente para texto em fundos escuros."
+    ],
+    "donts": [
+      "Don't pintar páginas inteiras de uma gema; o marinho é a única cor estrutural além dos neutros.",
+      "Don't usar Playfair em parágrafos de conteúdo nem Inter em títulos.",
+      "Don't usar sombras coloridas fora do CTA primário.",
+      "Don't exceder 8px de raio em componentes de conteúdo.",
+      "Don't adotar estética de 'igreja corporativa' genérica (banco de imagens, acúmulo de dourado, telhados de megachurch) — o sistema é pedra e vidro, não publicidade."
+    ]
+  }
+}

@@ -10,9 +10,10 @@
   --safira: #2f5f92;
   --esmeralda: #3f6f5a;
   --ambar: #d99b2b;
+  --ambar-deep: #a06a18;
   --rubi: #b3493a;
 
-  --grad-vitral: linear-gradient(120deg, #d99b2b 0%, #b3493a 100%);
+  --grad-vitral: linear-gradient(120deg, #a06a18 0%, #b3493a 100%);
   --grad-navy: linear-gradient(160deg, #0f1f2c 0%, #16324e 100%);
 
   --font-serif: "Playfair Display", Georgia, serif;
