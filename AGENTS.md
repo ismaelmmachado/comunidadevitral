@@ -2,11 +2,12 @@
 
 Guia de convenções e contexto para agentes que trabalham neste repositório.
 
-## Regra de Ouro (git — nunca esquecer)
+## Regra de Ouro (nunca esquecer)
 
-1. **"Salva"** → commit e push na branch `homologacao` (branch de trabalho padrão).
-2. **"Salva em main"** (explícito) → `main`.
-3. `main` só é usado quando solicitado explicitamente (deploy).
+1. **Idioma: interagir SEMPRE em português (pt-BR)** com o usuário — em qualquer conversa, resposta ou resumo, neste e em qualquer repositório.
+2. **"Salva"** → commit e push na branch `homologacao` (branch de trabalho padrão).
+3. **"Salva em main"** (explícito) → `main`.
+4. `main` só é usado quando solicitado explicitamente (deploy).
 
 ## Projeto
 
