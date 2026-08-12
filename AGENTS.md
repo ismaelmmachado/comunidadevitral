@@ -16,18 +16,17 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 
 ### Stack
 - **HTML5 + CSS puro** — sem build step, zero dependências de runtime.
-- HOME (mundo "O Café da Rua"): Bree Serif (letreiro), Kalam (lousa) e Archivo (corpo), via Google Fonts.
-- Subpáginas (ainda no "Vitral Arquitetônico"): Playfair Display (títulos) e Inter (corpo), via Google Fonts.
-- Design tokens: `css/tokens.css` — paleta "vidro sobre pedra" (subpáginas) + tokens café (Home). Fonte do sistema visual: `DESIGN.md`.
+- Identidade única "Marca Nova" em todo o site: verde petróleo + verde acinzentado (sálvia), tipografia **Montserrat**, via Google Fonts.
+- Design tokens: `css/tokens.css` — paleta Marca Nova padrão. Fonte do sistema visual: `DESIGN.md`.
 - JS mínimo: `js/menu.js` (menu mobile).
-- O hero da HOME usa o emblema oficial da marca (`assets/logos/logo-ipi-comunidade-vitral.png`); a tira de 4 cores é marca.
+- O hero da HOME usa o emblema oficial da marca (`assets/logos/logo-ipi-comunidade-vitral.png`); a tira de 4 cores é marca inegociável.
 
 ### Estrutura
 - 7 páginas estáticas na raiz: `index`, `quem-somos`, `jornada`, `encontros-e-pgs`,
   `criancas-e-familia`, `causas-e-cidade`, `contato` + `404.html`.
 - `css/` (tokens, base, estilo), `js/`, `assets/` (img, logos, favicon, og-image).
 - `docs/` — conteúdo extraído (`conteudo/`, `conteudo/novo/`, `raw/`, `inventario.md`), legado (`openspec-legado/`) e propostas (`propostas/`).
-- `openspec/` — documentação spec-driven (specs: `site-estatico-vitral`, `design-vitral-arquitetonico`, `design-cafe-da-rua`; `config.yaml`); changes concluídos em `changes/archive/`.
+- `openspec/` — documentação spec-driven (specs: `site-estatico-vitral`, `marca-nova`; `config.yaml`); changes concluídos em `changes/archive/`.
 - `AGENTS.md`, `README.md` — documentação do projeto.
 - `PRODUCT.md`, `DESIGN.md`, `.impeccable/` — sistema documentado via skill **impeccable** (ver abaixo).
 
@@ -55,9 +54,8 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 
 O sistema visual é documentado pela skill impeccable:
 - `PRODUCT.md` — verdade de produto; `DESIGN.md` + `.impeccable/design.json` — sistema visual
-  (North Star atual: "O Café da Rua"; hero da HOME usa o emblema oficial da marca).
+  (North Star atual: "Marca Nova" — verde petróleo/acinzentado, Montserrat; hero da HOME usa o emblema oficial da marca).
 - `.impeccable/surfaces/` — briefs por superfície; `.impeccable/critique/` — snapshots de crítica.
 - Comandos: critique, audit, polish, typeset etc. (skill impeccable). Detector mecânico:
   `node /root/.opencode/skills/impeccable/scripts/detect.mjs --json <target>`.
-- Estado: a HOME está no mundo "O Café da Rua"; **as subpáginas ainda usam o "Vitral Arquitetônico"
-  (migração pendente)** — ao alterar estilos compartilhados, preservar os dois mundos.
+- Estado: **todo o site** (HOME, subpáginas e 404) usa a Marca Nova como padrão único — um só mundo visual.

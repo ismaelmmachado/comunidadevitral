@@ -1,41 +1,44 @@
 ---
-name: Comunidade Vitral — O Café da Rua
-description: Mundo visual "O Café da Rua" (letreiro pintado e lousa de café do interior) aplicado à HOME; marca do vitral preservada.
+name: Comunidade Vitral — Marca Nova (verde petróleo/acinzentado)
+description: Identidade visual única do site inteiro — verde petróleo e verde acinzentado (sálvia) com Montserrat; emblema oficial e tira de 4 cores como marca inegociável.
 colors:
-  pedra-lavada: "#f7f3ea"
-  creme: "#f5efe2"
-  cafe: "#4a3528"
-  cafe-entardecer: "#3a2b1f"
-  cafe-leite: "#7a5f48"
-  giz-ink: "#f2ead2"
-  letreiro-ink: "#3a2416"
-  ambar: "#d99b2b"
-  ambar-deep: "#a06a18"
-  rubi: "#b3493a"
+  petroleo: "#005f6b"
+  petroleo-deep: "#00434d"
+  sage: "#94a69a"
+  sage-lighter: "#c6d6cc"
+  sage-claro: "#e9ede9"
+  off-black: "#1f2421"
+  muted-nova: "#5b6b63"
+  border-nova: "#d7ded9"
   safira: "#2f5f92"
   esmeralda: "#3f6f5a"
+  ambar: "#d99b2b"
+  rubi: "#b3493a"
   surface: "#ffffff"
-  ink: "#1d262e"
-  border: "#e5e1d7"
-  navy: "#0f1f2c"
+  ink: "#1f2421"
 typography:
   display:
-    fontFamily: "\"Bree Serif\", Georgia, serif"
+    fontFamily: "\"Montserrat\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
     fontSize: "clamp(2.2rem, 6vw, 4rem)"
-    fontWeight: 400
-    lineHeight: 1.06
-  chalk:
-    fontFamily: "\"Kalam\", cursive"
-    fontSize: "clamp(1.1rem, 2.2vw, 1.3rem)"
     fontWeight: 700
-    lineHeight: 1.4
+    lineHeight: 1.06
+  headline:
+    fontFamily: "\"Montserrat\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: "clamp(1.5rem, 3vw, 2.2rem)"
+    fontWeight: 700
+    lineHeight: 1.15
+  title:
+    fontFamily: "\"Montserrat\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: "clamp(1.15rem, 2vw, 1.4rem)"
+    fontWeight: 700
+    lineHeight: 1.15
   body:
-    fontFamily: "\"Archivo\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    fontFamily: "\"Montserrat\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
     fontSize: "clamp(1rem, 1.4vw, 1.125rem)"
     fontWeight: 400
     lineHeight: 1.65
   label:
-    fontFamily: "\"Archivo\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    fontFamily: "\"Montserrat\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
     fontSize: "0.72rem"
     fontWeight: 700
     letterSpacing: "0.16em"
@@ -45,164 +48,155 @@ rounded:
 spacing:
   space: "clamp(1.1rem, 3vw, 2.2rem)"
   section: "clamp(3rem, 7vw, 6rem)"
-  card: "1.5rem"
+  card: "1.6rem"
 components:
   button-primary:
-    backgroundColor: "{colors.cafe}"
-    textColor: "{colors.creme}"
-    rounded: "{rounded.sm}"
+    backgroundColor: "{colors.petroleo}"
+    textColor: "#ffffff"
+    rounded: "{rounded.md}"
     padding: "13px 26px"
   button-gold:
-    backgroundColor: "{colors.ambar-deep}"
+    backgroundColor: "{colors.petroleo-deep}"
     textColor: "#ffffff"
-    rounded: "{rounded.sm}"
+    rounded: "{rounded.md}"
     padding: "13px 26px"
   button-outline-dark:
-    textColor: "{colors.cafe}"
-    rounded: "{rounded.sm}"
+    textColor: "{colors.off-black}"
+    rounded: "{rounded.md}"
     padding: "13px 26px"
   card:
-    backgroundColor: "{colors.creme}"
-    textColor: "{colors.letreiro-ink}"
-    rounded: "{rounded.sm}"
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.off-black}"
+    rounded: "{rounded.md}"
     padding: "{spacing.card}"
   card-dark:
-    backgroundColor: "{colors.cafe-entardecer}"
-    textColor: "{colors.giz-ink}"
-    rounded: "{rounded.sm}"
+    backgroundColor: "{colors.petroleo-deep}"
+    textColor: "#ffffff"
+    rounded: "{rounded.md}"
     padding: "{spacing.card}"
 ---
 
-# Design System: Comunidade Vitral — O Café da Rua
+# Design System: Comunidade Vitral — Marca Nova
 
 ## Overview
 
-**Creative North Star: "O Café da Rua"**
+**Creative North Star: "Marca Nova" — verde petróleo e verde acinzentado (sálvia), comunicação serena e institucionalmente acolhedora.**
 
-A HOME se apresenta como a fachada de um café do interior paulista: um convite pintado à mão, uma lousa de giz com a informação prática e o emblema oficial da marca emoldurado como quadro pintado. O sistema traduz a promessa "puxe uma cadeira e respire fundo" em hospitalidade material — pedra lavada e creme como o chão da rua, marrom-café nos painéis e no rodapé, e o letreiro pintado (Bree Serif) como a voz do convite. A lousa (Kalam) cuida do cotidiano — horários, café, passos; o corpo (Archivo) fica quieto e legível.
+O site inteiro (HOME, 6 subpáginas e 404) usa o mesmo sistema visual: a serenidade dos verdes petróleo e acinzentado traduz confiança, profundidade e calma — o contraponto visual ao cansaço e à pressa da cidade. O título carrega o peso em Montserrat 700; o corpo fica quieto e legível; o emblema oficial da marca (logo IPI Comunidade Vitral) entra no hero da HOME numa moldura clara, e a tira de 4 cores (safira, esmeralda, âmbar, rubi) permanece no topo do rodapé como marca inegociável.
 
-As quatro gemas do vitral (safira, esmeralda, âmbar, rubi) — marca inegociável — aparecem como tintas pintadas em doses precisas, e o emblema oficial da marca (logo IPI Comunidade Vitral) entra no hero num quadro pintado, emoldurado. O sistema é deliberadamente anti-"religioso genérico": sem cruz decorativa, sem dourado, sem dourado de megachurch.
-
-**Estado de migração:** esta versão documenta o mundo aplicado à **HOME**. As subpáginas e a 404 ainda usam o mundo anterior ("Vitral Arquitetônico", paleta vidro sobre pedra) até a rodada de extensão. O padrão de componentes aqui vale para a Home.
+Este documento substitui os mundos anteriores ("O Café da Rua" na HOME e "Vitral Arquitetônico" nas subpáginas) — a Marca Nova é **padrão único** do site.
 
 **Key Characteristics:**
-- Fachada pintada: letreiro (Bree Serif) + lousa de giz (Kalam) + emblema oficial em moldura.
-- Tom de cor Committed quente: chão claro (pedra lavada/creme) e marrom-café em painéis (Café, Café do Entardecer).
-- Sem eyebrow/kicker acima de heading; o heading carrega o peso.
-- Componentes planos e quentes (raio 6px), com filete pintado (2px âmbar) sob títulos.
-- Citação em painel de lousa (giz sobre café), sem borda colorida lateral.
-- Marca preservada: emblema oficial no hero (`assets/logos/logo-ipi-comunidade-vitral.png`) e tira de 4 cores.
+- Paleta solo: verde petróleo (`#005f6b`) como tinta de ações, verde petróleo profundo em seções/footer escuros, e sálvia-acinzentado como chão claro e detalhes.
+- Tipo único Montserrat 400–800: display B700, corpo B400, labels B700 com tracking 0.16em.
+- Sem eyebrow acima de heading nas seções; a subpágina abre com banner em gradiente petróleo e eyebrow translúcido.
+- Componentes planos com raio 8px e borda `--border-nova`; card branco com sombra sutil petróleo.
+- Marca preservada: emblema oficial no hero (HOME) e tira de 4 cores no topo do footer.
 
 ## Colors
 
-A paleta é "café e gemas": neutros quentes de café sobre uma rua clara, com as quatro gemas do vitral como tintas pintadas.
+A paleta é "petróleo e sálvia": verdes profundos e acinzentados com um chão claro e quase-preto para texto.
 
 ### Primary
-- **Letreiro Tinta** (#3a2416): o marrom quase-preto do letreiro pintado; texto de títulos e o botão primário.
-- **Café** (#4a3528): o marrom do painel de lousa e do CTA primário (texto creme, AA ~10:1).
-- **Café do Entardecer** (#3a2b1f): painéis escuros, rodapé e seção institucional.
-- **Âmbar Profundo** (#a06a18): o acento quente dos CTAs secundários/gold (texto branco, AA 4.6:1).
+- **Petróleo** (#005f6b): a tinta das ações primárias (CTA, tabelas, links, faixa de foco) — texto branco AA ~7.4:1.
+- **Petróleo Profundo** (#00434d): seções e banner escuros, footer, botão gold — texto branco AA ~11:1.
 
 ### Secondary
-- **Âmbar** (#d99b2b): filete pintado sob títulos, links em fundos escuros, faixa de foco.
-
-### Tertiary
-- **Rubi** (#b3493a): carimbo dos passos, estados ativos da navegação, tintas do vitral.
-- **Safira** (#2f5f92) e **Esmeralda** (#3f6f5a): tintas do vitral e da tira de 4 cores; superfícies de conteúdo não as usam.
+- **Sálvia Escura** (#94a69a): detalhes e labels sobre neutros claros.
+- **Sálvia Clara** (#c6d6cc): links e rótulos sobre fundos escuros/petróleo — AA ~4.9:1.
 
 ### Neutral
-- **Pedra Lavada** (#f7f3ea): o chão claro da Home (background).
-- **Creme** (#f5efe2): cards (mesas), seções alternadas, menus mobile.
-- **Café com Leite** (#7a5f48): texto secundário e bordas — contraste AA (5.3:1 sobre pedra lavada).
-- **Giz** (#f2ead2): texto sobre painéis de café (contraste ~9.5:1).
+- **Quase-Preto** (#1f2421): texto de títulos e corpo — AA ~15.8:1 sobre branco.
+- **Cinza Novo** (#5b6b63): texto secundário — AA ~5.6:1 sobre branco.
+- **Borda Nova** (#d7ded9): bordas e divisores.
+- **Sálvia Claro** (#e9ede9): chão de seções alternadas e hero da HOME.
+- **Branco** (#ffffff): fundo do body e cards.
 
 ### Named Rules
-**The Rarity of Paint Rule.** As quatro gemas aparecem em superfícies pequenas e precisas (tintas, filetes, carimbos, tira); o marrom-café é o único "cheio" além dos neutros. O acúmulo de gema mateia o vidro.
+**The Petróleo Conduz as Ações Rule.** Toda ação primária é verde petróleo com texto branco (AA); o profundo vira o "escuro" das seções de autoridade. Nenhum CTA usa gradiente de alto contraste — a tinta é chapada.
 
-**The Café Ink Rule.** Toda ação primária é café/tinta-marrom com texto creme (AA); o âmbar profundo é o segundo quente. Nenhum CTA primário usa gradiente — o mundo é tinta chapada, não luz.
+**The Gems Stay Small Rule.** As quatro gemas (safira/esmeralda/âmbar/rubi) aparecem **apenas** na tira de 4 cores como identidade de marca — nunca como cores de CTA ou fundo de seção.
 
 ## Typography
 
-**Display Font (Letreiro):** Bree Serif 400 (fallback: Georgia, serif)
-**Chalk Font (Lousa):** Kalam 400/700 (fallback: cursive)
-**Body Font (Corpo):** Archivo 400/500/600/700 (fallback: system-ui; grotesca brasileira, Omnibus-Type)
+**Display Font:** Montserrat 700 (fallback: system-ui)
+**Body Font:** Montserrat 400/500/600/700 (fallback: system-ui)
 
-**Character:** a voz do convite é pintada à mão (Bree), generosa e quente; a voz do cotidiano é giz (Kalam); a voz do corpo é Archivo, grotesca limpa e brasileira. O contraste "pintado × quieto" ecoa o convite "venha como você está".
+**Character:** Montserrat é geométrica e contemporânea, com personalidade sem ser decorativa — sustenta a serenidade "petróleo" e a clareza do convite. Um único tipo elimina a dupla identidade anterior e reforça a coesão do site.
 
 ### Hierarchy
-- **Display** (Bree 400, clamp(2.2rem → 4rem), 1.06): H1 do hero (o letreiro). Máximo 2-3 linhas.
-- **Headline** (Bree 400, clamp(1.5rem → 2.2rem), 1.15): H2 de seção; um por seção.
-- **Title** (Bree 400, clamp(1.15rem → 1.4rem), 1.15): H3 de cards, com filete pintado (2px âmbar) sob o título.
-- **Body** (Archivo 400, clamp(1rem → 1.125rem), 1.65): corpo; medidas 42–60ch (leads/hero).
-- **Chalk** (Kalam 700, clamp(1.1rem → 1.3rem), 1.4): linhas de lousa (informação prática) sobre painel café, ou citação em lousa.
+- **Display** (Montserrat 700, clamp(2.2rem → 4rem), 1.06): H1 do hero da HOME.
+- **Headline** (Montserrat 700, clamp(1.5rem → 2.2rem), 1.15): H2 de seção; um por seção.
+- **Title** (Montserrat 700, clamp(1.15rem → 1.4rem), 1.15): H3 de cards.
+- **Body** (Montserrat 400, clamp(1rem → 1.125rem), 1.65): corpo; medidas 42–60ch.
+- **Label** (Montserrat 700, 0.72rem, tracking 0.16em): eyebrow do banner, labels de contato e seção.
 
 ### Named Rules
-**The Painted Voice Rule.** Bree é para títulos e números; Kalam para o que "está na lousa"; Archivo para corpo, botões e inputs. Nunca usar a serif pintada em parágrafos longos.
+**The One-Type Rule.** Montserrat é a única família: título, corpo e labels. A hierarquia vem de peso (700 vs 400) e tamanho, não de troca de fonte.
 
-**The No-Kicker Rule.** Nenhuma eyebrow/kicker acima de heading na Home; o H1/H2 carrega o peso inteiro. (O mundo pintado não precisa de rótulo em caixa alta.)
+**The No-Kicker Rule.** Nas seções, nenhum eyebrow/kicker acima do heading — o H2 carrega o peso. (O eyebrow vive apenas no banner de subpágina e nos labels de contato.)
 
 ## Layout
 
-Container único de 1120px, padding lateral em `--space`; seções com `--section` de respiro. A Home alterna chão de pedra lavada e faixas creme (`section-alt`) separadas por fio de café-com-leite; a seção institucional é o "interior ao entardecer" (café do entardecer). Héros e grids herdados (hero-inner 1.25fr/0.75fr; grades de 3 colunas colapsando a 1 na quebra de 760px). O emblema oficial fica na coluna direita do hero, emoldurado numa base creme.
+Container único de 1120px, padding lateral em `--space`; seções com `--section` de respiro. Alternância de chão branco e faixas `section-alt` (`--sage-claro`); a seção institucional e o footer usam `--grad-banner` (petróleo profundo → petróleo). O hero-inner da HOME segue `1.25fr/0.75fr` com o emblema oficial na moldura clara à direita.
 
 ### Named Rules
-**The One-At-a-Time Rule.** Um H2 por seção; um convite por viewport; o letreiro nunca compete com outro display.
+**The One-At-a-Time Rule.** Um H2 por seção; um convite por viewport; o display nunca compete com outro display.
 
 ## Elevation & Depth
 
-Sistema plano com profundidade de tinta, não de sombra: as coisas "se erguem" por filete pintado, moldura e tom, não por sombras empilhadas. O hover de botão escurece a tinta (`--letreiro-ink` sobre `--cafe`) a 1px; o foco usa a faixa âmbar do sistema. Não há sombras coloridas nem sombras duras na Home do café.
+Sistema predominantemente plano: profundidade por tom e gradiente discreto, não sombras empilhadas. Cards brancos têm sombra sutil em petróleo (a sombra de um objeto sobre o chão claro); o hover de botão escurece a tinta e aprofunda a sombra; o foco usa a faixa petróleo. Sombras coloridas só nas ações (petróleo), nunca nas superfícies.
 
 ### Named Rules
-**The Ink Depth Rule.** Nenhuma sombra em card/marrom nesta Home; a profundidade vem de camadas de tinta (filete, moldura, painel), não de box-shadow.
+**The Ink Depth Rule.** A profundidade vem de camadas de tinta (borda, tom, gradiente), nunca de sombras duras em superfícies claras.
 
 ## Shapes
 
-Forma reta e curta: raio de 6px em componentes do café (botões, cards, painéis de lousa, tabela); a moldura da vitrine tem raio de 8px no topo. Pílulas não aparecem na Home (sem eyebrows). Filetes de 2px — âmbar sob títulos, café-com-leite em divisores — são a gramática de linha.
+Forma reta e curta: raio 8px em componentes (botões, cards, tabela, FAQ, contact-item), raio da faixa de informação (HOME) como pílula 999px, e a moldura do emblema com raio 8px no topo. Sem pílulas em eyebrows de seção.
 
 ## Components
 
 ### Buttons
-- **Shape:** retangular, raio 6px, padding 13px 26px, peso 700 (Archivo), micro-elevação de 1px no hover.
-- **Primary:** tinta marrom `--cafe` com texto creme (AA ~10:1). É o CTA de conversão (visitar, WhatsApp).
-- **Outline Dark:** borda 2px `--cafe` + texto café; hover inverte para tinta cheia com creme.
-- **Outline (sobre painel escuro):** borda giz translúcida + texto giz; usado na Trilha sobre o card do entardecer.
-- **Gold:** âmbar profundo com texto branco (AA).
-- **Hover/Focus:** hover escurece a tinta; foco usa a faixa âmbar do sistema.
+- **Shape:** retangular, raio 8px, padding 13px 26px, peso 700 (Montserrat), micro-elevação de 1px no hover.
+- **Primary:** verde petróleo com texto branco (AA ~7.4:1). É o CTA de conversão (visitar, WhatsApp).
+- **Outline Dark:** borda 1px quase-preto + texto quase-preto; hover inverte para tinta cheia.
+- **Gold:** petróleo profundo com texto branco (AA ~11:1).
+- **Outline (sobre painel escuro):** borda branca translúcida + texto branco; usado em seções escuras.
 
-### Cards ("Mesas")
-- **Corner:** raio 6px; **Border:** 1px café-com-leite.
-- **Background:** creme; **Filete:** 2px âmbar sob o H3 (inline-block).
-- **Internal Padding:** 1.5rem. Sem sombra; sem hover de elevação.
-- **Card Dark (entardecer):** fundo café do entardecer, texto giz, borda giz translúcida — 1–3 destaques.
+### Cards
+- **Corner:** raio 8px; **Border:** 1px `--border-nova`.
+- **Background:** branco; **Sombras:** sutil em petróleo.
+- **Internal Padding:** 1.6rem.
+- **Card Dark:** gradiente `--grad-banner`, texto branco, borda branca translúcida — 1–3 destaques.
 
-### Feature List ("Passaporte")
-- **Item:** linha em creme com borda café-com-leite, raio 6px.
-- **Stamp (num):** círculo de 2px rubi com número em Bree — o carimbo do passo.
+### Feature List ("Passos")
+- **Item:** linha branca com borda `--border-nova`, raio 8px.
+- **Num:** número em Montserrat petróleo 700.
 
-### Chalkboard Panel (citação)
-- **Style:** painel `--cafe` com texto giz em Kalam, raio 6px; sem borda lateral colorida.
-- **Uso:** citação da marca ("Existimos para que...") e linhas de lousa do hero.
+### FAQ
+- **Item:** `details` branco com borda `--border-nova`, raio 8px; título `summary` quase-preto.
 
-### Tabela (Cordão de Três Dobras)
-- **Style:** creme, borda café-com-leite, raio 6px; **Header:** café com texto giz; rolagem horizontal dentro de `.table-wrap` no mobile.
+### Tabela (Cordão / dados)
+- **Style:** branca, borda `--border-nova`, raio 8px; **Header:** petróleo com texto branco; rolagem horizontal dentro de `.table-wrap` no mobile.
+
+### Banner de Subpágina
+- **Background:** `--grad-banner`; **Eyebrow:** translúcido branco; **H1/lead:** branco.
 
 ### Navigation
-- **Desktop:** links em letreiro-tinta (Archivo 600), raio 4px; hover/atual com tinta âmbar a 16% e texto rubi. Sem dropdown na Home.
-- **Mobile (≤760px):** botão "Menu" com borda café-com-leite (alvo ≥44px); painel creme suspenso à direita.
+- **Desktop:** links em quase-preto (Montserrat 600), raio 4px; hover/atual com fundo petróleo a 8% e texto petróleo.
+- **Mobile (≤760px):** botão "Menu" com borda `--border-nova`; painel branco suspenso.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** fazer do 1º viewport uma fachada: letreiro com o convite, linha de lousa com horário/café, CTA e o emblema oficial na moldura.
-- **Do** usar café/tinta para as ações primárias (texto creme, AA) e âmbar profundo para o segundo quente.
-- **Do** deixar o heading carregar o peso — sem eyebrow/kicker acima dele.
-- **Do** usar filete pintado (2px) e moldura para profundidade, não sombras em cards.
-- **Do** manter o emblema oficial no hero e a tira de 4 cores como marca nas páginas.
-- **Do** usar Kalam apenas para o que "está na lousa" e Bree para letreiros/títulos.
+- **Do** usar verde petróleo para CTAs primários (texto branco, AA) e petróleo profundo para seções/footer de autoridade.
+- **Do** usar sálvia claro como chão de seções alternadas e hero da HOME.
+- **Do** manter a tira de 4 cores no topo do footer e o emblema oficial no hero — marca inegociável.
+- **Do** deixar o heading carregar o peso — sem eyebrow/kicker acima de headings de seção.
+- **Do** usar Montserrat 700 para display/labels e 400 para corpo.
 
 ### Don't:
-- **Don't** pintar páginas inteiras das gemas; o café e os neutros são o chão, as gemas são tintas em doses.
-- **Don't** usar gradiente de texto, glass/blur decorativo ou sombras duras na Home do café.
-- **Don't** colocar eyebrow/kicker/pílula acima de heading.
-- **Don't** usar borda lateral colorida (>1px) em quotes ou cards — a citação é painel de lousa.
-- **Don't** criar estética "religiosa genérica" (cruz decorativa, dourado de megachurch, banco de sorrisos).
+- **Don't** pintar páginas inteiras de verde; o quase-preto e os neutros claros são o chão.
+- **Don't** usar as quatro gemas fora da tira de 4 cores (sem CTAs ou fundos de gema).
+- **Don't** usar gradiente de texto, glass/blur decorativo ou sombras duras em superfícies claras.
+- **Don't** recriar a dupla identidade anterior ("Café da Rua" / "Vitral Arquitetônico") — a Marca Nova é o padrão único.

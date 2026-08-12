@@ -1,11 +1,11 @@
 # Comunidade Vitral — Site
 
 Novo site estático da **Comunidade Vitral** (Igreja Presbiteriana Independente Vitral),
-em substituição ao site em Wix. A HOME adota o mundo visual **"O Café da Rua"** (letreiro
-pintado, lousa de giz e o emblema oficial da marca); as subpáginas ainda usam o
-"Vitral Arquitetônico" (migração pendente). Sistema visual documentado em `DESIGN.md`.
+em substituição ao site em Wix. Todo o site — HOME, subpáginas e 404 — usa a identidade
+**"Marca Nova"** (verde petróleo/verde acinzentado e Montserrat), com o emblema oficial
+da marca no hero e a tira de 4 cores no rodapé. Sistema visual documentado em `DESIGN.md`.
 
-Versão atual: **v2.1.0** · Branch de trabalho: `homologacao`
+Versão atual: **v3.0.0** · Branch de trabalho: `homologacao`
 
 Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 
@@ -25,19 +25,19 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 ## Stack
 
 - **HTML5 + CSS puro** — sem build step, zero dependências.
-- Fontes: Bree Serif + Kalam + Archivo na HOME; Playfair Display + Inter nas subpáginas (via Google Fonts).
-- Design tokens: `css/tokens.css` — paleta "vidro sobre pedra" (subpáginas) + tokens café do mundo "O Café da Rua" (Home).
+- Fonte única: Montserrat (400–800), via Google Fonts, em todas as páginas.
+- Design tokens: `css/tokens.css` — paleta "Marca Nova" (petróleo/sálvia/cinzas).
 - Emblema oficial da marca no hero (`assets/logos/logo-ipi-comunidade-vitral.png`) e tira de 4 cores no footer.
 - JS mínimo: `js/menu.js`.
 
 ## Design
 
-- **HOME — "O Café da Rua"** (v2.1): fachada de café com letreiro pintado (Bree Serif) + lousa de giz (Kalam)
-  e o emblema oficial da marca em quadro pintado; corpo Archivo. North Star: "O Café da Rua".
-- **Subpáginas — "Vitral Arquitetônico"** (v1.1): banner marinho + foto; Playfair Display + Inter; migração pendente.
+- **Marca Nova** (v3): identidade única em todo o site — verde petróleo `#005f6b` + verde acinzentado
+  (sálvia) `#94a69a`/`#e9ede9`, quase-preto `#1f2421` e Montserrat. O emblema oficial entra no hero
+  da HOME numa moldura clara; a tira de 4 cores (safira/esmeralda/âmbar/rubi) permanece no rodapé.
 - Fonte do sistema visual: `DESIGN.md` (+ `.impeccable/design.json`).
-- Specs OpenSpec: `openspec/specs/site-estatico-vitral/`, `openspec/specs/design-vitral-arquitetonico/`,
-  `openspec/specs/design-cafe-da-rua/` (changes concluídos em `openspec/changes/archive/`).
+- Specs OpenSpec: `openspec/specs/site-estatico-vitral/`, `openspec/specs/marca-nova/`
+  (changes concluídos em `openspec/changes/archive/`).
 
 ## Conteúdo
 

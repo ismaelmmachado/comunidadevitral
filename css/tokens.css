@@ -1,35 +1,31 @@
 :root {
-  --pedra: #f7f6f2;
-  --surface: #ffffff;
-  --ink: #1d262e;
-  --muted: #5d6a75;
-  --border: #e5e1d7;
-  --navy: #0f1f2c;
-  --navy-soft: #16324e;
+  /* Marca Nova — Verde Petróleo + Verde Acinzentado (padrão único do site) */
+  --petroleo: #005f6b;
+  --petroleo-deep: #00434d;
+  --sage: #94a69a;
+  --sage-lighter: #c6d6cc;
+  --sage-claro: #e9ede9;
+  --off-black: #1f2421;
+  --muted-nova: #5b6b63;
+  --border-nova: #d7ded9;
 
+  --grad-marca: linear-gradient(120deg, #005f6b 0%, #94a69a 100%);
+  --grad-banner: linear-gradient(160deg, #00434d 0%, #005f6b 100%);
+
+  /* Gemas do vitral — marca inegociável (tira de 4 cores) */
   --safira: #2f5f92;
   --esmeralda: #3f6f5a;
   --ambar: #d99b2b;
-  --ambar-deep: #a06a18;
   --rubi: #b3493a;
 
-  --grad-vitral: linear-gradient(120deg, #a06a18 0%, #b3493a 100%);
-  --grad-navy: linear-gradient(160deg, #0f1f2c 0%, #16324e 100%);
+  /* Alias mantidos para o base/estilo (valores Marca Nova) */
+  --surface: #ffffff;
+  --ink: var(--off-black);
+  --muted: var(--muted-nova);
+  --border: var(--border-nova);
 
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-
-  --pedra-lavada: #f7f3ea;
-  --creme: #f5efe2;
-  --cafe: #4a3528;
-  --cafe-entardecer: #3a2b1f;
-  --cafe-leite: #7a5f48;
-  --giz-ink: #f2ead2;
-  --letreiro-ink: #3a2416;
-
-  --font-sign: "Bree Serif", Georgia, serif;
-  --font-chalk: "Kalam", cursive;
-  --font-body: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
   --h1: clamp(2rem, 4.6vw, 3.4rem);
   --h2: clamp(1.5rem, 3vw, 2.2rem);

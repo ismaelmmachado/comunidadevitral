@@ -1,132 +1,132 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-11T21:05:00.000Z",
-  "title": "Design System: Comunidade Vitral — O Café da Rua",
+  "generatedAt": "2026-08-12T00:00:00.000Z",
+  "title": "Design System: Comunidade Vitral — Marca Nova",
   "extensions": {
     "colorMeta": {
-      "pedra-lavada": { "role": "neutral", "displayName": "Pedra Lavada", "canonical": "oklch(96% 0.013 86.8)", "tonalRamp": ["#0d0b06", "#28251e", "#45423a", "#646159", "#86827a", "#a8a59c", "#cdc9c0", "#f2eee5"] },
-      "creme": { "role": "neutral", "displayName": "Creme", "canonical": "oklch(95% 0.018 86.1)", "tonalRamp": ["#0f0b04", "#29251b", "#464137", "#666156", "#878276", "#aaa498", "#cec9bc", "#f4eee1"] },
-      "cafe": { "role": "primary", "displayName": "Café", "canonical": "oklch(35% 0.037 52.9)", "tonalRamp": ["#170600", "#332013", "#523d2f", "#735c4e", "#957d6e", "#b99f90", "#dec3b3", "#ffe8d8"] },
-      "cafe-entardecer": { "role": "neutral", "displayName": "Café do Entardecer", "canonical": "oklch(30% 0.030 60.0)", "tonalRamp": ["#140801", "#302216", "#4e3e32", "#6f5d50", "#907e71", "#b4a193", "#d9c5b6", "#ffeadb"] },
-      "cafe-leite": { "role": "neutral", "displayName": "Café com Leite", "canonical": "oklch(51% 0.049 61.8)", "tonalRamp": ["#190500", "#361f09", "#553c26", "#765b44", "#987c64", "#bc9f86", "#e1c3a9", "#ffe8ce"] },
-      "giz-ink": { "role": "neutral", "displayName": "Giz", "canonical": "oklch(94% 0.033 91.7)", "tonalRamp": ["#100a00", "#2b2512", "#48422e", "#68614c", "#89826c", "#aca58e", "#d1c9b2", "#f6eed6"] },
-      "letreiro-ink": { "role": "primary", "displayName": "Letreiro Tinta", "canonical": "oklch(28% 0.041 52.8)", "tonalRamp": ["#180600", "#351f11", "#543c2d", "#745b4c", "#977c6c", "#bb9f8e", "#e0c2b1", "#ffe8d6"] },
-      "ambar": { "role": "secondary", "displayName": "Âmbar", "canonical": "oklch(73% 0.140 77.0)", "tonalRamp": ["#270000", "#481000", "#693200", "#8c5300", "#b07500", "#d69826", "#fcbc54", "#ffe27b"] },
-      "ambar-deep": { "role": "primary", "displayName": "Âmbar Profundo", "canonical": "oklch(57% 0.114 71.4)", "tonalRamp": ["#240000", "#441400", "#663400", "#885400", "#ac7528", "#d1984f", "#f8bd73", "#ffe298"] },
-      "rubi": { "role": "tertiary", "displayName": "Rubi", "canonical": "oklch(54% 0.141 30.4)", "tonalRamp": ["#320000", "#570000", "#7c1207", "#a2392c", "#c95d4c", "#f0806e", "#ffa491", "#ffcab5"] },
+      "petroleo": { "role": "primary", "displayName": "Petróleo", "canonical": "oklch(45% 0.06 200)", "tonalRamp": ["#000a0d", "#002229", "#053b42", "#0c555e", "#1d7079", "#318c95", "#4da8b1", "#6dc5cd"] },
+      "petroleo-deep": { "role": "primary", "displayName": "Petróleo Profundo", "canonical": "oklch(36% 0.055 205)", "tonalRamp": ["#00080b", "#001f26", "#003840", "#04135", "#0b6b72", "#1b878e", "#31a4ab", "#4cc1ca"] },
+      "sage": { "role": "secondary", "displayName": "Sálvia", "canonical": "oklch(66% 0.05 160)", "tonalRamp": ["#0c1410", "#232d28", "#3b4540", "#545f59", "#6e7973", "#89948e", "#a5b0aa", "#c1ccc6"] },
+      "sage-lighter": { "role": "secondary", "displayName": "Sálvia Clara", "canonical": "oklch(84% 0.045 160)", "tonalRamp": ["#151d18", "#2c352f", "#444d47", "#5d6760", "#77817b", "#929d96", "#adb9b2", "#c9d5ce"] },
+      "sage-claro": { "role": "neutral", "displayName": "Sálvia Claro", "canonical": "oklch(94% 0.02 150)", "tonalRamp": ["#121814", "#29302c", "#414843", "#5a615c", "#747b76", "#8f9691", "#aab2ad", "#c6cec9"] },
+      "off-black": { "role": "neutral", "displayName": "Quase-Preto", "canonical": "oklch(25% 0.01 155)", "tonalRamp": ["#000000", "#0f120f", "#242824", "#3b3f3b", "#545854", "#6e726e", "#8a8e8a", "#a6aaa6"] },
+      "muted-nova": { "role": "neutral", "displayName": "Cinza Novo", "canonical": "oklch(50% 0.02 165)", "tonalRamp": ["#070d0a", "#1c231f", "#333a36", "#4b524e", "#646b67", "#7e8581", "#99a09c", "#b5bcb8"] },
+      "border-nova": { "role": "neutral", "displayName": "Borda Nova", "canonical": "oklch(88% 0.015 160)", "tonalRamp": ["#1a211d", "#313833", "#494f4b", "#626865", "#7c827e", "#969d99", "#b2b9b5", "#cdd5d1"] },
       "safira": { "role": "tertiary", "displayName": "Safira", "canonical": "oklch(48% 0.098 251.8)", "tonalRamp": ["#000532", "#002452", "#114374", "#346497", "#5586bb", "#77a9e1", "#9aceff", "#bef4ff"] },
-      "esmeralda": { "role": "tertiary", "displayName": "Esmeralda", "canonical": "oklch(50% 0.063 164.3)", "tonalRamp": ["#001205", "#002e1d", "#1c4c39", "#3d6d58", "#5e8f78", "#80b29b", "#a4d7be", "#c8fde3"] }
+      "esmeralda": { "role": "tertiary", "displayName": "Esmeralda", "canonical": "oklch(50% 0.063 164.3)", "tonalRamp": ["#001205", "#002e1d", "#1c4c39", "#3d6d58", "#5e8f78", "#80b29b", "#a4d7be", "#c8fde3"] },
+      "ambar": { "role": "tertiary", "displayName": "Âmbar", "canonical": "oklch(73% 0.140 77.0)", "tonalRamp": ["#270000", "#481000", "#693200", "#8c5300", "#b07500", "#d69826", "#fcbc54", "#ffe27b"] },
+      "rubi": { "role": "tertiary", "displayName": "Rubi", "canonical": "oklch(54% 0.141 30.4)", "tonalRamp": ["#320000", "#570000", "#7c1207", "#a2392c", "#c95d4c", "#f0806e", "#ffa491", "#ffcab5"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Letreiro (Bree Serif)", "purpose": "H1 do hero e títulos; a voz pintada à mão." },
-      "chalk": { "displayName": "Lousa (Kalam)", "purpose": "Linhas de lousa com informação prática e citações sobre painel café." },
-      "body": { "displayName": "Corpo (Archivo)", "purpose": "Texto corrente, botões e inputs." }
+      "display": { "displayName": "Display (Montserrat)", "purpose": "H1 do hero; títulos pesados. Voz serena e contemporânea." },
+      "headline": { "displayName": "Headline (Montserrat)", "purpose": "H2 de seção; um por seção." },
+      "title": { "displayName": "Title (Montserrat)", "purpose": "H3 de cards e títulos de bloco." },
+      "body": { "displayName": "Corpo (Montserrat)", "purpose": "Texto corrente, botões e inputs." },
+      "label": { "displayName": "Label (Montserrat)", "purpose": "Eyebrow de banner e labels de contato/seção, tracking 0.16em." }
     },
     "shadows": [],
     "motion": [
-      { "name": "ink-hover", "value": "background 0.15s ease, transform 0.15s ease", "purpose": "Botões escurecem a tinta no hover (1px de elevação)." }
+      { "name": "petroleo-hover", "value": "background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease", "purpose": "Botões escurecem ou elevam no hover; sombra petróleo em CTAs." }
     ],
     "breakpoints": [
-      { "name": "mobile", "value": "760px", "purpose": "Coluna única, menu mobile e lousa em bloco." }
+      { "name": "mobile", "value": "760px", "purpose": "Coluna única, menu mobile, hero empilhado." }
     ]
   },
   "components": [
     {
-      "name": "Primary Button (Café)",
+      "name": "Primary Button (Petróleo)",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "CTA de conversão: tinta marrom café com texto creme (AA ~10:1).",
+      "description": "CTA de conversão: verde petróleo com texto branco (AA ~7.4:1).",
       "html": "<a class=\"ds-btn-primary\">Venha nos visitar este domingo</a>",
-      "css": ".ds-btn-primary { display:inline-block; padding:13px 26px; border-radius:6px; text-decoration:none; font-family:'Archivo',system-ui,sans-serif; font-weight:700; font-size:0.98rem; border:1px solid transparent; color:#f5efe2; background:#4a3528; transition:background 0.15s ease, transform 0.15s ease; cursor:pointer; } .ds-btn-primary:hover { transform:translateY(-1px); background:#3a2416; } .ds-btn-primary:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+      "css": ".ds-btn-primary { display:inline-block; padding:13px 26px; border-radius:8px; text-decoration:none; font-family:'Montserrat',system-ui,sans-serif; font-weight:700; font-size:0.98rem; border:1px solid transparent; color:#ffffff; background:#005f6b; box-shadow:0 8px 20px rgba(0,95,107,0.22); transition:background 0.15s ease, transform 0.15s ease; cursor:pointer; } .ds-btn-primary:hover { transform:translateY(-1px); background:#00434d; box-shadow:0 12px 26px rgba(0,95,107,0.30); } .ds-btn-primary:focus-visible { outline:3px solid #005f6b; outline-offset:2px; }"
     },
     {
       "name": "Gold Button",
       "kind": "button",
       "refersTo": "button-gold",
-      "description": "Âmbar profundo com texto branco (AA); chamada sobre o entardecer.",
+      "description": "Petróleo profundo com texto branco (AA); chamada sobre painéis escuros.",
       "html": "<a class=\"ds-btn-gold\">Quero conhecer a Trilha de Novos</a>",
-      "css": ".ds-btn-gold { display:inline-block; padding:13px 26px; border-radius:6px; text-decoration:none; font-family:'Archivo',system-ui,sans-serif; font-weight:700; font-size:0.98rem; border:1px solid transparent; color:#fff; background:#a06a18; transition:background 0.15s ease, transform 0.15s ease; cursor:pointer; } .ds-btn-gold:hover { transform:translateY(-1px); } .ds-btn-gold:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+      "css": ".ds-btn-gold { display:inline-block; padding:13px 26px; border-radius:8px; text-decoration:none; font-family:'Montserrat',system-ui,sans-serif; font-weight:700; font-size:0.98rem; border:1px solid transparent; color:#fff; background:#00434d; transition:background 0.15s ease, transform 0.15s ease; cursor:pointer; } .ds-btn-gold:hover { transform:translateY(-1px); } .ds-btn-gold:focus-visible { outline:3px solid #005f6b; outline-offset:2px; }"
     },
     {
       "name": "Outline Dark Button",
       "kind": "button",
       "refersTo": "button-outline-dark",
-      "description": "Borda marrom-café com texto café; hover inverte para tinta cheia.",
+      "description": "Borda quase-preta com texto quase-preto; hover inverte para tinta cheia.",
       "html": "<a class=\"ds-btn-outline-dark\">Conheça o nosso jeito de viver</a>",
-      "css": ".ds-btn-outline-dark { display:inline-block; padding:13px 26px; border-radius:6px; text-decoration:none; font-family:'Archivo',system-ui,sans-serif; font-weight:700; font-size:0.98rem; background:transparent; border:2px solid #4a3528; color:#4a3528; transition:background 0.15s ease, color 0.15s ease; cursor:pointer; } .ds-btn-outline-dark:hover { background:#4a3528; color:#f5efe2; } .ds-btn-outline-dark:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+      "css": ".ds-btn-outline-dark { display:inline-block; padding:13px 26px; border-radius:8px; text-decoration:none; font-family:'Montserrat',system-ui,sans-serif; font-weight:700; font-size:0.98rem; background:transparent; border:1px solid #1f2421; color:#1f2421; transition:background 0.15s ease, color 0.15s ease; cursor:pointer; } .ds-btn-outline-dark:hover { background:#1f2421; color:#fff; } .ds-btn-outline-dark:focus-visible { outline:3px solid #005f6b; outline-offset:2px; }"
     },
     {
-      "name": "Mesa Card",
+      "name": "Card",
       "kind": "card",
       "refersTo": "card",
-      "description": "Superfície creme com filete pintado âmbar sob o título; sem sombra.",
+      "description": "Superfície branca com borda sálvia-clara e sombra sutil petróleo.",
       "html": "<article class=\"ds-card\"><h3>Nosso Jeito de Viver</h3><p>Pessoas reais, fé translúcida.</p></article>",
-      "css": ".ds-card { background:#f5efe2; border:1px solid #7a5f48; border-radius:6px; padding:1.5rem; box-shadow:none; font-family:'Archivo',system-ui,sans-serif; } .ds-card h3 { font-family:'Bree Serif',Georgia,serif; font-weight:400; font-size:1.2rem; color:#3a2416; line-height:1.15; margin:0 0 0.5rem; border-bottom:2px solid #d99b2b; display:inline-block; padding-bottom:0.4rem; } .ds-card p { color:#7a5f48; margin:0; line-height:1.65; }"
+      "css": ".ds-card { background:#ffffff; border:1px solid #d7ded9; border-radius:8px; padding:1.6rem; box-shadow:0 4px 14px rgba(0,67,77,0.06); font-family:'Montserrat',system-ui,sans-serif; } .ds-card h3 { font-family:'Montserrat',system-ui,sans-serif; font-weight:700; font-size:1.2rem; color:#1f2421; line-height:1.15; margin:0 0 0.5rem; } .ds-card p { color:#5b6b63; margin:0; line-height:1.65; }"
     },
     {
-      "name": "Entardecer Card",
+      "name": "Dark Card",
       "kind": "card",
       "refersTo": "card-dark",
-      "description": "Painel marrom do entardecer com texto giz; 1-3 destaques.",
+      "description": "Painel em gradiente petróleo com texto branco; 1-3 destaques.",
       "html": "<article class=\"ds-card-dark\"><h3>Está chegando agora?</h3><p>A Trilha de Novos é um espaço acolhedor.</p></article>",
-      "css": ".ds-card-dark { background:#3a2b1f; border:1px solid rgba(242,234,210,0.25); border-radius:6px; padding:1.5rem; color:rgba(242,234,210,0.9); font-family:'Archivo',system-ui,sans-serif; } .ds-card-dark h3 { font-family:'Bree Serif',Georgia,serif; font-weight:400; font-size:1.2rem; color:#f2ead2; line-height:1.15; margin:0 0 0.5rem; border-bottom:2px solid #d99b2b; display:inline-block; padding-bottom:0.4rem; } .ds-card-dark p { color:rgba(242,234,210,0.9); margin:0; line-height:1.65; }"
+      "css": ".ds-card-dark { background:linear-gradient(160deg,#00434d 0%,#005f6b 100%); border:1px solid rgba(255,255,255,0.25); border-radius:8px; padding:1.6rem; color:#fff; font-family:'Montserrat',system-ui,sans-serif; } .ds-card-dark h3 { font-family:'Montserrat',system-ui,sans-serif; font-weight:700; font-size:1.2rem; color:#fff; line-height:1.15; margin:0 0 0.5rem; } .ds-card-dark p { color:rgba(255,255,255,0.92); margin:0; line-height:1.65; }"
     },
     {
-      "name": "Feature Step (Carimbo)",
+      "name": "Feature Step",
       "kind": "custom",
       "refersTo": "feature-list",
-      "description": "Passo em linha creme com carimbo circular rubi.",
-      "html": "<ol class=\"ds-steps\"><li><span class=\"ds-stamp\">1</span><span>Chegar — conheça o Encontro e tome um café.</span></li></ol>",
-      "css": ".ds-steps { list-style:none; padding:0; margin:0; display:grid; gap:1rem; font-family:'Archivo',system-ui,sans-serif; } .ds-steps li { display:flex; gap:0.8rem; align-items:flex-start; background:#f5efe2; border:1px solid #7a5f48; border-radius:6px; padding:1rem 1.2rem; } .ds-stamp { font-family:'Bree Serif',Georgia,serif; font-size:1.05rem; line-height:1; color:#b3493a; border:2px solid #b3493a; border-radius:50%; width:2.1em; height:2.1em; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; }"
+      "description": "Passo em linha branca com número petróleo.",
+      "html": "<ol class=\"ds-steps\"><li><span class=\"ds-num\">1</span><span>Chegar — conheça o Encontro e tome um café.</span></li></ol>",
+      "css": ".ds-steps { list-style:none; padding:0; margin:0; display:grid; gap:1rem; font-family:'Montserrat',system-ui,sans-serif; } .ds-steps li { display:flex; gap:0.8rem; align-items:flex-start; background:#ffffff; border:1px solid #d7ded9; border-radius:8px; padding:1rem 1.2rem; } .ds-num { font-family:'Montserrat',system-ui,sans-serif; font-size:1.4rem; font-weight:700; line-height:1.2; color:#005f6b; }"
     },
     {
-      "name": "Chalkboard Panel (Lousa)",
+      "name": "FAQ Item",
       "kind": "custom",
-      "refersTo": "big-quote",
-      "description": "Painel marrom com texto giz em Kalam; citação e informação prática.",
-      "html": "<p class=\"ds-chalk\">Domingos às 10h · café quentinho te espera.</p>",
-      "css": ".ds-chalk { font-family:'Kalam',cursive; font-weight:700; font-size:1.2rem; line-height:1.4; color:#f2ead2; background:#4a3528; border-radius:6px; padding:1.1rem 1.3rem; margin:0; }"
+      "refersTo": "faq",
+      "description": "Accordion branco com borda sálvia; título quase-preto.",
+      "html": "<details class=\"ds-faq\"><summary>O que acontece depois?</summary><p>Grupos menores durante a semana.</p></details>",
+      "css": ".ds-faq { background:#ffffff; border:1px solid #d7ded9; border-radius:8px; padding:1rem 1.2rem; font-family:'Montserrat',system-ui,sans-serif; } .ds-faq summary { cursor:pointer; font-weight:700; color:#1f2421; } .ds-faq p { color:#5b6b63; margin:0.8rem 0 0; }"
     },
     {
       "name": "Navigation Link",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "Link de menu; hover/atual com tinta âmbar a 16% e texto rubi.",
+      "description": "Link de menu; hover/atual com fundo petróleo a 8% e texto petróleo.",
       "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"ds-nav-link\">Home</a><a href=\"#\" class=\"ds-nav-link ds-current\">Quem Somos</a></nav>",
-      "css": ".ds-nav { display:flex; gap:4px; font-family:'Archivo',system-ui,sans-serif; } .ds-nav-link { display:inline-block; padding:8px 12px; color:#3a2416; text-decoration:none; font-weight:600; font-size:0.95rem; border-radius:4px; } .ds-nav-link:hover { background:rgba(217,155,43,0.16); color:#b3493a; } .ds-current { background:rgba(217,155,43,0.16); color:#b3493a; } .ds-nav-link:focus-visible { outline:3px solid #d99b2b; outline-offset:2px; }"
+      "css": ".ds-nav { display:flex; gap:4px; font-family:'Montserrat',system-ui,sans-serif; } .ds-nav-link { display:inline-block; padding:8px 12px; color:#1f2421; text-decoration:none; font-weight:600; font-size:0.95rem; border-radius:4px; } .ds-nav-link:hover { background:rgba(0,95,107,0.08); color:#005f6b; } .ds-current { background:rgba(0,95,107,0.08); color:#005f6b; } .ds-nav-link:focus-visible { outline:3px solid #005f6b; outline-offset:2px; }"
     }
   ],
   "narrative": {
-    "northStar": "O Café da Rua",
-    "overview": "A Home se apresenta como a fachada de um café do interior paulista: um convite pintado à mão, uma lousa de giz com a informação prática e a janela de vitral acesa na vitrine. O sistema traduz 'puxe uma cadeira e respire fundo' em hospitalidade material — pedra lavada e creme como o chão da rua, marrom-café nos painéis e no rodapé, e o letreiro (Bree Serif) como a voz do convite. A lousa (Kalam) cuida do cotidiano; o corpo (Archivo) fica quieto. As quatro gemas do vitral, marca inegociável, aparecem como tintas pintadas em doses, e a janela de vitral entra como o vidro pintado da vitrine, em moldura de madeira. Anti-'religioso genérico': sem cruz decorativa, sem dourado de megachurch. Estado: mundo aplicado à HOME; subpáginas ainda no mundo anterior (migração pendente).",
+    "northStar": "Marca Nova",
+    "overview": "O site inteiro — HOME, 6 subpáginas e 404 — usa o mesmo sistema visual: a serenidade dos verdes petróleo e acinzentado (sálvia) traduz confiança, profundidade e calma, o contraponto visual ao cansaço e à pressa da cidade. O título carrega o peso em Montserrat 700; o corpo fica quieto e legível; o emblema oficial da marca entra no hero da HOME numa moldura clara, e a tira de 4 cores (safira, esmeralda, âmbar, rubi) permanece no topo do rodapé como marca inegociável. A Marca Nova substitui os mundos anteriores ('O Café da Rua' na HOME e 'Vitral Arquitetônico' nas subpáginas) — padrão único.",
     "keyCharacteristics": [
-      "Fachada pintada: letreiro (Bree Serif) + lousa de giz (Kalam) + janela de vitral em moldura.",
-      "Tom Committed quente: chão claro (pedra lavada/creme) e marrom-café em painéis.",
-      "Sem eyebrow/kicker acima de heading; o heading carrega o peso.",
-      "Componentes planos e quentes (raio 6px), com filete pintado (2px âmbar) sob títulos.",
-      "Citação em painel de lousa; marca preservada (janela de vitral + tira de 4 cores)."
+      "Paleta solo: verde petróleo como tinta de ações, verde petróleo profundo em seções/footer escuros, sálvia-acinzentado como chão claro e detalhes.",
+      "Tipo único Montserrat 400-800: display B700, corpo B400, labels B700 com tracking 0.16em.",
+      "Sem eyebrow/kicker acima de headings de seção; a subpágina abre com banner em gradiente petróleo e eyebrow translúcido.",
+      "Componentes planos com raio 8px e borda sálvia; card branco com sombra sutil petróleo.",
+      "Marca preservada: emblema oficial no hero (HOME) e tira de 4 cores no topo do rodapé."
     ],
     "rules": [
-      { "name": "The Rarity of Paint Rule", "body": "As quatro gemas aparecem em superfícies pequenas e precisas (tintas, filetes, carimbos, tira); o marrom-café é o único 'cheio' além dos neutros.", "section": "colors" },
-      { "name": "The Café Ink Rule", "body": "Toda ação primária é café/tinta com texto creme (AA); âmbar profundo é o segundo quente. Nenhum CTA primário usa gradiente.", "section": "colors" },
-      { "name": "The Painted Voice Rule", "body": "Bree é para títulos; Kalam para o que está na lousa; Archivo para corpo, botões e inputs.", "section": "typography" },
-      { "name": "The No-Kicker Rule", "body": "Nenhuma eyebrow/kicker acima de heading na Home; o H1/H2 carrega o peso inteiro.", "section": "typography" },
-      { "name": "The Ink Depth Rule", "body": "Nenhuma sombra em card na Home do café; profundidade via filete, moldura e tom de tinta.", "section": "elevation" }
+      { "name": "The Petróleo Conduz as Ações Rule", "body": "Toda ação primária é verde petróleo com texto branco (AA); o profundo vira o 'escuro' das seções de autoridade. Nenhum CTA usa gradiente de alto contraste.", "section": "colors" },
+      { "name": "The Gems Stay Small Rule", "body": "As quatro gemas (safira/esmeralda/âmbar/rubi) aparecem apenas na tira de 4 cores como identidade de marca — nunca como cor de CTA ou fundo de seção.", "section": "colors" },
+      { "name": "The One-Type Rule", "body": "Montserrat é a única família: título, corpo e labels. A hierarquia vem de peso (700 vs 400) e tamanho, não de troca de fonte.", "section": "typography" },
+      { "name": "The No-Kicker Rule", "body": "Nenhuma eyebrow/kicker acima de headings de seção; o H2 carrega o peso. (O eyebrow vive apenas no banner de subpágina e nos labels de contato.)", "section": "typography" },
+      { "name": "The Ink Depth Rule", "body": "A profundidade vem de camadas de tinta (borda, tom, gradiente), nunca de sombras duras em superfícies claras.", "section": "elevation" }
     ],
     "dos": [
-      "Do fazer do 1º viewport uma fachada: letreiro com o convite, linha de lousa com horário/café, CTA e a janela de vitral na moldura.",
-      "Do usar café/tinta para as ações primárias (texto creme, AA) e âmbar profundo para o segundo quente.",
-      "Do deixar o heading carregar o peso — sem eyebrow/kicker acima dele.",
-      "Do usar filete pintado (2px) e moldura para profundidade, não sombras.",
-      "Do manter a janela de vitral e a tira de 4 cores como marca.",
-      "Do usar Kalam apenas para o que está na lousa e Bree para letreiros/títulos."
+      "Do usar verde petróleo para CTAs primários (texto branco, AA) e petróleo profundo para seções/footer de autoridade.",
+      "Do usar sálvia claro como chão de seções alternadas e do hero da HOME.",
+      "Do manter a tira de 4 cores no topo do rodapé e o emblema oficial no hero — marca inegociável.",
+      "Do deixar o heading carregar o peso — sem eyebrow/kicker acima de headings de seção.",
+      "Do usar Montserrat 700 para display/labels e 400 para corpo."
     ],
     "donts": [
-      "Don't pintar páginas inteiras das gemas; o café e os neutros são o chão.",
-      "Don't usar gradiente de texto, glass/blur decorativo ou sombras duras na Home do café.",
-      "Don't colocar eyebrow/kicker/pílula acima de heading.",
-      "Don't usar borda lateral colorida (>1px) em quotes ou cards — a citação é painel de lousa.",
-      "Don't criar estética 'religiosa genérica' (cruz decorativa, dourado de megachurch, banco de sorrisos)."
+      "Don't pintar páginas inteiras de verde; o quase-preto e os neutros claros são o chão.",
+      "Don't usar as quatro gemas fora da tira de 4 cores (sem CTAs ou fundos de gema).",
+      "Don't usar gradiente de texto, glass/blur decorativo ou sombras duras em superfícies claras.",
+      "Don't recriar a dupla identidade anterior ('Café da Rua' / 'Vitral Arquitetônico') — a Marca Nova é o padrão único."
     ]
   }
 }

@@ -38,6 +38,8 @@ Acolhe quem tem dúvidas, marcas e histórias difíceis, sem cobrar nada.
 ## Capabilities and Constraints
 
 - Site estático HTML5 + CSS puro, sem build step, caminhos relativos.
+- Identidade visual única "Marca Nova" — verde petróleo/verde acinzentado (sálvia) e tipografia
+  Montserrat em todo o site (tokens em css/tokens.css; sistema em DESIGN.md). Sem modo escuro.
 - 7 páginas + 404; header e footer repetidos — alterar exige atualizar todas as páginas.
 - Mobile-first; acessibilidade WCAG 2.1 AA (contraste >= 4.5:1, alt, teclado, ARIA, foco visível).
 - Apenas modo claro (decisão de produto).
@@ -51,9 +53,9 @@ Acolhe quem tem dúvidas, marcas e histórias difíceis, sem cobrar nada.
 - Nome: Comunidade Vitral — Igreja Presbiteriana Independente Vitral (IPI Vitral); raiz IPIB.
 - Marca: "Igreja em Pessoas"; valores Simples, Missional, Acolhedor.
 - Tom: coloquial, "você"/"a gente", sem jargão teológico; sempre convida, nunca exige.
-- Mundo visual atual: "O Café da Rua" na HOME (letreiro pintado, lousa, emblema oficial da
-  marca); subpáginas seguem no "Vitral Arquitetônico" (migração pendente). Sistema visual
-  documentado em DESIGN.md — a série do vitral (emblema/tira de 4 cores/conceito) é marca.
+- Mundo visual: identidade única **"Marca Nova"** em todo o site (verde petróleo/verde acinzentado,
+  Montserrat), com o emblema oficial da marca no hero da HOME e a tira de 4 cores no rodapé.
+  Sistema visual documentado em DESIGN.md — a série do vitral (emblema/tira de 4 cores/conceito) é marca.
 - Citações bíblicas sempre na Nova Versão Transformadora (NVT).
 
 ## Evidence on Hand

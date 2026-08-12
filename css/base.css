@@ -14,13 +14,13 @@ body {
   font-size: var(--body);
   line-height: 1.65;
   color: var(--ink);
-  background: var(--pedra);
+  background: var(--surface);
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  color: var(--navy);
+  color: var(--off-black);
   line-height: 1.2;
   margin: 0 0 0.6em;
   font-weight: 700;
@@ -35,13 +35,13 @@ p {
 }
 
 a {
-  color: var(--rubi);
+  color: var(--petroleo);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--ambar);
+  color: var(--petroleo-deep);
 }
 
 img {
@@ -64,7 +64,7 @@ ul, ol {
   position: absolute;
   left: -999px;
   top: 0;
-  background: var(--navy);
+  background: var(--petroleo-deep);
   color: #fff;
   padding: 0.7em 1.2em;
   border-radius: 0 0 10px 0;
@@ -77,7 +77,7 @@ ul, ol {
 }
 
 :focus-visible {
-  outline: 3px solid var(--ambar);
+  outline: 3px solid var(--petroleo);
   outline-offset: 2px;
 }
 
