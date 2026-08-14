@@ -69,7 +69,7 @@ A Vitral caminha ao seu lado para dar suporte, escuta e encorajamento à sua fam
 O que acontece quando você chega com seus filhos.
 
 ### Passos da Experiência
-* **Recepção e Check-in**: Logo na entrada, nosso time de acolhimento vai te orientar e fazer um cadastro simples das crianças (nome, idade e contatos dos responsáveis).
+* **Recepção**: Na entrada, nossa equipe te recebe com carinho.
 * **Início Juntos**: Nossos pequenos começam o Encontro no salão principal junto com os pais, participando do momento de acolhida e louvor.
 * **Momento Kids**: Em seguida, as crianças são convidadas com alegria a irem para as suas salas dedicadas por faixa etária, acompanhadas pelos nossos monitores.
 * **Choro e Barulho são Bem-vindos**: Se o seu filho estranhar, chorar ou quiser ficar no seu colo no salão principal, tudo bem! Não se preocupe ou sinta vergonha. Na Vitral, vida de família é assim mesmo.

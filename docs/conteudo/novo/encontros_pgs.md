@@ -59,7 +59,7 @@ Encontre um PG perto de você.
 Temos Pequenos Grupos espalhados por diferentes bairros de São José do Rio Preto, se reunindo em dias e horários variados durante a semana. Você pode visitar sem compromisso para conhecer as pessoas e ver se se sente em casa.
 
 ### Passo a Passo para se Conectar
-1. **Escolha a região ou o dia**: Veja a lista de grupos disponíveis na cidade.
+1. **Quer achar um Pequeno Grupo que seja a sua cara**: Fale com a gente; vamos te ajudar a encontrar o dia, o lugar e a turma certos para você.
 2. **Faça uma visita**: Vá a uma reunião, tome um chá/café e acompanhe a conversa sem obrigação de falar.
 3. **Sinta-se em casa**: Se curtir, o grupo te acolhe para caminharem juntos.
 

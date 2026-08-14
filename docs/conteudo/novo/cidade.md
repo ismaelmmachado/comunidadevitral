@@ -67,7 +67,7 @@ Responsabilidade social com raiz e governança[cite: 8, 9].
 ### Texto de Apoio
 A atuação missional da Vitral se conecta com a nossa história de mais de 120 anos através da **Igreja Presbiteriana Independente do Brasil (IPIB)**[cite: 8, 9]. 
 
-Todas as nossas ações sociais, arrecadações e investimentos no serviço à cidade são geridos com total transparência e fiscalização pelo Conselho Pastoral, pela Diaconia e aprovados em Assembleia pela própria comunidade[cite: 8]. Servem para abençoar vidas, sem qualquer interesse de autopromoção[cite: 1, 8].
+Todas as nossas ações sociais, arrecadações e investimentos no serviço à cidade são geridos com total transparência e fiscalização pelo Conselho da Igreja, pela Diaconia e aprovados em Assembleia pela própria comunidade[cite: 8]. Servem para abençoar vidas, sem qualquer interesse de autopromoção[cite: 1, 8].
 
 ---
 

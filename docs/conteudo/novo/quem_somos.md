@@ -5,7 +5,7 @@
 ## SEÇÃO 1: HERO / ABERTURA INSTITUCIONAL
 
 ### Título (H1)
-Não somos um prédio. Somos uma comunidade de pessoas em caminho.
+Não somos um prédio. Somos uma comunidade de pessoas no caminho.
 
 ### Subtítulo
 Uma igreja de tradição histórica, fé graciosa e vocação urbana em São José do Rio Preto. Simples, missional e acolhedora.
@@ -84,7 +84,7 @@ Uma estrutura que serve às pessoas, e não o contrário.
 Na Vitral, gostamos de usar a imagem da **Treliça e da Videira**. A Videira é Jesus e a vida comunitária que flui. A Treliça é a estrutura que sustenta o crescimento. Nossa governança presbiteriana não existe para controlar, mas para cuidar e proteger a comunidade.
 
 ### Estrutura de Cuidado
-* **O Conselho Pastoral**: Composto por pastores e presbíteros eleitos pela própria comunidade, responsáveis pela liderança espiritual, ensino e cuidado pastoral.
+* **O Conselho da Igreja**: Composto pelo pastor (ou pastores) e pelos presbíteros eleitos pela comunidade, responsáveis pela liderança espiritual, ensino da Palavra, governo e cuidado pastoral da igreja.
 * **A Diaconia**: Homens e mulheres dedicados ao serviço prático, compaixão e cuidado com os necessitados dentro e fora da comunidade.
 * **A Assembleia Comunitária**: Momento participativo onde os membros votam e tomam decisões administrativas e orçamentárias com total transparência financeira.
 * **Os 4 Times de Servidores (Mordomos)**:
