@@ -444,6 +444,10 @@
   line-height: 1.2;
 }
 
+.section-dark .feature-list li {
+  color: var(--off-black);
+}
+
 .faq details {
   background: #ffffff;
   border: 1px solid var(--border-nova);

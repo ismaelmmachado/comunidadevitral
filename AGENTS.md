@@ -19,7 +19,7 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - Identidade única "Marca Nova" em todo o site: verde petróleo + verde acinzentado (sálvia), tipografia **Montserrat**, via Google Fonts.
 - Design tokens: `css/tokens.css` — paleta Marca Nova padrão. Fonte do sistema visual: `DESIGN.md`.
 - JS mínimo: `js/menu.js` (menu mobile).
-- O hero da HOME usa o emblema oficial da marca (`assets/logos/logo-ipi-comunidade-vitral.png`); a tira de 4 cores é marca inegociável.
+- O hero da HOME usa o emblema da marca (`assets/logos/logo-vitral.png`); a tira de 4 cores é marca inegociável.
 
 ### Estrutura
 - 7 páginas estáticas na raiz: `index`, `quem-somos`, `jornada`, `encontros-e-pgs`,

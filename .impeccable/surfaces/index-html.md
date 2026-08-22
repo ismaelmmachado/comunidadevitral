@@ -17,7 +17,7 @@ Público primário: pessoas não cristãs ou afastadas, cansadas, sozinhas em S�
 Entender a promessa de acolhimento e ver o convite para o domingo (horário 10h, café, endereço/região). Ação primária: "Quero visitar este domingo".
 
 ## Proof / Content
-Conteúdo verbatim (docs/conteudo/novo/). Conceito-âncora: **mesa e hospitalidade**. Anti-referências: religioso genérico (cruz, dourado, igreja corporativa). Compromissos de marca inegociáveis: **emblema oficial (assets/logos/logo-ipi-comunidade-vitral.png)** no hero da HOME e **tira de 4 cores** (safira/esmeralda/âmbar/rubi) no topo do rodapé.
+Conteúdo verbatim (docs/conteudo/novo/). Conceito-âncora: **mesa e hospitalidade**. Anti-referências: religioso genérico (cruz, dourado, igreja corporativa). Compromissos de marca inegociáveis: **emblema da marca (assets/logos/logo-vitral.png)** no hero da HOME e **tira de 4 cores** (safira/esmeralda/âmbar/rubi) no topo do rodapé.
 
 ## Chosen Direction — "Marca Nova" (padrão único do site)
 Paleta verde petróleo (`#005f6b`) e verde acinzentado/sálvia (`#94a69a`, `#e9ede9`), quase-preto `#1f2421`, com tipografia única **Montserrat** 400–800. A HOME mantém a estrutura do hero (convite, faixa de informação, CTAs e o emblema oficial na moldura), re-tintada na Marca Nova; as subpáginas usam banner em gradiente petróleo. A tira de 4 cores e o emblema preservam a marca do vitral.

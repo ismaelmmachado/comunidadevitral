@@ -27,7 +27,7 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 - **HTML5 + CSS puro** — sem build step, zero dependências.
 - Fonte única: Montserrat (400–800), via Google Fonts, em todas as páginas.
 - Design tokens: `css/tokens.css` — paleta "Marca Nova" (petróleo/sálvia/cinzas).
-- Emblema oficial da marca no hero (`assets/logos/logo-ipi-comunidade-vitral.png`) e tira de 4 cores no footer.
+- Emblema da marca no hero (`assets/logos/logo-vitral.png`) e tira de 4 cores no footer.
 - JS mínimo: `js/menu.js`.
 
 ## Design
