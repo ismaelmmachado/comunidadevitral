@@ -1,6 +1,6 @@
 # PÁGINA 8: O GRANDE BANQUETE (`/grande-banquete`)
 
-> Fonte da verdade desta página. Imagem do banner (hero): `assets/img/cafe-encontros.jpg`.
+> Fonte da verdade desta página. Imagem do banner (hero): `assets/img/decolores-placa.png`.
 > Conexões: complementa a Jornada do Discípulo (jornada.html); CTAs usam o WhatsApp
 > institucional https://wa.me/5517996195302. Sem emojis; sem tom de "evento secreto";
 > terminologia oficial: Trilha de Novos, Pequenos Grupos (PGs), os 4 Times de Servidores (Mordomos).
