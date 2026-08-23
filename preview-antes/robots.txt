@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ismaelmmachado.github.io/comunidadevitral/sitemap.xml
