@@ -32,5 +32,5 @@
 
 ## 5. Fechamento
 
-- [ ] 5.1 Conferência visual do usuário no browser (roteiro de URLs fornecido)
-- [ ] 5.2 Arquivar change e sincronizar specs marca-nova e site-estatico-vitral
+- [x] 5.1 Conferência visual do usuário no browser (roteiro de URLs fornecido)
+- [x] 5.2 Arquivar change e sincronizar specs marca-nova e site-estatico-vitral
