@@ -17,7 +17,7 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 ### Stack
 - **HTML5 + CSS puro** — sem build step, zero dependências de runtime.
 - Identidade única "Marca Nova" em todo o site: verde petróleo + verde acinzentado (sálvia), tipografia **Montserrat**, via Google Fonts.
-- Design tokens: `css/tokens.css` — paleta Marca Nova padrão. Fonte do sistema visual: `DESIGN.md`.
+- Design tokens: `css/tokens.css` — paleta Marca Nova padrão; especificação completa em `openspec/specs/marca-nova/`.
 - JS mínimo: `js/menu.js` (menu mobile).
 - O hero da HOME usa o emblema da marca (`assets/logos/logo-vitral.png`); a tira de 4 cores é marca inegociável.
 
@@ -28,7 +28,6 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - `docs/` — conteúdo extraído (`conteudo/`, `conteudo/novo/`, `raw/`, `inventario.md`), legado (`openspec-legado/`) e propostas (`propostas/`).
 - `openspec/` — documentação spec-driven (specs: `site-estatico-vitral`, `marca-nova`; `config.yaml`); changes concluídos em `changes/archive/`.
 - `AGENTS.md`, `README.md` — documentação do projeto.
-- `PRODUCT.md`, `DESIGN.md`, `.impeccable/` — sistema documentado via skill **impeccable** (ver abaixo).
 
 ### Conteúdo
 - Conteúdo das 7 páginas em `docs/conteudo/novo/*.md` (fonte da verdade); a Home está
@@ -50,12 +49,8 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - Sem emojis em código/comentários; sem comentários no código salvo se solicitado.
 - Mobile-first; acessibilidade AA; caminhos relativos (subpath do Pages).
 
-## Design (impeccable)
+## Design
 
-O sistema visual é documentado pela skill impeccable:
-- `PRODUCT.md` — verdade de produto; `DESIGN.md` + `.impeccable/design.json` — sistema visual
-  (North Star atual: "Marca Nova" — verde petróleo/acinzentado, Montserrat; hero da HOME usa o emblema oficial da marca).
-- `.impeccable/surfaces/` — briefs por superfície; `.impeccable/critique/` — snapshots de crítica.
-- Comandos: critique, audit, polish, typeset etc. (skill impeccable). Detector mecânico:
-  `node /root/.opencode/skills/impeccable/scripts/detect.mjs --json <target>`.
-- Estado: **todo o site** (HOME, subpáginas e 404) usa a Marca Nova como padrão único — um só mundo visual.
+O sistema visual "Marca Nova" é especificado em `openspec/specs/marca-nova/` e implementado
+nos tokens de `css/tokens.css`. Estado: **todo o site** (HOME, subpáginas e 404) usa a Marca Nova
+como padrão único — um só mundo visual.

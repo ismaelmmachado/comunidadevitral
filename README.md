@@ -3,7 +3,7 @@
 Novo site estático da **Comunidade Vitral** (Igreja Presbiteriana Independente Vitral),
 em substituição ao site em Wix. Todo o site — HOME, subpáginas e 404 — usa a identidade
 **"Marca Nova"** (verde petróleo/verde acinzentado e Montserrat), com o emblema oficial
-da marca no hero e a tira de 4 cores no rodapé. Sistema visual documentado em `DESIGN.md`.
+da marca no hero e a tira de 4 cores no rodapé.
 
 Versão atual: **v3.0.0** · Branch de trabalho: `homologacao`
 
@@ -35,7 +35,7 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 - **Marca Nova** (v3): identidade única em todo o site — verde petróleo `#005f6b` + verde acinzentado
   (sálvia) `#94a69a`/`#e9ede9`, quase-preto `#1f2421` e Montserrat. O emblema oficial entra no hero
   da HOME numa moldura clara; a tira de 4 cores (safira/esmeralda/âmbar/rubi) permanece no rodapé.
-- Fonte do sistema visual: `DESIGN.md` (+ `.impeccable/design.json`).
+- Specs do sistema visual: `openspec/specs/marca-nova/`, `openspec/specs/site-estatico-vitral/`
 - Specs OpenSpec: `openspec/specs/site-estatico-vitral/`, `openspec/specs/marca-nova/`
   (changes concluídos em `openspec/changes/archive/`).
 
