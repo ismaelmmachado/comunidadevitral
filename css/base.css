@@ -60,6 +60,19 @@ ul, ol {
   padding: 0 var(--space);
 }
 
+.container.narrow {
+  max-width: 520px;
+  text-align: center;
+}
+
+.mt-10 { margin-top: 1rem; }
+
+.mt-16 { margin-top: 1.6rem; }
+
+.mt-20 { margin-top: 2rem; }
+
+.mt-24 { margin-top: 2.4rem; }
+
 .skip-link {
   position: absolute;
   left: -999px;
@@ -76,9 +89,21 @@ ul, ol {
   left: 0;
 }
 
+[id] {
+  scroll-margin-top: 88px;
+}
+
 :focus-visible {
   outline: 3px solid var(--petroleo);
   outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--surface);
+}
+
+.page-banner :focus-visible,
+.section-dark :focus-visible,
+.card-dark :focus-visible,
+.site-footer :focus-visible {
+  outline-color: var(--sage-lighter);
 }
 
 @media (prefers-reduced-motion: reduce) {

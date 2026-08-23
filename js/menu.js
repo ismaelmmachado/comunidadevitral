@@ -1,7 +1,6 @@
 (function () {
   var toggle = document.querySelector('.nav-toggle');
   var menu = document.getElementById('nav-menu');
-  var dropdowns = document.querySelectorAll('.nav-dropdown');
   var year = document.getElementById('year');
 
   if (year) {
@@ -19,46 +18,54 @@
       document.body.classList.toggle('nav-locked', open);
     }
 
+    function focusablesInMenu() {
+      return Array.prototype.filter.call(
+        menu.querySelectorAll('a[href]'),
+        function (el) {
+          return el.offsetParent !== null;
+        }
+      );
+    }
+
     toggle.addEventListener('click', function () {
       setMenu(!isMenuOpen());
     });
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && isMenuOpen()) {
+      if (!isMenuOpen()) {
+        return;
+      }
+      if (e.key === 'Escape') {
+        e.preventDefault();
         setMenu(false);
         toggle.focus();
+        return;
+      }
+      if (e.key === 'Tab') {
+        var items = [toggle].concat(focusablesInMenu());
+        var first = items[0];
+        var last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     });
 
     document.addEventListener('click', function (e) {
       if (isMenuOpen() && !e.target.closest('.nav')) {
         setMenu(false);
+        toggle.focus();
       }
     });
 
     menu.addEventListener('click', function (e) {
-      var link = e.target.closest('a');
-      if (link && !link.classList.contains('dd-label')) {
+      if (e.target.closest('a')) {
         setMenu(false);
       }
     });
   }
-
-  dropdowns.forEach(function (dd) {
-    var label = dd.querySelector('.dd-label');
-    if (label) {
-      label.addEventListener('click', function (e) {
-        e.preventDefault();
-        dd.classList.toggle('open');
-      });
-    }
-  });
-
-  document.addEventListener('click', function (e) {
-    dropdowns.forEach(function (dd) {
-      if (!dd.contains(e.target)) {
-        dd.classList.remove('open');
-      }
-    });
-  });
 })();

@@ -1,4 +1,4 @@
-/* Vitral Arquitetônico — Direção A (Luminoso) */
+/* Marca Nova — Comunidade Vitral */
 
 /* Header */
 .site-header {
@@ -55,8 +55,7 @@
   padding: 0;
 }
 
-.nav-menu a,
-.nav-dropdown > .dd-label {
+.nav-menu a {
   display: inline-block;
   padding: 8px 12px;
   color: var(--ink);
@@ -67,18 +66,7 @@
 }
 
 .nav-menu a:hover,
-.nav-dropdown > .dd-label:hover,
 .nav-menu a[aria-current="page"] {
-  background: rgba(0, 95, 107, 0.08);
-  color: var(--petroleo);
-}
-
-.nav-dropdown > .dd-label {
-  cursor: pointer;
-  user-select: none;
-}
-
-.nav-dropdown.open > .dd-label {
   background: rgba(0, 95, 107, 0.08);
   color: var(--petroleo);
 }
@@ -95,37 +83,6 @@
   min-height: 44px;
   border-radius: var(--radius);
   cursor: pointer;
-}
-
-.nav-dropdown {
-  position: relative;
-}
-
-.nav-dropdown .dd-menu {
-  position: absolute;
-  top: calc(100% + 6px);
-  right: 0;
-  min-width: 210px;
-  background: #ffffff;
-  border: 1px solid var(--border-nova);
-  border-radius: var(--radius);
-  box-shadow: 0 12px 30px rgba(0, 67, 77, 0.12);
-  padding: 8px;
-  list-style: none;
-  margin: 0;
-  display: none;
-  z-index: 70;
-}
-
-.nav-dropdown.open .dd-menu {
-  display: block;
-}
-
-.dd-menu a {
-  display: block;
-  width: 100%;
-  text-align: left;
-  border-radius: var(--radius);
 }
 
 /* Hero (HOME — editorial claro com emblema da marca) */
@@ -180,13 +137,6 @@
   width: 100%;
   max-width: 270px;
   margin-left: auto;
-}
-
-.hero .container:not(.hero-inner) {
-  max-width: 760px;
-  text-align: center;
-  padding-top: clamp(3.5rem, 8vw, 6.5rem);
-  padding-bottom: clamp(3.5rem, 8vw, 6.5rem);
 }
 
 .hero-glass img {
@@ -269,8 +219,19 @@
 }
 
 .section-dark {
+  position: relative;
   background: var(--grad-banner);
   color: rgba(255, 255, 255, 0.92);
+}
+
+.section-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--safira) 0 25%, var(--esmeralda) 25% 50%, var(--ambar) 50% 75%, var(--rubi) 75% 100%);
 }
 
 .section-dark h2,
@@ -317,10 +278,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
-}
-
-.grid-2 {
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
@@ -394,8 +351,8 @@
 }
 
 .btn-gold {
-  background: var(--petroleo-deep);
-  color: #fff;
+  background: var(--ambar);
+  color: var(--off-black);
 }
 
 .btn-outline {
@@ -406,11 +363,6 @@
 
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.14);
-}
-
-.btn-navy {
-  background: var(--off-black);
-  color: #fff;
 }
 
 .btn-outline-dark {
@@ -425,16 +377,14 @@
 }
 
 .btn:active,
-.nav-menu a:active,
-.nav-dropdown > .dd-label:active {
+.nav-menu a:active {
   transform: scale(0.98);
 }
 
 @media (prefers-reduced-motion: reduce) {
 
   .btn:active,
-  .nav-menu a:active,
-  .nav-dropdown > .dd-label:active {
+  .nav-menu a:active {
     transform: none;
   }
 }
@@ -464,6 +414,18 @@
   font-weight: 700;
   color: var(--petroleo);
   line-height: 1.2;
+}
+
+.feature-list li:nth-child(3n+1) .num {
+  color: var(--safira);
+}
+
+.feature-list li:nth-child(3n+2) .num {
+  color: var(--esmeralda);
+}
+
+.feature-list li:nth-child(3n) .num {
+  color: var(--rubi);
 }
 
 .section-dark .feature-list li {
@@ -559,7 +521,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.18);
   padding-top: 1.2rem;
   font-size: var(--small);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.72);
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem 1.4rem;
@@ -586,24 +548,13 @@
 
 .social-row a {
   display: inline-flex;
+  padding: 5px;
 }
 
 .social-row img {
   height: 34px;
   width: auto;
   border-radius: var(--radius);
-}
-
-/* Tira de vitral (divisor de seção) */
-.vitral-strip {
-  height: 6px;
-  background: linear-gradient(90deg, var(--safira) 0 25%, var(--esmeralda) 25% 50%, var(--ambar) 50% 75%, var(--rubi) 75% 100%);
-}
-
-/* Misc */
-.meta-line {
-  color: var(--muted-nova);
-  font-size: var(--small);
 }
 
 .big-quote {
@@ -679,8 +630,7 @@
     overflow: hidden;
   }
 
-  .nav-menu a,
-  .nav-dropdown > .dd-label {
+  .nav-menu a {
     display: flex;
     align-items: center;
     min-height: 48px;
@@ -688,20 +638,7 @@
     border-bottom: 1px solid var(--sage-claro);
   }
 
-  .nav-dropdown .dd-menu {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding: 0 0 0 0.8rem;
-    display: none;
-  }
-
-  .nav-dropdown.open .dd-menu {
-    display: block;
-  }
-
   .grid,
-  .grid-2,
   .contact-grid,
   .footer-grid,
   .section-head {
