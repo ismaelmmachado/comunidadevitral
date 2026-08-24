@@ -4,12 +4,13 @@ context: |
   Site estático da Comunidade Vitral (Igreja Presbiteriana Independente Vitral), da IPIB, em São José do Rio Preto/SP.
   Stack: HTML5 + CSS puro, sem build step e sem dependências de runtime. JS mínimo (js/menu.js).
   Publicação: GitHub Pages serve a raiz da branch homologacao (subpath /comunidadevitral/); main só em deploy explícito.
-  Arquitetura atual: 7 páginas + 404 (index, quem-somos, jornada, encontros-e-pgs, criancas-e-familia, causas-e-cidade, contato).
+  Arquitetura atual: 8 páginas de conteúdo + 404 (index, quem-somos, jornada, encontros-e-pgs,
+  grande-banquete, criancas-e-familia, causas-e-cidade, contato).
   Fonte da verdade do conteúdo: docs/conteudo/novo/*.md; a Home em docs/conteudo/homepage.md.
   Conteúdo institucional preservado verbatim: telefone 17 99619-5302, e-mail contato@comunidadevitral.com.br,
   endereço Avenida Sebastião Tavares da Silva 1191, CEP 15061-660, CNPJ 49.075.286/0001-63, PIX financeiro@comunidadevitral.com.br,
   WhatsApp institucional https://wa.me/5517996195302.
-  Design system "Vitral Arquitetônico" em css/tokens.css (paleta vidro sobre pedra; Playfair Display + Inter; raio 8px).
+  Design system "Marca Nova" em css/tokens.css (verde petróleo #005f6b + sálvia #94a69a, gemas safira/esmeralda/âmbar/rubi; Montserrat).
   Header e footer são repetidos em todas as páginas — alterar exige atualizar todas.
   Mobile-first; acessibilidade WCAG 2.1 AA; idioma pt-BR.
   Convenção de commit: "salva" = commit e push na branch homologacao.
@@ -26,4 +27,4 @@ operations:
       - "Site estático: verifique as páginas afetadas e o conteúdo verbatim antes de fechar"
   archive:
     guidance:
-      - "Confirme que a spec sincronizada reflete a arquitetura publicada (7 páginas)"
+      - "Confirme que a spec sincronizada reflete a arquitetura publicada (8 páginas de conteúdo)"

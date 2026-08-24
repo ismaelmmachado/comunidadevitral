@@ -22,16 +22,19 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - O hero da HOME usa o emblema da marca (`assets/logos/logo-vitral.png`); a tira de 4 cores é marca inegociável.
 
 ### Estrutura
-- 7 páginas estáticas na raiz: `index`, `quem-somos`, `jornada`, `encontros-e-pgs`,
-  `criancas-e-familia`, `causas-e-cidade`, `contato` + `404.html`.
+- 8 páginas estáticas de conteúdo na raiz: `index`, `quem-somos`, `jornada`, `encontros-e-pgs`,
+  `grande-banquete`, `criancas-e-familia`, `causas-e-cidade`, `contato` + `404.html`.
 - `css/` (tokens, base, estilo), `js/`, `assets/` (img, logos, favicon, og-image).
 - `docs/` — conteúdo extraído (`conteudo/`, `conteudo/novo/`, `raw/`, `inventario.md`), legado (`openspec-legado/`) e propostas (`propostas/`).
 - `openspec/` — documentação spec-driven (specs: `site-estatico-vitral`, `marca-nova`; `config.yaml`); changes concluídos em `changes/archive/`.
 - `AGENTS.md`, `README.md` — documentação do projeto.
 
 ### Conteúdo
-- Conteúdo das 7 páginas em `docs/conteudo/novo/*.md` (fonte da verdade); a Home está
+- Conteúdo das 8 páginas em `docs/conteudo/novo/*.md` (fonte da verdade); a Home está
   em `docs/conteudo/homepage.md`.
+- Material da formação: apostilas da Trilha de Novos vivem no repo
+  `ismaelmmachado/trilha_de_novos` (docs/apostilas/); análise de congruência
+  apostila × site em `docs/propostas/congruencia-apostila-v2.2-site.md`.
 - Preservar verbatim: textos, telefone 17 99619-5302, e-mail contato@comunidadevitral.com.br,
   endereço, CNPJ 49.075.286/0001-63, PIX financeiro@comunidadevitral.com.br, banco Itaú Ag 8299.
 - Botões de WhatsApp usam o número institucional `https://wa.me/5517996195302`.
