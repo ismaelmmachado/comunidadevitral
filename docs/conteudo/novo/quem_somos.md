@@ -87,7 +87,7 @@ Na Vitral, gostamos de usar a imagem da **Treliça e da Videira**. A Videira é 
 * **O Conselho da Igreja**: Composto pelo pastor (ou pastores) e pelos presbíteros eleitos pela comunidade, responsáveis pela liderança espiritual, ensino da Palavra, governo e cuidado pastoral da igreja.
 * **A Diaconia**: Homens e mulheres dedicados ao serviço prático, compaixão e cuidado com os necessitados dentro e fora da comunidade.
 * **A Assembleia Comunitária**: Momento participativo onde os membros votam e tomam decisões administrativas e orçamentárias com total transparência financeira.
-* **Os 4 Times de Servidores (Mordomos)**:
+* **Os 4 Times de Servidores**:
   * 🫂 **Acolhimento**: Quem recebe cada visitante com café e sorriso sincero.
   * 🪑 **Logística**: Quem cuida da casa, som e ambiente para você descansar.
   * 🎨 **Experiência**: Música, arte e comunicação que apontam para a beleza de Deus.

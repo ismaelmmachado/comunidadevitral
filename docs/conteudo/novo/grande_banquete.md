@@ -3,7 +3,7 @@
 > Fonte da verdade desta página. Imagem do banner (hero): `assets/img/decolores-placa.png`.
 > Conexões: complementa a Jornada do Discípulo (jornada.html); CTAs usam o WhatsApp
 > institucional https://wa.me/5517996195302. Sem emojis; sem tom de "evento secreto";
-> terminologia oficial: Trilha de Novos, Pequenos Grupos (PGs), os 4 Times de Servidores (Mordomos).
+> terminologia oficial: Trilha de Novos, Pequenos Grupos (PGs), os 4 Times de Servidores.
 
 ---
 
@@ -117,7 +117,7 @@ O Grande Banquete não termina no domingo à noite. O objetivo principal da imer
 
 Após o evento, você continua crescendo através de:
 * **Pequenos Grupos (PGs)**: Conexão semanal em casas e cafés para continuar partilhando a vida.
-* **Serviço na comunidade**: Oportunidade de servir nos 4 Times de Servidores (Mordomos) ou apoiar futuras edições do Banquete.
+* **Serviço na comunidade**: Oportunidade de servir nos 4 Times de Servidores ou apoiar futuras edições do Banquete.
 * **Vida em família e no trabalho**: Aplicação prática da fé no seu dia a dia em São José do Rio Preto.
 
 ---
