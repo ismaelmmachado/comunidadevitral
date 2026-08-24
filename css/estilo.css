@@ -88,9 +88,18 @@
 /* Hero (HOME — editorial claro com emblema da marca) */
 .hero {
   position: relative;
-  background: var(--sage-claro);
-  border-bottom: 1px solid var(--border-nova);
+  background: linear-gradient(180deg, var(--sage-claro) 55%, #ffffff 100%);
   overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--safira) 0 25%, var(--esmeralda) 25% 50%, var(--ambar) 50% 75%, var(--rubi) 75% 100%);
 }
 
 .hero-inner {
