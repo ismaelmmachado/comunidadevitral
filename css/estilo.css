@@ -332,6 +332,15 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
+.card-dark a {
+  color: var(--sage-lighter);
+  font-weight: 700;
+}
+
+.card-dark a:hover {
+  color: #fff;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -465,6 +474,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
+  min-width: 0;
+}
+
+.contact-grid > * {
+  min-width: 0;
 }
 
 .contact-item {
@@ -472,6 +486,8 @@
   border: 1px solid var(--border-nova);
   border-radius: var(--radius);
   padding: 1.4rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .contact-item .label {
