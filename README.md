@@ -5,7 +5,7 @@ em substituição ao site em Wix. Todo o site — HOME, subpáginas e 404 — us
 **"Marca Nova"** (verde petróleo/verde acinzentado e Montserrat), com o emblema oficial
 da marca no hero e a tira de 4 cores no rodapé.
 
-Versão atual: **v3.0.0** · Branch de trabalho: `homologacao`
+Versão atual: **v3.0.1** · Branch de trabalho: `homologacao`
 
 Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 
@@ -17,6 +17,7 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 | Quem Somos | `quem-somos.html` |
 | No Que Cremos | `no-que-cremos.html` |
 | A Jornada & Trilha de Novos | `jornada.html` |
+| O Grande Banquete | `grande-banquete.html` |
 | Encontros & PGs | `encontros-e-pgs.html` |
 | Crianças & Família | `criancas-e-familia.html` |
 | Causas & Cidade | `causas-e-cidade.html` |

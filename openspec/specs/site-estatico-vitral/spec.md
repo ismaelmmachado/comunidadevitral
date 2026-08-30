@@ -2,13 +2,13 @@
 
 ## Purpose
 
-O site estático da Comunidade Vitral apresenta o conteúdo institucional da igreja em uma arquitetura de 8 páginas + 404, no design "Marca Nova" (verde petróleo/verde acinzentado, Montserrat), preservando fielmente os textos e dados institucionais, e é publicado via GitHub Pages (subpath `/comunidadevitral/`, branch `homologacao`).
+O site estático da Comunidade Vitral apresenta o conteúdo institucional da igreja em uma arquitetura de 9 páginas + 404, no design "Marca Nova" (verde petróleo/verde acinzentado, Montserrat), preservando fielmente os textos e dados institucionais, e é publicado via GitHub Pages (subpath `/comunidadevitral/`, branch `homologacao`).
 
 ## Requirements
 
-### Requirement: Estrutura de 8 páginas com conteúdo preservado
+### Requirement: Estrutura de 9 páginas com conteúdo preservado
 
-O site DEVE (MUST) publicar 8 páginas + 404: HOME (`index.html`), Quem Somos (`quem-somos.html`), A Jornada & Trilha de Novos (`jornada.html`), O Grande Banquete (`grande-banquete.html`), Encontros & PGs (`encontros-e-pgs.html`), Crianças & Família (`criancas-e-familia.html`), Causas & Cidade (`causas-e-cidade.html`) e Contato (`contato.html`). O conteúdo de cada página DEVE (MUST) seguir a fonte da verdade em `docs/conteudo/novo/*.md` (a Home em `docs/conteudo/homepage.md`). Os dados institucionais DEVEM (MUST) estar corretos e visíveis no rodapé e na página de contato: telefone 17 99619-5302, e-mail contato@comunidadevitral.com.br, endereço "Avenida Sebastião Tavares da Silva, 1191 - Jardim Vista Alegre, São José do Rio Preto - SP - CEP 15061-660", CNPJ 49.075.286/0001-63, PIX financeiro@comunidadevitral.com.br e banco Itaú Ag 8299.
+O site DEVE (MUST) publicar 9 páginas + 404: HOME (`index.html`), Quem Somos (`quem-somos.html`), No Que Cremos (`no-que-cremos.html`), A Jornada & Trilha de Novos (`jornada.html`), O Grande Banquete (`grande-banquete.html`), Encontros & PGs (`encontros-e-pgs.html`), Crianças & Família (`criancas-e-familia.html`), Causas & Cidade (`causas-e-cidade.html`) e Contato (`contato.html`). O conteúdo de cada página DEVE (MUST) seguir a fonte da verdade em `docs/conteudo/novo/*.md` (a Home em `docs/conteudo/homepage.md`). Os dados institucionais DEVEM (MUST) estar corretos e visíveis no rodapé e na página de contato: telefone 17 99619-5302, e-mail contato@comunidadevitral.com.br, endereço "Avenida Sebastião Tavares da Silva, 1191 - Jardim Vista Alegre, São José do Rio Preto - SP - CEP 15061-660", CNPJ 49.075.286/0001-63, PIX financeiro@comunidadevitral.com.br e banco Itaú Ag 8299.
 
 #### Scenario: Visualizar dados de contato na HOME
 - **WHEN** o usuário acessa a página inicial
@@ -60,7 +60,7 @@ O site DEVE (MUST) oferecer canais de contato direto: WhatsApp institucional (`h
 
 ### Requirement: Navegação entre as páginas
 
-O site DEVE (MUST) exibir um cabeçalho fixo com o logotipo e o menu de navegação com as 8 páginas: Home, Quem Somos, Jornada, Grande Banquete, Encontros & PGs, Crianças & Família, Causas & Cidade e Contato. Todos os links internos DEVM (MUST) usar caminhos relativos para funcionar no subpath do GitHub Pages. Em telas estreitas (≤760px), o menu DEVE (MUST) abrir como drawer em tela cheia com os links empilhados, alvos de toque de no mínimo 48px de altura, fechamento por tecla Esc, clique fora ou seleção de link, trava da rolagem do fundo enquanto aberto e devolução do foco ao botão Menu ao fechar; o botão toggle DEVE (MUST) manter `aria-expanded` e `aria-controls`.
+O site DEVE (MUST) exibir um cabeçalho fixo com o logotipo e o menu de navegação com as 9 páginas: Home, Quem Somos, No Que Cremos, Jornada, Grande Banquete, Encontros & PGs, Crianças & Família, Causas & Cidade e Contato. Todos os links internos DEVM (MUST) usar caminhos relativos para funcionar no subpath do GitHub Pages. Em telas estreitas (≤760px), o menu DEVE (MUST) abrir como drawer em tela cheia com os links empilhados, alvos de toque de no mínimo 48px de altura, fechamento por tecla Esc, clique fora ou seleção de link, trava da rolagem do fundo enquanto aberto e devolução do foco ao botão Menu ao fechar; o botão toggle DEVE (MUST) manter `aria-expanded` e `aria-controls`.
 
 #### Scenario: Navegar do menu principal
 - **WHEN** o usuário clica em "Quem Somos" no menu
