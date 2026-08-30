@@ -628,7 +628,10 @@
 }
 
 /* Mobile */
-@media (max-width: 760px) {
+/* Header drawer — ativa o menu hambúrguer antes que os itens estourem o header
+   (com 9 itens o menu horizontal só cabe a partir de ~1000px; breakpoint do
+   conteúdo permanece em 760px). */
+@media (max-width: 1024px) {
   .nav-toggle {
     display: block;
   }
@@ -666,7 +669,10 @@
     font-size: 1.15rem;
     border-bottom: 1px solid var(--sage-claro);
   }
+}
 
+/* Mobile */
+@media (max-width: 760px) {
   .grid,
   .contact-grid,
   .footer-grid,
