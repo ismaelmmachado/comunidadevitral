@@ -216,6 +216,10 @@
   font-size: clamp(1.05rem, 2vw, 1.25rem);
 }
 
+.page-banner .hero-meta {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 /* Sections */
 .section {
   padding: var(--section) 0;

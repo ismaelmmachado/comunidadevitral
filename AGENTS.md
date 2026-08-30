@@ -22,7 +22,7 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - O hero da HOME usa o emblema da marca (`assets/logos/logo-vitral.png`); a tira de 4 cores é marca inegociável.
 
 ### Estrutura
-- 8 páginas estáticas de conteúdo na raiz: `index`, `quem-somos`, `jornada`, `encontros-e-pgs`,
+- 9 páginas estáticas de conteúdo na raiz: `index`, `quem-somos`, `no-que-cremos`, `jornada`, `encontros-e-pgs`,
   `grande-banquete`, `criancas-e-familia`, `causas-e-cidade`, `contato` + `404.html`.
 - `css/` (tokens, base, estilo), `js/`, `assets/` (img, logos, favicon, og-image).
 - `docs/` — conteúdo extraído (`conteudo/`, `conteudo/novo/`, `raw/`, `inventario.md`), legado (`openspec-legado/`) e propostas (`propostas/`).
@@ -30,7 +30,7 @@ Publicado via GitHub Pages: `https://ismaelmmachado.github.io/comunidadevitral/`
 - `AGENTS.md`, `README.md` — documentação do projeto.
 
 ### Conteúdo
-- Conteúdo das 8 páginas em `docs/conteudo/novo/*.md` (fonte da verdade); a Home está
+- Conteúdo das 9 páginas em `docs/conteudo/novo/*.md` (fonte da verdade); a Home está
   em `docs/conteudo/homepage.md`.
 - Material da formação: apostilas da Trilha de Novos vivem no repo
   `ismaelmmachado/trilha_de_novos` (docs/apostilas/); análise de congruência

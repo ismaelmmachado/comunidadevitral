@@ -15,6 +15,7 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 |---|---|
 | HOME | `index.html` |
 | Quem Somos | `quem-somos.html` |
+| No Que Cremos | `no-que-cremos.html` |
 | A Jornada & Trilha de Novos | `jornada.html` |
 | Encontros & PGs | `encontros-e-pgs.html` |
 | Crianças & Família | `criancas-e-familia.html` |
@@ -41,7 +42,7 @@ Publicado em: <https://ismaelmmachado.github.io/comunidadevitral/>
 
 ## Conteúdo
 
-- Fonte da verdade das 7 páginas: `docs/conteudo/novo/` (a Home está em `docs/conteudo/homepage.md`).
+- Fonte da verdade das páginas: `docs/conteudo/novo/` (a Home está em `docs/conteudo/homepage.md`).
 - Conteúdo antigo (10 páginas Wix) preservado em `docs/conteudo/` e `docs/raw/` para referência.
 - Imagens: `assets/img/` (fotos) e `assets/logos/`.
 
