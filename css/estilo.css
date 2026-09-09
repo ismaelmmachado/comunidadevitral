@@ -697,6 +697,13 @@
 
   .hero-cta {
     align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-cta a {
+    width: 100%;
+    max-width: 280px;
+    margin: 0.4rem 0;
   }
 }
 
